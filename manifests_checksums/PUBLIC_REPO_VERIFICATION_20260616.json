@@ -1,13 +1,13 @@
 {
   "status": "OK",
-  "payload_file_count_excluding_generated_manifest_files": 186,
+  "payload_file_count_excluding_generated_manifest_files": 178,
   "generated_manifest_files": [
     "manifests_checksums/PUBLIC_REPO_MANIFEST_20260616.csv",
     "manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_20260616.txt",
     "manifests_checksums/PUBLIC_REPO_VERIFICATION_20260616.json"
   ],
-  "expected_zip_entry_count_after_manifest_generation": 189,
-  "total_bytes": 25978045,
+  "expected_zip_entry_count_after_manifest_generation": 181,
+  "total_bytes": 25839158,
   "required_root_entries": {
     "README.md": true,
     "LICENSE": true,
@@ -31,8 +31,6 @@
     "spatial_sensitivity_table13_exists": true,
     "review_planning_summary_exists": true,
     "point_level_public_sentinel2_imagery_date_audit_exists": true,
-    "second_reader_vhr_agreement_template_exists": true,
-    "second_reader_vhr_agreement_merge_script_exists": true,
     "full_targeted_review_queues_excluded": true,
     "no_file_over_100mb": true
   },
@@ -48,10 +46,9 @@
       "sample_files": []
     },
     "expected_result_status_terms": {
-      "file_count": 10,
-      "occurrences": 52,
+      "file_count": 9,
+      "occurrences": 50,
       "sample_files": [
-        "docs/SECOND_READER_VHR_AGREEMENT_INSTRUCTIONS.md",
         "results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.csv",
         "results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.json",
         "results/active_q25_rerun/fold3_teacher_vhr_rerun_QA_summary_20260613.json",

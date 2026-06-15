@@ -17,6 +17,4 @@
 - `manifests_checksums/`: source package records plus newly generated staging manifest/checksum/verification.
 - `docs/`: data availability, reproducibility, limitations, and upload notes.
 - `docs/POINT_LEVEL_IMAGERY_DATES.md`: scope and wording for the public Sentinel-2 point-level imagery-date audit.
-- `docs/SECOND_READER_VHR_AGREEMENT_INSTRUCTIONS.md`: human instructions for blind second-reader VHR interpretation and agreement merging.
-- `docs/second_reader_vhr_agreement/`: blind second-reader interpretation template and allowed-value list.
 
