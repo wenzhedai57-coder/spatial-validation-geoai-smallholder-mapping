@@ -1,0 +1,21 @@
+﻿cff-version: 1.2.0
+message: "If you use this code or data, cite the archived public release when available and the associated manuscript."
+title: "Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping"
+version: "v1.0-ijrs-staging"
+date-released: "2026-06-15"
+authors:
+  - family-names: "Dai"
+    given-names: "Wenzhe"
+    orcid: "https://orcid.org/0009-0009-0210-9839"
+  - family-names: "Cao"
+    given-names: "Wang"
+  - family-names: "Hou"
+    given-names: "Xuehui"
+abstract: "Evidence, code, figures, and provenance for a spatially honest validation-sensitivity study of GeoAI land-cover mapping in Malaysian smallholder mosaics."
+keywords:
+  - GeoAI
+  - spatial validation
+  - remote sensing
+  - land-cover mapping
+  - conformal prediction
+  - label provenance

@@ -1,0 +1,42 @@
+{
+  "timestamp_utc": "20260612T172827Z",
+  "config_path": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+  "config_hash_sha256": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+  "random_seed": 42,
+  "inputs": {
+    "reference_samples": "data/reference_samples_verified_622_public.csv",
+    "feature_stacks": {
+      "B0": {
+        "label": "S2 spectral+indices",
+        "file": "data/features_fold3_teacher_vhr_repair_20260613/B0.csv"
+      },
+      "B1": {
+        "label": "S1+S2",
+        "file": "data/features_fold3_teacher_vhr_repair_20260613/B1.csv"
+      },
+      "B2": {
+        "label": "AlphaEarth 64-dim embedding",
+        "file": "data/features_fold3_teacher_vhr_repair_20260613/B2.csv"
+      },
+      "B3": {
+        "label": "AlphaEarth+S1/S2",
+        "file": "data/features_fold3_teacher_vhr_repair_20260613/B3.csv"
+      }
+    },
+    "locked_results": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///results_fold3_teacher_vhr_repair_20260613"
+  },
+  "outputs": {
+    "results_dir": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///results_fold3_teacher_vhr_improvements_20260613",
+    "figures_dir": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///figures_fold3_teacher_vhr_improvements_20260613"
+  },
+  "library_versions": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "matplotlib": "3.10.9",
+    "sklearn": "1.9.0",
+    "xgboost": "unavailable"
+  },
+  "note": "Candidate labels remain verified=False until user/field confirmation."
+}

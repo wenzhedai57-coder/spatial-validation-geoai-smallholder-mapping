@@ -1,0 +1,168 @@
+{
+  "class_counts_excluded": {},
+  "class_counts_verified": {
+    "builtup_other": 85,
+    "forest": 129,
+    "oil_palm": 109,
+    "other_agri": 89,
+    "paddy": 105,
+    "rubber": 105
+  },
+  "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+  "max_oa_optimism_gap": {
+    "model": "XGBoost",
+    "optimism_gap": 0.258649053816146,
+    "stack": "B2"
+  },
+  "moran_summary": {
+    "mean_abs_morans_i": 0.01457681617753944,
+    "mean_morans_i": 0.007540016292453337,
+    "ok_rows": 64,
+    "skipped_rows": 0
+  },
+  "random_seed": 42,
+  "reference_file": "data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+  "sample_counts": {
+    "total_rows": 622,
+    "verified_false_excluded": 0,
+    "verified_true": 622
+  },
+  "source_results_dir": "results_fold3_teacher_vhr_repair_20260613",
+  "spatial_conformal_audit": [
+    {
+      "available_spatial_blocks": 16,
+      "block_distance_m": 126783.51747145984,
+      "calibration_count": 362,
+      "candidate_search_truncated": true,
+      "candidate_sets_evaluated": 4216,
+      "classes_retained_by_calibration": "1|2|3|4|5|6",
+      "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+      "input_files": "verified_reference_samples",
+      "minimum_calibration_test_distance_m": 228997.11569357847,
+      "random_seed": 42,
+      "reason": NaN,
+      "required_class_codes": "1|2|3|4|5|6",
+      "required_class_codes_missing": NaN,
+      "required_class_codes_satisfied": "1|2|3|4|5|6",
+      "required_spatial_blocks": 4,
+      "selected_calibration_cell_ids": "90:1|90:2|89:2|91:1|89:1",
+      "selected_test_cell_ids": "88:5|88:4",
+      "split_score": "6|39|6|39|142|118|362",
+      "split_strategy": "class_aware",
+      "status": "OK",
+      "test_count": 142,
+      "timestamp": "20260612T173210Z",
+      "train_count": 118,
+      "zero_leakage_assertion": true
+    }
+  ],
+  "spatial_fold_audit": [
+    {
+      "available_spatial_blocks": 16,
+      "block_distance_m": 126783.51747145984,
+      "buffered_out_count": 314,
+      "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+      "fold": 1,
+      "input_files": "verified_reference_samples",
+      "minimum_train_test_distance_m": 127129.75612190778,
+      "random_seed": 42,
+      "reason": NaN,
+      "required_spatial_blocks": 4,
+      "status": "OK",
+      "test_count": 124,
+      "timestamp": "20260612T173210Z",
+      "train_count": 184,
+      "zero_leakage_assertion": true
+    },
+    {
+      "available_spatial_blocks": 16,
+      "block_distance_m": 126783.51747145984,
+      "buffered_out_count": 379,
+      "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+      "fold": 2,
+      "input_files": "verified_reference_samples",
+      "minimum_train_test_distance_m": 126794.40479851734,
+      "random_seed": 42,
+      "reason": NaN,
+      "required_spatial_blocks": 4,
+      "status": "OK",
+      "test_count": 139,
+      "timestamp": "20260612T173210Z",
+      "train_count": 104,
+      "zero_leakage_assertion": true
+    },
+    {
+      "available_spatial_blocks": 16,
+      "block_distance_m": 126783.51747145984,
+      "buffered_out_count": 373,
+      "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+      "fold": 3,
+      "input_files": "verified_reference_samples",
+      "minimum_train_test_distance_m": 127599.30429506733,
+      "random_seed": 42,
+      "reason": NaN,
+      "required_spatial_blocks": 4,
+      "status": "OK",
+      "test_count": 219,
+      "timestamp": "20260612T173210Z",
+      "train_count": 30,
+      "zero_leakage_assertion": true
+    },
+    {
+      "available_spatial_blocks": 16,
+      "block_distance_m": 126783.51747145984,
+      "buffered_out_count": 394,
+      "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+      "fold": 4,
+      "input_files": "verified_reference_samples",
+      "minimum_train_test_distance_m": 127695.02619802412,
+      "random_seed": 42,
+      "reason": NaN,
+      "required_spatial_blocks": 4,
+      "status": "OK",
+      "test_count": 140,
+      "timestamp": "20260612T173210Z",
+      "train_count": 88,
+      "zero_leakage_assertion": true
+    }
+  ],
+  "table_status_counts": {
+    "table10": {
+      "OK": 72
+    },
+    "table11": {
+      "OK": 72
+    },
+    "table12": {
+      "OK": 48,
+      "SKIPPED": 24
+    },
+    "table3": {
+      "OK": 64
+    },
+    "table4": {
+      "OK": 16
+    },
+    "table5": {
+      "OK": 16
+    },
+    "table6": {
+      "OK": 64
+    },
+    "table7": {
+      "OK": 16
+    },
+    "table8": {
+      "OK": 64
+    },
+    "table9": {
+      "OK": 18
+    }
+  },
+  "variogram": {
+    "chosen_block_distance_km": 126.78351747145986,
+    "chosen_block_distance_m": 126783.51747145985,
+    "n_samples": 622,
+    "pair_count_used": null
+  }
+}

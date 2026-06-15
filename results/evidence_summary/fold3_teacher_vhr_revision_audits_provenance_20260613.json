@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "20260612T175809Z",
+  "status": "OK",
+  "random_seed": 42,
+  "bootstrap_replicates": 5000,
+  "inputs": {
+    "rule_candidates": "results/variogram/block_distance_practical_rule_candidates_20260613.csv",
+    "predictions": "results/active_q25_rerun/predictions_by_fold.csv",
+    "landscape_regression": "results/active_q25_rerun/table9_landscape_regression.csv"
+  },
+  "outputs": [
+    "results/evidence_summary/fold3_teacher_vhr_q25_block_distance_rule_selection_audit_20260613.csv",
+    "results/evidence_summary/fold3_teacher_vhr_alphaearth_spatial_paired_bootstrap_20260613.csv",
+    "results/evidence_summary/fold3_teacher_vhr_alphaearth_spatial_fold_level_differences_20260613.csv",
+    "results/evidence_summary/fold3_teacher_vhr_landscape_regression_fdr_audit_20260613.csv"
+  ]
+}

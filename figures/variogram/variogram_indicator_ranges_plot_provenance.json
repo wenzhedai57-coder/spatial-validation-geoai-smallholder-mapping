@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "inputs": [
+    "results/variogram/variogram_indicator_bins.csv",
+    "results/variogram/block_distance_practical_rule_summary_20260613.json"
+  ],
+  "outputs": [
+    "figures/variogram/variogram_indicator_ranges.png",
+    "figures/variogram/variogram_indicator_ranges.pdf"
+  ],
+  "note": "Figure recreated from packaged variogram artifacts; no result values are recomputed."
+}

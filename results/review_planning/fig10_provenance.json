@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "20260612T174619Z",
+  "figure": "figures/manuscript/Figure_10_error_guided_validation_plan.png",
+  "summary": "results/review_planning/table15_error_guided_validation_plan.csv",
+  "inputs": [
+    "results/review_planning/sample_level_failure_disagreement.csv",
+    "results/review_planning/targeted_validation_candidate_summary_review_planning_20260613.csv"
+  ],
+  "priority_candidate_rows": 108,
+  "verified_diagnostic_rows": 622,
+  "no_fabrication_note": "The figure links observed diagnostic errors to an unverified review queue; it does not add labels or metrics.",
+  "review_queue_status": "review planning only; not ground truth"
+}

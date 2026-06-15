@@ -1,0 +1,5 @@
+timestamp,config_hash,input_files,random_seed,status,reason,fold,train_count,test_count,buffered_out_count,block_distance_m,minimum_train_test_distance_m,zero_leakage_assertion,available_spatial_blocks,required_spatial_blocks
+20260612T173210Z,13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5,verified_reference_samples,42,OK,,1,184,124,314,126783.51747145985,127129.75612190778,True,16,4
+20260612T173210Z,13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5,verified_reference_samples,42,OK,,2,104,139,379,126783.51747145985,126794.40479851734,True,16,4
+20260612T173210Z,13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5,verified_reference_samples,42,OK,,3,30,219,373,126783.51747145985,127599.30429506731,True,16,4
+20260612T173210Z,13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5,verified_reference_samples,42,OK,,4,88,140,394,126783.51747145985,127695.02619802413,True,16,4

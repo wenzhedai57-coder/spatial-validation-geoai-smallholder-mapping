@@ -1,0 +1,6 @@
+timestamp_utc,metric,value,interpretation
+20260613T071959Z,B2_RF_random_fold_mean_OA,0.7347394540942929,random-CV reference mean across four folds
+20260613T071959Z,B2_RF_q25_spatial_all_folds_mean_OA,0.4942423505801129,q25 spatial-CV fold mean including fold 3
+20260613T071959Z,B2_RF_q25_spatial_excluding_fold3_mean_OA,0.5357021295406071,support sensitivity summary excluding the 30-train-sample fold
+20260613T071959Z,B2_RF_all_folds_random_minus_spatial_OA_gap,0.24049710351417997,headline gap if all q25 folds are retained
+20260613T071959Z,B2_RF_random_minus_spatial_excluding_fold3_OA_gap,0.19903732455368572,gap after removing fold 3 from the spatial mean

@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "20260613T071959Z",
+  "input_files": [
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//table3_accuracy_by_stack_split.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//spatial_fold_leakage_audit.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//table10_leave_region_out_transfer.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//table7_conformal.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results_fold3_teacher_vhr_improvements_20260613//table13_spatial_cv_sensitivity_summary.csv"
+  ],
+  "output_files": [
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/reviewer_risk_evidence//fold3_support_sensitivity_B2_RF_20260613.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/reviewer_risk_evidence//fold3_support_sensitivity_summary_B2_RF_20260613.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/reviewer_risk_evidence//rubber_belt_B2_B3_transfer_consistency_20260613.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/reviewer_risk_evidence//conformal_informativeness_primary_RF_20260613.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/reviewer_risk_evidence//q25_distance_sensitivity_primary_RF_20260613.csv"
+  ],
+  "random_seed": 42,
+  "notes": "Derived summary artifacts for reviewer-risk manuscript revision; no new model fitting was performed."
+}

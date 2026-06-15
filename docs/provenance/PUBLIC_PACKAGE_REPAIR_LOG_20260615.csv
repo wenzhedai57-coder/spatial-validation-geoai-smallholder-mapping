@@ -1,0 +1,123 @@
+action,path,detail
+removed_from_public_slim_repo,config/legacy_sensitivity,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/figures/make_error_guided_validation_figure.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/figures/make_targeted_user_confirmed_80_figures.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/figures/make_workflow_figure.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/figures/redraw_workflow_minimal_journal.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/package/build_reviewer_risk_evidence.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/package/run_region_specific_calibration.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/pipeline/audit_s1_band_provenance.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/pipeline/make_revision_audits_20260613.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/pipeline/run_negative_control_experiment.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/pipeline/run_topjournal_improvements.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/pipeline/verify_reference_urls_20260612.py,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/figures,"obsolete, legacy, or not runnable against the staged public layout"
+removed_from_public_slim_repo,scripts/package,"obsolete, legacy, or not runnable against the staged public layout"
+copied_active_support_artifact,results/spatial_sensitivity/RUN_LOG_20260612T172827Z.txt,from source_package/results_fold3_teacher_vhr_improvements_20260613/RUN_LOG_20260612T172827Z.txt
+copied_active_support_artifact,results/spatial_sensitivity/RUN_LOG_20260612T173903Z.txt,from source_package/results_fold3_teacher_vhr_improvements_20260613/RUN_LOG_20260612T173903Z.txt
+copied_active_support_artifact,results/spatial_sensitivity/spatial_cv_sensitivity_fold_audit.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/spatial_cv_sensitivity_fold_audit.csv
+copied_active_support_artifact,results/spatial_sensitivity/spatial_cv_sensitivity_missing_value_policy_audit.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/spatial_cv_sensitivity_missing_value_policy_audit.csv
+copied_active_support_artifact,results/spatial_sensitivity/spatial_cv_sensitivity_predictions.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/spatial_cv_sensitivity_predictions.csv
+copied_active_support_artifact,results/spatial_sensitivity/table13_spatial_cv_sensitivity.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/table13_spatial_cv_sensitivity.csv
+copied_active_support_artifact,results/spatial_sensitivity/table13_spatial_cv_sensitivity_summary.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/table13_spatial_cv_sensitivity_summary.csv
+copied_active_support_artifact,results/spatial_sensitivity/topjournal_improvements_provenance.json,from source_package/results_fold3_teacher_vhr_improvements_20260613/topjournal_improvements_provenance.json
+copied_active_support_artifact,results/review_planning/fig10_provenance.json,from source_package/results_fold3_teacher_vhr_improvements_20260613/fig10_provenance.json
+copied_active_support_artifact,results/review_planning/sample_level_failure_disagreement.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/sample_level_failure_disagreement.csv
+copied_active_support_artifact,results/review_planning/table15_error_guided_validation_plan.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/table15_error_guided_validation_plan.csv
+copied_active_support_artifact,results/review_planning/targeted_validation_candidate_summary_review_planning_20260613.csv,from source_package/results_fold3_teacher_vhr_improvements_20260613/targeted_validation_candidate_summary_review_planning_20260613.csv
+copied_active_support_artifact,results/review_planning/targeted_validation_queue_reconstruction_provenance_20260613.json,from source_package/results_fold3_teacher_vhr_improvements_20260613/targeted_validation_queue_reconstruction_provenance_20260613.json
+renamed_doc,docs/PUBLIC_REUSE_NOTES.md,renamed from docs/TEMPLATES_README.md to avoid template-residue false positive
+created_public_reproduction_config,config/config_public_reproduction_20260615.yaml,original hash-preserved config left unchanged
+normalized_public_paths,docs/REPRODUCIBILITY.md,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/class_counts_verified.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/feature_missing_value_policy_audit.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/gee_asset_verification.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/gee_feature_export_log_20260612T171934Z.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/gee_feature_export_log_20260612T172156Z.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/gee_feature_export_log_20260612T172216Z.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/gee_feature_export_log_20260612T172238Z.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/gee_feature_export_log_20260612T172259Z.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/per_class_metrics.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/predictions_by_fold.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/provenance.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/reference_sample_audit.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/RUN_LOG_20260612T172442Z.txt,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/RUN_LOG_20260612T173210Z.txt,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/run_status.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/study_area_audit.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table10_leave_region_out_transfer.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table10_leave_region_out_transfer_per_class.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table11_region_transfer_conformal.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table12_region_transfer_morans_i.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table3_accuracy_by_stack_split.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table6_ece.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table7_conformal.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table8_morans_i.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/table9_landscape_regression.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/topjournal_transfer_experiment_provenance.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/transfer_missing_value_policy_audit.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/variogram_bins.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/active_q25_rerun/variogram_choice.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/conformal_summary.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/fold3_teacher_vhr_alphaearth_spatial_fold_level_differences_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/fold3_teacher_vhr_alphaearth_spatial_paired_bootstrap_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/fold3_teacher_vhr_landscape_regression_fdr_audit_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/fold3_teacher_vhr_revision_audits_provenance_20260613.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/landscape_regression_top.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/targeted_user_confirmed_80_result_summary.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/evidence_summary/transfer_conformal_summary.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/region_calibration_evidence/region_specific_calibration_manifest_20260613.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/region_calibration_evidence/rubber_belt_region_specific_calibration_detail_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/reviewer_risk_evidence/conformal_informativeness_primary_RF_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/reviewer_risk_evidence/fold3_support_sensitivity_B2_RF_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/reviewer_risk_evidence/q25_distance_sensitivity_primary_RF_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/reviewer_risk_evidence/reviewer_risk_evidence_manifest_20260613.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/reviewer_risk_evidence/rubber_belt_B2_B3_transfer_consistency_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/review_planning/fig10_provenance.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/review_planning/sample_level_failure_disagreement.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/review_planning/targeted_validation_candidate_summary_review_planning_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/review_planning/targeted_validation_queue_reconstruction_provenance_20260613.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/conformal_coverage_audit_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/conformal_random_undercoverage_summary_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/confusion_matrix_B2_RF_random_spatial_counts_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/confusion_matrix_B2_RF_random_spatial_row_normalized_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/confusion_matrix_B2_RF_summary_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/figure_resolution_audit_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/method_completeness_audit_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/metrics_dispersion_summary_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/primary_b2_rf_headline_audit_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/region_class_counts_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/region_transfer_similarity_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/rubber_belt_calibration_majority_baseline_detail_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/rubber_belt_calibration_majority_baseline_summary_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/sample_design_audit_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/second_round_reviewer_evidence_manifest_20260613.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/second_round_evidence/temporal_alignment_audit_20260613.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/RUN_LOG_20260612T172827Z.txt,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/RUN_LOG_20260612T173903Z.txt,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/spatial_cv_sensitivity_fold_audit.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/spatial_cv_sensitivity_missing_value_policy_audit.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/spatial_cv_sensitivity_predictions.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/table13_spatial_cv_sensitivity.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/table13_spatial_cv_sensitivity_summary.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/spatial_sensitivity/topjournal_improvements_provenance.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/block_distance_decision_20260612.md,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/block_distance_practical_rule_20260612.md,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/block_distance_practical_rule_20260613.md,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/block_distance_practical_rule_summary_20260612.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/block_distance_practical_rule_summary_20260613.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/variogram_indicator_bins.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/variogram_indicator_ranges.csv,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,results/variogram/variogram_indicator_summary.json,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,scripts/pipeline/compute_indicator_variogram_final_revision_20260612.py,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,scripts/pipeline/run_fold3_teacher_vhr_variogram_q25_20260613.py,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,scripts/pipeline/run_reproducible_pipeline.py,local absolute paths replaced with package-relative or not-included provenance paths
+normalized_public_paths,scripts/pipeline/select_practical_indicator_block_distance_20260612.py,local absolute paths replaced with package-relative or not-included provenance paths
+created_result_group_readme,results/spatial_sensitivity/README.md,
+created_result_group_readme,results/review_planning/README.md,
+removed_invalid_cff_placeholder_url,CITATION.cff,repository-code omitted until a real public URL exists
+created_author_actions_doc,docs/AUTHOR_ACTIONS.md,
+updated_readme,README.md,
+updated_file_map,docs/FILE_MAP.md,
+updated_reproducibility_doc,docs/REPRODUCIBILITY.md,

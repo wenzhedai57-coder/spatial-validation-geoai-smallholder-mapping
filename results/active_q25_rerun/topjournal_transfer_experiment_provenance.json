@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "20260612T173856Z",
+  "config": "C://Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+  "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+  "reference_rows": 622,
+  "regions": [
+    "advisor_vhr_cell_39_1",
+    "advisor_vhr_cell_39_2",
+    "advisor_vhr_cell_40_2",
+    "fold3_teacher_vhr_cell_88_2",
+    "fold3_teacher_vhr_cell_88_3",
+    "fold3_teacher_vhr_cell_88_4",
+    "johor_negeri_pahang_rubber_belt",
+    "kedah_perlis_paddy_belt",
+    "study_area"
+  ],
+  "outputs": [
+    "table10_leave_region_out_transfer.csv",
+    "table10_leave_region_out_transfer_per_class.csv",
+    "table11_region_transfer_conformal.csv",
+    "table12_region_transfer_morans_i.csv",
+    "transfer_missing_value_policy_audit.csv"
+  ],
+  "note": "Leave-region-out transfer uses fixed configured models and no per-region tuning."
+}

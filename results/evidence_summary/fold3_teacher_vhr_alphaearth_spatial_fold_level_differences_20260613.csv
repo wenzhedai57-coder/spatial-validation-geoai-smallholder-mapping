@@ -1,0 +1,13 @@
+timestamp_utc,comparison,fold,fold_oa_diff,input_files,random_seed
+20260612T175809Z,B2_vs_B0_RF_spatial,1,0.23387096774193547,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B2_vs_B0_RF_spatial,2,0.15827338129496402,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B2_vs_B0_RF_spatial,3,0.1050228310502283,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B2_vs_B0_RF_spatial,4,0.16428571428571428,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B1_RF_spatial,1,0.24193548387096775,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B1_RF_spatial,2,0.06474820143884892,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B1_RF_spatial,3,0.0091324200913242,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B1_RF_spatial,4,0.04285714285714286,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B2_RF_spatial,1,-0.008064516129032258,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B2_RF_spatial,2,-0.03597122302158273,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B2_RF_spatial,3,0.0,results/active_q25_rerun/predictions_by_fold.csv,42
+20260612T175809Z,B3_vs_B2_RF_spatial,4,0.0,results/active_q25_rerun/predictions_by_fold.csv,42

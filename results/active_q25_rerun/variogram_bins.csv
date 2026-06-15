@@ -1,0 +1,2 @@
+timestamp,config_hash,input_files,random_seed,status,reason,bin,distance_midpoint_m,semivariance,pair_count,variable
+20260612T173210Z,13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5,D:/Moved_From_C_2026-06-12/Users/m1761/Documents/New project/config_fold3_teacher_vhr_repair_20260613.yaml;D:/Moved_From_C_2026-06-12/Users/m1761/Documents/New project/results/variogram/block_distance_practical_rule_summary_20260613.json,42,OK,Using code-generated one-vs-rest indicator variogram summary as the spatial block-distance source.,,,,,one_vs_rest_indicator_summary

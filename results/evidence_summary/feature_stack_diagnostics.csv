@@ -1,0 +1,5 @@
+stack,feature_rows_total,verified_rows_matched,feature_columns,missing_feature_cells_on_verified_rows,rows_with_any_missing_feature
+B0,622,622,14,196,14
+B1,622,622,18,196,14
+B2,622,622,64,0,0
+B3,622,622,82,196,14

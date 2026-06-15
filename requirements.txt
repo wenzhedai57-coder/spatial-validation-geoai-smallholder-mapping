@@ -1,0 +1,11 @@
+pandas
+numpy
+PyYAML
+scikit-learn
+matplotlib
+scipy
+python-docx
+earthengine-api
+xgboost==3.2.0
+lxml
+requests

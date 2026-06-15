@@ -1,0 +1,14 @@
+timestamp,summary_type,group,verified_samples,mean_random_cv_disagreement,mean_random_cv_error,strict_spatial_tested,strict_spatial_errors,strict_spatial_error_rate,priority_review_candidates,status,reason
+20260612T174618Z,verified_error_diagnostic,other_agri,89,0.26264044943820225,0.5112359550561798,89,30,0.33707865168539325,,OK,
+20260612T174618Z,verified_error_diagnostic,paddy,105,0.21904761904761905,0.580952380952381,105,96,0.9142857142857143,,OK,
+20260612T174618Z,verified_error_diagnostic,forest,129,0.16472868217054262,0.25872093023255816,129,74,0.5736434108527132,,OK,
+20260612T174618Z,verified_error_diagnostic,rubber,105,0.16428571428571428,0.3595238095238095,105,71,0.6761904761904762,,OK,
+20260612T174618Z,verified_error_diagnostic,oil_palm,109,0.15825688073394495,0.20756880733944955,109,9,0.08256880733944955,,OK,
+20260612T174618Z,verified_error_diagnostic,builtup_other,85,0.15588235294117647,0.21176470588235294,85,52,0.611764705882353,,OK,
+20260612T174618Z,priority_review_queue,builtup_core,,,,,,,13,OK,proposed_class=builtup_other; verified remains False
+20260612T174618Z,priority_review_queue,forest_core,,,,,,,20,OK,proposed_class=forest; verified remains False
+20260612T174618Z,priority_review_queue,johor_paddy_supplement,,,,,,,15,OK,proposed_class=paddy; verified remains False
+20260612T174618Z,priority_review_queue,paddy_core,,,,,,,18,OK,proposed_class=paddy; verified remains False
+20260612T174618Z,priority_review_queue,paddy_disagreement,,,,,,,20,OK,proposed_class=paddy; verified remains False
+20260612T174618Z,priority_review_queue,rubber_core,,,,,,,6,OK,proposed_class=rubber; verified remains False
+20260612T174618Z,priority_review_queue,rubber_disagreement,,,,,,,16,OK,proposed_class=rubber; verified remains False

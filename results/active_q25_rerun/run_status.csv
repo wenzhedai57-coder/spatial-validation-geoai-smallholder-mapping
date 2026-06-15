@@ -1,0 +1,2 @@
+timestamp,config_hash,input_files,random_seed,status,reason,artifact
+20260612T173210Z,13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5,D:/Moved_From_C_2026-06-12/Users/m1761/Documents/New project/results/variogram/block_distance_practical_rule_summary_20260613.json,42,OK,Using indicator-derived block distance 126783.51747145985 m.,variogram_precomputed_choice

@@ -1,0 +1,478 @@
+timestamp_utc: 20260612T172442Z
+config_path: D:/Moved_From_C_2026-06-12/Users/m1761/Documents/New project/config_fold3_teacher_vhr_repair_20260613.yaml
+config_hash_sha256: 13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5
+random_seed: 42
+
+[config]
+{
+  "assets": {
+    "alphaearth": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+    "dem": "USGS/SRTMGL1_003",
+    "dynamicworld": "GOOGLE/DYNAMICWORLD/V1",
+    "fdp_palm_2025a": "projects/forestdatapartnership/assets/palm/model_2025a",
+    "fdp_rubber_2025a": "projects/forestdatapartnership/assets/rubber/model_2025a",
+    "global_oil_palm_2019": "BIOPAMA/GlobalOilPalm/v1",
+    "s1_grd": "COPERNICUS/S1_GRD",
+    "s2_sr": "COPERNICUS/S2_SR_HARMONIZED",
+    "worldcover": "ESA/WorldCover/v200"
+  },
+  "classes": [
+    {
+      "code": 1,
+      "name": "oil_palm"
+    },
+    {
+      "code": 2,
+      "name": "rubber"
+    },
+    {
+      "code": 3,
+      "name": "paddy"
+    },
+    {
+      "code": 4,
+      "name": "other_agri"
+    },
+    {
+      "code": 5,
+      "name": "forest"
+    },
+    {
+      "code": 6,
+      "name": "builtup_other"
+    }
+  ],
+  "cv": {
+    "conformal_alpha": 0.1,
+    "k_folds": 4,
+    "random_calibration_fraction": 0.5,
+    "random_test_fraction": 0.2,
+    "spatial_conformal_max_calibration_cell_sets_per_test": 120,
+    "spatial_conformal_max_test_cell_sets": 120,
+    "spatial_conformal_required_class_codes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "spatial_conformal_split_strategy": "class_aware"
+  },
+  "extension_study_areas": {
+    "johor_negeri_pahang_rubber_belt": {
+      "bbox": [
+        101.331594,
+        1.1956685,
+        104.7512029,
+        4.7811216
+      ],
+      "bbox_queries": [
+        "Johor, Malaysia",
+        "Negeri Sembilan, Malaysia",
+        "Pahang, Malaysia"
+      ],
+      "bbox_source": "Nominatim OpenStreetMap search API plus existing Johor bbox",
+      "name": "Johor-Negeri Sembilan-Pahang rubber supplement belt, Malaysia",
+      "role": "rubber_sample_supplement"
+    },
+    "kedah_perlis_paddy_belt": {
+      "bbox": [
+        99.6404969,
+        5.0763369,
+        101.127939,
+        6.726082
+      ],
+      "bbox_queries": [
+        "Kedah, Malaysia",
+        "Perlis, Malaysia"
+      ],
+      "bbox_source": "Nominatim OpenStreetMap search API",
+      "name": "Kedah-Perlis paddy belt, Malaysia",
+      "role": "second_region_leave_region_out_transfer"
+    }
+  },
+  "feature_stacks": {
+    "B0": {
+      "file": "data/features_fold3_teacher_vhr_repair_20260613/B0.csv",
+      "label": "S2 spectral+indices"
+    },
+    "B1": {
+      "file": "data/features_fold3_teacher_vhr_repair_20260613/B1.csv",
+      "label": "S1+S2"
+    },
+    "B2": {
+      "file": "data/features_fold3_teacher_vhr_repair_20260613/B2.csv",
+      "label": "AlphaEarth 64-dim embedding"
+    },
+    "B3": {
+      "file": "data/features_fold3_teacher_vhr_repair_20260613/B3.csv",
+      "label": "AlphaEarth+S1/S2"
+    }
+  },
+  "gee": {
+    "project": "geoai-trust-landcover"
+  },
+  "landscape_covariates": {
+    "file": "data/landscape_covariates.csv"
+  },
+  "low_count_policy": "drop",
+  "min_class_count": 30,
+  "paths": {
+    "data": "data/",
+    "figures": "figures_fold3_teacher_vhr_repair_20260613/",
+    "manuscript": "manuscript/",
+    "results": "results/active_q25_rerun/"
+  },
+  "preprocessing": {
+    "imputer_strategy": "median",
+    "missing_feature_policy": "sentinel_to_nan_then_median_impute",
+    "missing_feature_sentinel": -9999,
+    "s2_cloudy_pixel_percentage_max": 20
+  },
+  "project": {
+    "manuscript_focus": "GeoAI, spatial validation, conformal uncertainty, smallholder land-cover mapping",
+    "name": "spatially_honest_trust_aware_smallholder_landcover",
+    "target_journal": "International Journal of Applied Earth Observation and Geoinformation"
+  },
+  "random_forest": {
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 500,
+    "n_jobs": -1
+  },
+  "reference_samples": {
+    "advisor_vhr_merge_audit": "results_advisor_vhr_repair_20260612/advisor_vhr_merge_audit_20260612.csv",
+    "advisor_vhr_source_zip": "C://Users//m1761//Documents//New project//advisor_verified_review_DaiWenzhe_20260611.zip",
+    "class_code_column": "class_code",
+    "class_name_column": "class_name",
+    "file": "data/reference_samples_verified_622_public.csv",
+    "fold3_teacher_vhr_merge_audit": "results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.csv",
+    "id_column": "sample_id",
+    "latitude_column": "latitude",
+    "lock_date": "20260613",
+    "lock_status": "baseline_plus_advisor_vhr_95_plus_cao_wang_fold3_vhr_3",
+    "longitude_column": "longitude",
+    "region_file": "data/reference_samples_verified_622_public.csv",
+    "targeted_confirmation_note": "Baseline plus 95 advisor VHR accepted rows plus 3 Cao Wang teacher-reviewed fold-3 VHR accepted rows; weak products remain context only.",
+    "targeted_confirmation_source_file": "manuscript//targeted_user_confirmed_evidence_20260603//priority_candidates_CODEX_OPINION_80_DIRECT_COMPLETE_20260603.csv",
+    "uncertain_rows_are_verified_false": true,
+    "verified_column": "verified"
+  },
+  "reference_screening": {
+    "candidates_per_class": 80,
+    "min_spacing_km": 2.0,
+    "thresholds": {
+      "built_dynamicworld_built_high": 0.25,
+      "forest_dynamicworld_trees_high": 0.6,
+      "oil_palm_palm_probability_high": 0.85,
+      "oil_palm_palm_probability_strict": 0.95,
+      "paddy_dynamicworld_crops_high": 0.25,
+      "rubber_probability_high": 0.35,
+      "rubber_probability_strict": 0.6
+    },
+    "weak_assets_are_not_ground_truth": true
+  },
+  "seeds": {
+    "global": 42
+  },
+  "study_area": {
+    "bbox": [
+      99.6404969,
+      1.1956685,
+      104.7512029,
+      6.726082
+    ],
+    "bbox_query": "Johor, Malaysia",
+    "bbox_source": "combined bounding box of Johor, Kedah-Perlis, and rubber supplement samples",
+    "bbox_timestamp_utc": "20260601T133906Z",
+    "name": "Expanded Johor Kedah Perlis rubber paddy study area",
+    "subareas": []
+  },
+  "tables": {
+    "table3": "results/active_q25_rerun/table3_accuracy_by_stack_split.csv",
+    "table4": "results/active_q25_rerun/table4_optimism_gap.csv",
+    "table5": "results/active_q25_rerun/table5_alphaearth_contrasts.csv",
+    "table6": "results/active_q25_rerun/table6_ece.csv",
+    "table7": "results/active_q25_rerun/table7_conformal.csv",
+    "table8": "results/active_q25_rerun/table8_morans_i.csv",
+    "table9": "results/active_q25_rerun/table9_landscape_regression.csv"
+  },
+  "top_journal_extension": {
+    "active_sampling_targets": [
+      {
+        "active_stratum": "paddy_core",
+        "proposed_class_name": "paddy",
+        "region_key": "kedah_perlis_paddy_belt",
+        "target_candidates": 120
+      },
+      {
+        "active_stratum": "paddy_disagreement",
+        "proposed_class_name": "paddy",
+        "region_key": "kedah_perlis_paddy_belt",
+        "target_candidates": 120
+      },
+      {
+        "active_stratum": "rubber_core",
+        "proposed_class_name": "rubber",
+        "region_key": "johor_negeri_pahang_rubber_belt",
+        "target_candidates": 140
+      },
+      {
+        "active_stratum": "rubber_disagreement",
+        "proposed_class_name": "rubber",
+        "region_key": "johor_negeri_pahang_rubber_belt",
+        "target_candidates": 100
+      },
+      {
+        "active_stratum": "johor_paddy_supplement",
+        "proposed_class_name": "paddy",
+        "region_key": "study_area",
+        "target_candidates": 80
+      }
+    ],
+    "final_labels_require_human_verified_true": true,
+    "objective": "spatial_phenological_trust_transfer",
+    "weak_disagreement_guided_sampling": true
+  },
+  "variogram": {
+    "max_pair_count": 250000,
+    "n_bins": 12,
+    "precomputed_indicator_summary_file": "results/variogram/block_distance_practical_rule_summary_20260613.json",
+    "sill_fraction_for_range": 0.95,
+    "variable": "one_vs_rest_indicator_summary"
+  },
+  "xgboost": {
+    "colsample_bytree": 0.8,
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "n_estimators": 150,
+    "n_jobs": -1,
+    "subsample": 0.8,
+    "tree_method": "hist",
+    "verbosity": 0
+  },
+  "year": 2024
+}
+
+[assets]
+[
+  {
+    "asset_id": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+    "asset_key": "alphaearth",
+    "asset_type": "ImageCollection",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "A00|A01|A02|A03|A04|A05|A06|A07|A08|A09|A10|A11|A12|A13|A14|A15|A16|A17|A18|A19|A20|A21|A22|A23|A24|A25|A26|A27|A28|A29|A30|A31|A32|A33|A34|A35|A36|A37|A38|A39|A40|A41|A42|A43|A44|A45|A46|A47|A48|A49|A50|A51|A52|A53|A54|A55|A56|A57|A58|A59|A60|A61|A62|A63",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "COPERNICUS/S2_SR_HARMONIZED",
+    "asset_key": "s2_sr",
+    "asset_type": "ImageCollection",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "B1|B2|B3|B4|B5|B6|B7|B8|B8A|B9|B11|B12|AOT|WVP|SCL|TCI_R|TCI_G|TCI_B|MSK_CLDPRB|MSK_SNWPRB|QA10|QA20|QA60|MSK_CLASSI_OPAQUE|MSK_CLASSI_CIRRUS|MSK_CLASSI_SNOW_ICE",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "COPERNICUS/S1_GRD",
+    "asset_key": "s1_grd",
+    "asset_type": "ImageCollection.filtered_median",
+    "audit_scope": "study_area_year_filtered",
+    "bands": "VV|VH|angle",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "bounds=study_area.bbox;date=2024-01-01/2025-01-01",
+    "image_count": 736,
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "ESA/WorldCover/v200",
+    "asset_key": "worldcover",
+    "asset_type": "ImageCollection",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "Map",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "GOOGLE/DYNAMICWORLD/V1",
+    "asset_key": "dynamicworld",
+    "asset_type": "ImageCollection",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "water|trees|grass|flooded_vegetation|crops|shrub_and_scrub|built|bare|snow_and_ice|label",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "USGS/SRTMGL1_003",
+    "asset_key": "dem",
+    "asset_type": "Image",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "elevation",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "BIOPAMA/GlobalOilPalm/v1",
+    "asset_key": "global_oil_palm_2019",
+    "asset_type": "ImageCollection",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "classification",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "projects/forestdatapartnership/assets/palm/model_2025a",
+    "asset_key": "fdp_palm_2025a",
+    "asset_type": "ImageCollection",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "probability",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  },
+  {
+    "asset_id": "projects/forestdatapartnership/assets/rubber/model_2025a",
+    "asset_key": "fdp_rubber_2025a",
+    "asset_type": "ImageCollection",
+    "audit_scope": "broad_live_asset_check",
+    "bands": "probability",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "filter": "",
+    "image_count": "",
+    "input_files": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z"
+  }
+]
+
+[per_class_sample_counts]
+[
+  {
+    "class_code": 1,
+    "class_name": "oil_palm",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "input_files": "C://Users//m1761//Documents//New project///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z",
+    "verified_count": 109
+  },
+  {
+    "class_code": 2,
+    "class_name": "rubber",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "input_files": "C://Users//m1761//Documents//New project///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z",
+    "verified_count": 105
+  },
+  {
+    "class_code": 3,
+    "class_name": "paddy",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "input_files": "C://Users//m1761//Documents//New project///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z",
+    "verified_count": 105
+  },
+  {
+    "class_code": 4,
+    "class_name": "other_agri",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "input_files": "C://Users//m1761//Documents//New project///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z",
+    "verified_count": 89
+  },
+  {
+    "class_code": 5,
+    "class_name": "forest",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "input_files": "C://Users//m1761//Documents//New project///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z",
+    "verified_count": 129
+  },
+  {
+    "class_code": 6,
+    "class_name": "builtup_other",
+    "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "input_files": "C://Users//m1761//Documents//New project///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+    "random_seed": 42,
+    "reason": "",
+    "status": "OK",
+    "timestamp": "20260612T172442Z",
+    "verified_count": 85
+  }
+]
+
+[library_versions]
+{
+  "ee": "1.7.28",
+  "matplotlib": "3.10.9",
+  "numpy": "2.4.6",
+  "pandas": "3.0.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "scipy": "1.17.1",
+  "sklearn": "1.9.0",
+  "xgboost": "ERROR: XGBoostError: /nXGBoost Library (xgboost.dll) could not be loaded./nLikely causes:/n  * OpenMP runtime is not installed/n    - vcomp140.dll or libgomp-1.dll for Windows/n    - libomp.dylib for Mac OSX/n    - libgomp.so for Linux and other UNIX-like OSes/n    Mac OSX users: Run `brew install libomp` to install OpenMP runtime./n/n  * You are running 32-bit Python on a 64-bit OS/n/nError message(s): ['[WinError 193] %1 /u4e0d/u662f/u6709/u6548/u7684 Win32 /u5e94/u7528/u7a0b/u5e8f/u3002']/n"
+}

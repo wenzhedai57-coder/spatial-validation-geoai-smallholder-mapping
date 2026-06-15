@@ -1,0 +1,254 @@
+{
+  "timestamp_utc": "20260613T130008Z",
+  "status": "OK",
+  "script": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//build_second_round_reviewer_evidence.py",
+  "script_sha256": "afa4cffe36ef703a18a982164b01770aebfd4effce1b9717bb500cec9e4c3b76",
+  "source_dir": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar//GeoAI_JAG_final_revision_20260612",
+  "output_dir": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//second_round_evidence",
+  "figure_dir": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures",
+  "inputs": [
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///config_fold3_teacher_vhr_repair_20260613.yaml",
+      "sha256": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+      "bytes": 6848
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//table3_accuracy_by_stack_split.csv",
+      "sha256": "e0577c0606720fea48af428fa8b8f8019c1e9cacfbc19bbc54136a0444ef5bd1",
+      "bytes": 28245
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//predictions_by_fold.csv",
+      "sha256": "0a44ac3f7e8eff06ce5999df8ba8f9c7c389d29a802b57e49aaf34d16e264dfd",
+      "bytes": 4325605
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//table7_conformal.csv",
+      "sha256": "010059fed5c1cfcb1ba615191aa873c09f841eda9944c4ea3db26074272605f2",
+      "bytes": 7096
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//table10_leave_region_out_transfer.csv",
+      "sha256": "2d4c527625441773af523742dcc0b0b52fe23578505372bff06673e28bd927e6",
+      "bytes": 30671
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/active_q25_rerun//table9_landscape_regression.csv",
+      "sha256": "b772befae03a2dee8453f9e96a50b6643d9394bca6f44aac7c8d1edb14c1411d",
+      "bytes": 8728
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+      "sha256": "abac92866b1925ec132cd26273a3a34fcbf4601e45fa83a80cea0dd2d3692779",
+      "bytes": 414200
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//features_fold3_teacher_vhr_repair_20260613//B2.csv",
+      "sha256": "0c704cf370157bf1a3e7dfeaf91e2fb8fa030b62cbc9be843caf05c97118ef33",
+      "bytes": 823955
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results_fold3_teacher_vhr_improvements_20260613//table13_spatial_cv_sensitivity_summary.csv",
+      "sha256": "d22386c01101b8844838d8410c6f5462592f19c15c7201a154397df452dfdee4",
+      "bytes": 22072
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results_fold3_teacher_vhr_improvements_20260613//targeted_validation_candidate_summary_review_planning_20260613.csv",
+      "sha256": "3c1e38585f2ac7a81344b059092b83f99fc3807144b81b14fd1392822902d3df",
+      "bytes": 6053
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results_fold3_teacher_vhr_improvements_20260613//spatial_cv_sensitivity_missing_value_policy_audit.csv",
+      "sha256": "174b7234ef82ff8827322a9386de7a94655a8c54874a4706297871893740b968",
+      "bytes": 2198
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/variogram//variogram_indicator_ranges.csv",
+      "sha256": "3a7c1f2f5bc40c7621d56aef5e63ea4f825997e263888cc5154aee181a652b6e",
+      "bytes": 3335
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///results/variogram//block_distance_practical_rule_summary_20260613.json",
+      "sha256": "f2838fbf22bdb1340fac1b5dd534a90d6b06a914d5e63dd4620173f2ae8da4cc",
+      "bytes": 2278
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/region_calibration_evidence//rubber_belt_region_specific_calibration_detail_20260613.csv",
+      "sha256": "378a6622b63da95268df6f55726d743764e1a9eef5fe7a119431da0040b9e87f",
+      "bytes": 154139
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//metrics_dispersion_summary_20260613.csv",
+      "sha256": "ea0e30b0078362ff7b98afead90618481844d0d9e0b31537a1240707bf4d8381",
+      "bytes": 12970
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//primary_b2_rf_headline_audit_20260613.csv",
+      "sha256": "6f9864766ad89cbcb37ab92a25aca764a8951b0c10f30fcbc108956caead47a4",
+      "bytes": 3291
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//rubber_belt_calibration_majority_baseline_detail_20260613.csv",
+      "sha256": "bbe1e46cb9cafcbe4687e3e2123eec6eb1d8dc6d5a2cf3112249c9af1dda0ff6",
+      "bytes": 215708
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//rubber_belt_calibration_majority_baseline_summary_20260613.csv",
+      "sha256": "cb2f32e0cdae659b52e704613317b6b578dc2ca26bb7e83e66c634ef1d5ffdb3",
+      "bytes": 7806
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//conformal_coverage_audit_20260613.csv",
+      "sha256": "900bc11946bd2b8eaf2c955dfb473acc92c4deefc2449fe2b6733ad433f5d975",
+      "bytes": 10987
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//conformal_random_undercoverage_summary_20260613.csv",
+      "sha256": "0900ee6b04e29ba93c5c506106f3e714a0430a70094118fcc709fb839ef7d72d",
+      "bytes": 2138
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_11_B2_RF_confusion_matrices.png",
+      "sha256": "a155a4d4de9ad9ed8a63953abc2767075be749a72d89ef29cbb19b79c29e26bf",
+      "bytes": 583551
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_11_B2_RF_confusion_matrices.pdf",
+      "sha256": "dc9f4ad0ddc17ee41409993dd8e3fd79508ef1ef53c6fafcc66f6d531a12c517",
+      "bytes": 22426
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//confusion_matrix_B2_RF_random_spatial_counts_20260613.csv",
+      "sha256": "445f3c7cd49ab875c9ff3012c776774749a93c08da3c76b92de6b88ffc2fb0b9",
+      "bytes": 45673
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//confusion_matrix_B2_RF_random_spatial_row_normalized_20260613.csv",
+      "sha256": "e24be6d7dd9403f6c1e51239554a9916cfb4c88549ff459e927402f6220b601e",
+      "bytes": 46752
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//confusion_matrix_B2_RF_summary_20260613.csv",
+      "sha256": "8e6120d84725d91d4f4bd819e44e54c9812c936dfa535f79be4f9a2129f6cec7",
+      "bytes": 1556
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//region_transfer_similarity_20260613.csv",
+      "sha256": "d0adc5848ce56c6f1bc8ae4f26f8c6640a37c9ec73ea655671fce605daf8caef",
+      "bytes": 8520
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_12_transfer_similarity.png",
+      "sha256": "9c632e0d66697d871510259a47fccc7256a3a9eba3caf284c64735ade861dc04",
+      "bytes": 285155
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_12_transfer_similarity.pdf",
+      "sha256": "72d2b534155aa838401b82e51ca86f55c282f9e118bd2406f3e10f17ab3ae863",
+      "bytes": 19695
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//region_class_counts_20260613.csv",
+      "sha256": "aa4f4fccc51027fcdd868474a87ea0dc6bbdb0253865564d59126124feaeee75",
+      "bytes": 17757
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//sample_design_audit_20260613.csv",
+      "sha256": "1a4af48425d7f5f8ad791b5673262a2ab2e7cb67685afa454866760ba089153c",
+      "bytes": 4441
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//temporal_alignment_audit_20260613.csv",
+      "sha256": "8ac50249270ca6adea4aa93c7eaf8369e46b899cfcf0d703ec33ae253f6f1315",
+      "bytes": 2271
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_2_locked_verified_samples_map.png",
+      "sha256": "ae2588cf4011ce52b945d4ee7938d7cb32bfd667d71d9f4504ff1c56ac13afeb",
+      "bytes": 1102463
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_2_locked_verified_samples_map.pdf",
+      "sha256": "ab44ed5626539f7466599a3f9d0793509f01d2176e10b7b99de63a4c0bcc4fbc",
+      "bytes": 26534
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_3_random_vs_spatial_accuracy.png",
+      "sha256": "91a94232669c56acbbefaa0e806e4874ac570cd77d7890960ffceda1b88df7fa",
+      "bytes": 247499
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_3_random_vs_spatial_accuracy.pdf",
+      "sha256": "fac908293b619e635bb4f87c8de8e5428255ae2a5b89401c85c1d3491e89d07a",
+      "bytes": 17083
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_4_conformal_coverage.png",
+      "sha256": "e05fb34d5e06cdd6992a5b468e3b30b8a2d4570e3caf17e1e711c503ec8bbd97",
+      "bytes": 186627
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_4_conformal_coverage.pdf",
+      "sha256": "326a53d34361aaf90e40cea6a2be48782ca9cbe7d412d5492d3e0763250ff00c",
+      "bytes": 14614
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_5_landscape_regression.png",
+      "sha256": "300b7f93fd9225a9b1703ade91d4a1d3d2bebbb046916498a0651c16b616d795",
+      "bytes": 360092
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_5_landscape_regression.pdf",
+      "sha256": "c87fd3aafc5a2e40aeb68a82840ecd68fdef3001cb9b4c47c5e68d7b005482d2",
+      "bytes": 16687
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_6_transfer_accuracy.png",
+      "sha256": "57b1760c922cc16e76d6008e227115fcc43e5b2b254675182d0f08dbd0baf741",
+      "bytes": 266960
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_6_transfer_accuracy.pdf",
+      "sha256": "8e7263f2050155463a6039d88d493a5dcdaf9e72dc851aecd2cffa2c6484531e",
+      "bytes": 16106
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_9_spatial_cv_sensitivity.png",
+      "sha256": "4073d6b2eb155728545dfcb3a2a2f51bb670fdaef51621fda2ee2c23ee405655",
+      "bytes": 330232
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_9_spatial_cv_sensitivity.pdf",
+      "sha256": "6e7ae366a15938018805c2e3430829e6a79976019a9dc401a1f226e1fd174349",
+      "bytes": 17332
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_10_error_guided_validation_plan.png",
+      "sha256": "bd7e56078250d75c155ce5a66f1bcaf1f8d2dd51c641b5187f1e910439ad5031",
+      "bytes": 247725
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//figures//Figure_10_error_guided_validation_plan.pdf",
+      "sha256": "8812d8265edd35df7e7bfd8c02c5076d2d5f320f59ec2b4af5abf80c626cd59e",
+      "bytes": 15175
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//method_completeness_audit_20260613.csv",
+      "sha256": "e1c686a55de9623c49a5c357d8970268190ef5c46f20aa4c1e97985324143a3e",
+      "bytes": 6315
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//remaining_submission_blockers_20260613.csv",
+      "sha256": "a19ff7960c757e3c7846d309413fd351388ba2a3f142dfca9277746e7718ece0",
+      "bytes": 8011
+    },
+    {
+      "path": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/second_round_evidence//figure_resolution_audit_20260613.csv",
+      "sha256": "79d28fca9ae2152fc75f5f17c4584290fd2affb9b2249b5897f68b6be6e6abbf",
+      "bytes": 9705
+    }
+  ],
+  "no_fabrication_note": "All derived numbers are computed from package CSV/JSON artifacts; unresolved author-input or new-evidence items remain explicit blockers."
+}

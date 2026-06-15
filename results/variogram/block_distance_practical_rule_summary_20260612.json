@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "20260612T172431Z",
+  "status": "OK",
+  "method": "one_vs_rest_indicator_empirical_variogram_practical_q25_rule",
+  "source_indicator_summary": "results/variogram/variogram_indicator_summary.json",
+  "source_indicator_summary_sha256": "2a094b3be4b4cfdaf74c5429d67c3e69137ef6e280a16b7054b17f64b4e827ac",
+  "reference_file": "data/reference_samples_verified_622_public.csv",
+  "reference_sha256": "abac92866b1925ec132cd26273a3a34fcbf4601e45fa83a80cea0dd2d3692779",
+  "verified_rows": 622,
+  "random_seed": 42,
+  "block_distance_rule": "q25_of_ok_one_vs_rest_indicator_ranges",
+  "selection_rationale": "Use the 25th percentile of OK class-specific one-vs-rest indicator ranges. This remains indicator-derived while reducing sensitivity to very broad regional class ranges that make the configured spatial validation design infeasible. The rule uses only reference geometry and class-specific variogram diagnostics, not model accuracy.",
+  "suggested_block_distance_m": 126783.51747145985,
+  "suggested_block_distance_km": 126.78351747145986,
+  "spatial_precheck": {
+    "timestamp_utc": "20260612T172431Z",
+    "candidate": "q25_ok_selected",
+    "selection_status": "SELECTED",
+    "distance_m": 126783.51747145985,
+    "distance_km": 126.78351747145986,
+    "available_spatial_blocks": 16,
+    "required_spatial_blocks": 4,
+    "all_folds_nonempty": true,
+    "min_train_count_after_buffer": 30,
+    "min_test_count": 124,
+    "fold_train_test_buffered": "fold1:train=184;test=124;buffered=314;train_classes=6;test_classes=6 | fold2:train=104;test=139;buffered=379;train_classes=6;test_classes=6 | fold3:train=30;test=219;buffered=373;train_classes=6;test_classes=6 | fold4:train=88;test=140;buffered=394;train_classes=6;test_classes=6",
+    "fold_train_classes": "6|6|6|6",
+    "fold_test_classes": "6|6|6|6",
+    "reason": ""
+  },
+  "candidate_table": "results/variogram/block_distance_practical_rule_candidates_20260612.csv",
+  "requires_full_spatial_rerun_before_manuscript_tables_can_use_this_distance": true
+}

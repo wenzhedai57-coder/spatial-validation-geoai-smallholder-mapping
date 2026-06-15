@@ -1,0 +1,122 @@
+{
+  "timestamp_utc": "2026-06-12T10:12:43.334901+00:00",
+  "source": "data/reference_samples_DAI_WENZHE_ADVISOR_VHR_ACCEPTED_95_20260612.csv",
+  "output": "data/reference_samples_DAI_WENZHE_ADVISOR_VHR_ACCEPTED_95_CLEANED_20260612.csv",
+  "source_sha256": "d764a8f2aeed5e27aa4718b42247760a8a58e2e2ca52ac5dc1dafb5db8db0a0c",
+  "output_sha256": "2f112eedca03cdc4e8458ddf3ccf4d27a6571ba1cc66976cf8960d3a8a9111f9",
+  "rows": 619,
+  "protected_fields": [
+    "sample_id",
+    "longitude",
+    "latitude",
+    "class_code",
+    "class_name",
+    "verified",
+    "final_review_decision",
+    "user_confirmation_status",
+    "targeted_confirmation_status"
+  ],
+  "removed_columns": [
+    "warning",
+    "comparison_only",
+    "human_review_status",
+    "confirmation_status",
+    "confirmation_timestamp_utc"
+  ],
+  "not_modified": {
+    "coordinates": true,
+    "class_code": true,
+    "class_name": true,
+    "verified": true,
+    "final_review_decision": true,
+    "user_confirmation_status": true,
+    "targeted_confirmation_status": true
+  },
+  "source_column_counts": {
+    "warning": {
+      "": 492,
+      "Codex opinion sets verified=True only in this comparison file. Do not use as final ground truth until user agrees.": 32,
+      "DO_NOT_USE_WEAK_LABELS_AS_GROUND_TRUTH": 95
+    },
+    "comparison_only": {
+      "": 412,
+      "False": 175,
+      "True": 32
+    },
+    "human_review_status": {
+      "": 356,
+      "USER_CONFIRMED_MATCHED_CODEX_OPINION": 80,
+      "CODEX_PROVISIONAL_AWAITING_AUTHOR_CONFIRMATION": 88,
+      "ADVISOR_VHR_REVIEWED": 95
+    },
+    "confirmation_status": {
+      "": 356,
+      "USER_CONFIRMED_CODEX80_MATCH_20260603": 80,
+      "CODEX_PROVISIONAL_AWAITING_AUTHOR_CONFIRMATION": 88,
+      "ADVISOR_VHR_ACCEPTED": 95
+    },
+    "confirmation_timestamp_utc": {
+      "": 356,
+      "20260603T091959Z": 80,
+      "20260602T123426Z": 88,
+      "20260611T175724Z": 95
+    },
+    "verified": {
+      "True": 619
+    },
+    "final_review_decision": {
+      "ACCEPT": 619
+    },
+    "user_confirmation_status": {
+      "USER_CONFIRMED_EXISTING_VERIFIED": 345,
+      "USER_CONFIRMED_CODEX80_MATCH_20260603": 80,
+      "USER_CONFIRMED_TARGETED_CODEX_MATCH_20260603": 32,
+      "USER_CONFIRMED_ACCEPTED_20260602": 67,
+      "ADVISOR_VHR_ACCEPTED": 95
+    }
+  },
+  "output_columns": [
+    "sample_id",
+    "longitude",
+    "latitude",
+    "class_code",
+    "class_name",
+    "verified",
+    "region_key",
+    "extension_stratum",
+    "final_review_decision",
+    "user_confirmation_status",
+    "user_confirmation_timestamp_utc",
+    "verification_source",
+    "verification_notes",
+    "codex_review_recommendation",
+    "codex_review_risk",
+    "codex_confidence_tier",
+    "codex_comparison_note",
+    "source_reference",
+    "candidate_source_file",
+    "active_score",
+    "active_rank_within_stratum",
+    "google_maps_search",
+    "active_evidence_flags",
+    "targeted_confirmation_status",
+    "targeted_confirmation_timestamp_utc",
+    "targeted_confirmation_prior_verified",
+    "targeted_confirmation_prior_class_name",
+    "targeted_confirmation_change_type",
+    "targeted_confirmation_note",
+    "selection_order",
+    "worldcover_hint",
+    "dynamicworld_mode_hint",
+    "dw_trees",
+    "dw_built",
+    "dw_crops",
+    "dw_water",
+    "fdp_rubber_probability_2023",
+    "fdp_palm_probability_2023",
+    "embedding_margin_other_minus_proposed",
+    "review_risk",
+    "user_final_decision",
+    "user_review_notes"
+  ]
+}

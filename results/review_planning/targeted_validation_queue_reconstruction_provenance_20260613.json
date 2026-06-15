@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "20260612T174604Z",
+  "status": "OK_REBUILT_FROM_LEGACY_REVIEW_QUEUE",
+  "source_queue": "docs/provenance/legacy_review_queue_not_packaged.csv",
+  "source_queue_sha256": "e1c4ac163539e2f304256df2af628c819db789a466195e6dbfd8dff90e1c2f99",
+  "current_reference": "data/reference_samples_verified_622_public.csv",
+  "current_reference_sha256": "abac92866b1925ec132cd26273a3a34fcbf4601e45fa83a80cea0dd2d3692779",
+  "review_sheet": "docs/provenance/teacher_review_sheet_hash_recorded_not_packaged.csv",
+  "review_sheet_sha256": "399fbb3aae37eceaf756b98f2e465bb8364e64b07927dbf62d89c574eaffe968",
+  "raw_candidate_source_files_status": "not packaged in public slim repository",
+  "source_queue_rows": 112,
+  "accepted_queue_ids_excluded_as_current_reference": [
+    "TJ04_008",
+    "TJ04_027",
+    "TJ04_030"
+  ],
+  "reviewed_not_verified_ids_excluded": [
+    "TJ04_032"
+  ],
+  "reconstructed_queue_rows": 108,
+  "outputs": {
+    "full_review_queue": "not included in public slim repository",
+    "summary": "results/review_planning/targeted_validation_candidate_summary_review_planning_20260613.csv"
+  },
+  "no_fabrication_note": "This records an unverified review-planning queue lineage. It does not create labels, does not promote weak labels, and excludes rows already resolved by teacher review."
+}
