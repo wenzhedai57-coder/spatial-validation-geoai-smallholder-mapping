@@ -12,7 +12,7 @@ Complete these steps before making the repository public or linking it in a manu
 
 ## Evidence-strengthening items
 
-- Add second-reader VHR agreement or field validation if available.
+- Second-reader VHR agreement workflow/template is included; final agreement results require a human-filled second-reader table.
 - Add NNDM/kNNDM or support-balanced spatial validation if run.
 - Add complete-case or alternative-imputation sensitivity if run.
 - Point-level public Sentinel-2 imagery-date audit is included in `results/point_imagery_dates/`; exact VHR basemap dates remain available only if recorded by the interpretation platform or author records.

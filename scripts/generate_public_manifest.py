@@ -191,6 +191,8 @@ def main() -> int:
             "spatial_sensitivity_table13_exists": (ROOT / "results" / "spatial_sensitivity" / "table13_spatial_cv_sensitivity_summary.csv").exists(),
             "review_planning_summary_exists": (ROOT / "results" / "review_planning" / "targeted_validation_candidate_summary_review_planning_20260613.csv").exists(),
             "point_level_public_sentinel2_imagery_date_audit_exists": any((ROOT / "results" / "point_imagery_dates").glob("point_level_public_sentinel2_imagery_dates_*.csv")),
+            "second_reader_vhr_agreement_template_exists": any((ROOT / "docs" / "second_reader_vhr_agreement").glob("second_reader_blind_vhr_interpretation_template_*.csv")),
+            "second_reader_vhr_agreement_merge_script_exists": (ROOT / "scripts" / "merge_second_reader_vhr_agreement.py").exists(),
             "full_targeted_review_queues_excluded": len(full_queues) == 0,
             "no_file_over_100mb": len(large_files) == 0,
         },

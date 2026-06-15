@@ -1,0 +1,12 @@
+field,allowed_value,meaning
+second_reader_class_name,oil_palm,primary manuscript legend class
+second_reader_class_name,rubber,primary manuscript legend class
+second_reader_class_name,paddy,primary manuscript legend class
+second_reader_class_name,other_agri,primary manuscript legend class
+second_reader_class_name,forest,primary manuscript legend class
+second_reader_class_name,builtup_other,primary manuscript legend class
+second_reader_class_name,uncertain,human reader cannot confidently assign one primary class
+second_reader_class_name,uninterpretable,available imagery is not interpretable for this point
+second_reader_confidence,high,reader confidence in the assigned class
+second_reader_confidence,medium,reader confidence in the assigned class
+second_reader_confidence,low,reader confidence in the assigned class
