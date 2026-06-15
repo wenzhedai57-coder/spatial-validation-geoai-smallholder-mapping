@@ -1,13 +1,13 @@
 {
   "status": "OK",
-  "payload_file_count_excluding_generated_manifest_files": 177,
+  "payload_file_count_excluding_generated_manifest_files": 178,
   "generated_manifest_files": [
-    "manifests_checksums/PUBLIC_REPO_MANIFEST_20260615.csv",
-    "manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_20260615.txt",
-    "manifests_checksums/PUBLIC_REPO_VERIFICATION_20260615.json"
+    "manifests_checksums/PUBLIC_REPO_MANIFEST_20260616.csv",
+    "manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_20260616.txt",
+    "manifests_checksums/PUBLIC_REPO_VERIFICATION_20260616.json"
   ],
-  "expected_zip_entry_count_after_manifest_generation": 180,
-  "total_bytes": 25545394,
+  "expected_zip_entry_count_after_manifest_generation": 181,
+  "total_bytes": 25839158,
   "required_root_entries": {
     "README.md": true,
     "LICENSE": true,
@@ -30,6 +30,7 @@
     "variogram_pdf_exists": true,
     "spatial_sensitivity_table13_exists": true,
     "review_planning_summary_exists": true,
+    "point_level_public_sentinel2_imagery_date_audit_exists": true,
     "full_targeted_review_queues_excluded": true,
     "no_file_over_100mb": true
   },

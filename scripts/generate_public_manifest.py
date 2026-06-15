@@ -13,7 +13,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "manifests_checksums"
-DATE_TAG = "20260615"
+DATE_TAG = "20260616"
+
+
+def is_public_payload_file(path: Path) -> bool:
+    rel_parts = path.relative_to(ROOT).parts
+    if ".git" in rel_parts or "__pycache__" in rel_parts:
+        return False
+    if path.suffix.lower() == ".pyc":
+        return False
+    return path.is_file()
 
 
 def sha256_file(path: Path) -> str:
@@ -49,7 +58,7 @@ def main() -> int:
         if old.is_file():
             old.unlink()
 
-    files = sorted(p for p in ROOT.rglob("*") if p.is_file())
+    files = sorted(p for p in ROOT.rglob("*") if is_public_payload_file(p))
     manifest_rows = []
     for path in files:
         rel = path.relative_to(ROOT).as_posix()
@@ -181,6 +190,7 @@ def main() -> int:
             "variogram_pdf_exists": (ROOT / "figures" / "variogram" / "variogram_indicator_ranges.pdf").exists(),
             "spatial_sensitivity_table13_exists": (ROOT / "results" / "spatial_sensitivity" / "table13_spatial_cv_sensitivity_summary.csv").exists(),
             "review_planning_summary_exists": (ROOT / "results" / "review_planning" / "targeted_validation_candidate_summary_review_planning_20260613.csv").exists(),
+            "point_level_public_sentinel2_imagery_date_audit_exists": any((ROOT / "results" / "point_imagery_dates").glob("point_level_public_sentinel2_imagery_dates_*.csv")),
             "full_targeted_review_queues_excluded": len(full_queues) == 0,
             "no_file_over_100mb": len(large_files) == 0,
         },

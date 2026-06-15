@@ -4,7 +4,7 @@ This repository intentionally preserves the main evidence limitations rather tha
 
 - Reference labels are image/VHR-verified, not field-validated.
 - No second-reader agreement file is included.
-- Point-level imagery dates are not available for every reference point.
+- Point-level public Sentinel-2 acquisition-date coverage is now audited in `results/point_imagery_dates/`; exact VHR basemap acquisition dates are still not available for every reference point.
 - Sampling probabilities and design weights are not available, so reported OA and macro-F1 values are diagnostic sample-based metrics, not design-unbiased map accuracy estimates.
 - The q25 spatial validation is zero-leakage but support-sensitive; fold 3 has limited training support.
 - NNDM/kNNDM or a separate support-balanced spatial-validation rerun is not included in this staging repository.

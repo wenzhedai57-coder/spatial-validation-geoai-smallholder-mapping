@@ -18,6 +18,7 @@ The active evidence line is the fold-3 teacher-VHR q25 rerun:
 - active result tables and audits: `results/active_q25_rerun/`
 - spatial-sensitivity support artifacts: `results/spatial_sensitivity/`
 - review-planning support artifacts: `results/review_planning/`
+- point-level public Sentinel-2 imagery-date audit: `results/point_imagery_dates/`
 - variogram/block-distance evidence: `results/variogram/`
 - generated variogram figure: `figures/variogram/variogram_indicator_ranges.png`
 - manuscript figures: `figures/manuscript/`
@@ -36,6 +37,8 @@ Targeted-validation candidate queues are not included as main data. They are rev
 The main pipeline and supporting scripts are in `scripts/`. The active configuration is in `config/`. The original run logs, configuration hashes, input file names, random seed, and library/version records are preserved in `results/active_q25_rerun/`.
 
 The generated figures in this staging repository are already present. The variogram figure was generated from the packaged variogram CSV/JSON outputs and does not change any result value.
+
+Point-level public imagery-date coverage is documented in `results/point_imagery_dates/`. This is a Sentinel-2 metadata audit for the 2024 analysis year, not field validation and not an exact VHR basemap acquisition-date record.
 
 ## Before public release
 

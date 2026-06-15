@@ -1,0 +1,60 @@
+{
+  "timestamp_utc": "20260615T181001Z",
+  "status": "OK",
+  "input_files": [
+    "data/reference_samples_verified_622_public.csv",
+    "config/config_public_reproduction_20260615.yaml"
+  ],
+  "input_sha256": {
+    "data/reference_samples_verified_622_public.csv": "df1ba783d4092c8d8481a3fd0f4d3ee497263c469981653fc52ff4cfa57bb392",
+    "config/config_public_reproduction_20260615.yaml": "d3a51614aff30e8a8fb911715c1237164a2c427fdc17169e8c62170c04ff20b7"
+  },
+  "stac_endpoint": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "source_collection": "sentinel-2-l2a",
+  "source_dataset": "Sentinel-2 Level-2A public STAC metadata",
+  "audit_period_start_utc": "2024-01-01T00:00:00Z",
+  "audit_period_end_utc": "2025-01-01T00:00:00Z",
+  "query_bbox": [
+    99.62099055742043,
+    1.1995272,
+    104.2817929,
+    6.772480684262968
+  ],
+  "stac_items_loaded": 5083,
+  "reference_rows": 622,
+  "point_rows_ok": 622,
+  "point_rows_error": 0,
+  "class_status_counts": {
+    "oil_palm": {
+      "OK": 109
+    },
+    "rubber": {
+      "OK": 105
+    },
+    "paddy": {
+      "OK": 105
+    },
+    "other_agri": {
+      "OK": 89
+    },
+    "forest": {
+      "OK": 129
+    },
+    "builtup_other": {
+      "OK": 85
+    }
+  },
+  "selection_rule": "For each point, select the 2024 Sentinel-2 L2A item that intersects the point and has the lowest item-level eo:cloud_cover; ties are resolved by earliest datetime.",
+  "output_csv": "results/point_imagery_dates/point_level_public_sentinel2_imagery_dates_20260616.csv",
+  "limitations": [
+    "This is a public Sentinel-2 metadata date audit, not field validation.",
+    "This is not an exact VHR basemap acquisition-date record.",
+    "The selected cloud-cover value is item-level eo:cloud_cover, not a point-level cloud mask.",
+    "The 2024 annual window follows the repository configuration year."
+  ],
+  "public_documentation_urls": [
+    "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+    "https://planetarycomputer.microsoft.com/docs/quickstarts/reading-stac/",
+    "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED"
+  ]
+}
