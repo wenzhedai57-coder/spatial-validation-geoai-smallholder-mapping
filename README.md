@@ -1,10 +1,10 @@
 ﻿# Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping
 
-This repository is a GitHub/Zenodo-ready staging package for the evidence, code, figures, and provenance supporting the manuscript "Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping".
+This repository is a public reproducibility package for the evidence, code, figures, and provenance supporting the manuscript "Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping".
 
 ## Repository status
 
-This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. It is not yet the final public archival record until the authors choose a license and create a GitHub release or Zenodo record.
+This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. The manuscript Data Availability statement uses the stable commit URL: https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/78d16cbaa5ca55922b0ccdd2fc595e81b135abd7. A GitHub release or Zenodo DOI can still be added later, but is not required for the current stable-URL wording.
 
 ## Main evidence line
 
@@ -28,7 +28,7 @@ The active evidence line is the fold-3 teacher-VHR q25 rerun:
 
 Final metric labels come only from rows with `verified == True` in `data/reference_samples_verified_622_public.csv`. ESA WorldCover, Google Dynamic World, GlobalOilPalm, and Forest Data Partnership probabilities are weak screening or contextual sources only; they are not ground truth.
 
-The reference labels are image/VHR-verified. They are not field-validated, no second-reader agreement is included in this staging package, and no design weights or sampling probabilities are available for design-unbiased map accuracy. Reported OA and macro-F1 values should therefore be interpreted as sample-based validation diagnostics.
+The reference labels are image/VHR-reviewed. The completed second-reader VHR adjudication QA workpack is a submission supplementary reproducibility artifact, not part of this public GitHub release. The primary manuscript metrics were computed on the locked 622-row reference table and must be rerun before using the adjudicated subset as a replacement metric base. No design weights or sampling probabilities are available for design-unbiased map accuracy. Reported OA and macro-F1 values should therefore be interpreted as sample-based validation diagnostics.
 
 Targeted-validation candidate queues are not included as main data. They are review-planning/provenance artifacts only and must not be used as ground truth.
 
@@ -38,9 +38,8 @@ The main pipeline and supporting scripts are in `scripts/`. The active configura
 
 The generated figures in this staging repository are already present. The variogram figure was generated from the packaged variogram CSV/JSON outputs and does not change any result value.
 
-Point-level public imagery-date coverage is documented in `results/point_imagery_dates/`. This is a Sentinel-2 metadata audit for the 2024 analysis year, not field validation and not an exact VHR basemap acquisition-date record.
+Point-level public imagery-date coverage is documented in `results/point_imagery_dates/`. This is a Sentinel-2 metadata audit for the 2024 analysis year, not an exact VHR basemap acquisition-date record.
 
-## Before public release
+## Remaining author-side checks
 
-Before making this repository public or linking it in a manuscript, complete the author-controlled items listed in `docs/UPLOAD_CHECKLIST.md`, especially the public release/DOI, author contribution confirmation, ORCID confirmation, manuscript render QA, and license choice.
-
+Unknown ORCID values for Wang Cao and Xuehui Hou are intentionally omitted rather than guessed. Final manuscript render QA and any future GitHub release or Zenodo DOI remain author-side options.

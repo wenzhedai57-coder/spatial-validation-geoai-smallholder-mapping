@@ -19,7 +19,7 @@ The selected item is the 2024 Sentinel-2 L2A scene that intersects the point and
 
 ## Interpretation Boundary
 
-This audit does not create field validation data and does not recover exact very-high-resolution basemap acquisition dates. It is a public remote-sensing metadata audit that shows each reference point has an independently traceable 2024 Sentinel-2 observation history.
+This audit does not create in-situ reference records and does not recover exact very-high-resolution basemap acquisition dates. It is a public remote-sensing metadata audit that shows each reference point has an independently traceable 2024 Sentinel-2 observation history.
 
 Use this wording in the manuscript if needed:
 

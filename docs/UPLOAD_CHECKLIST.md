@@ -5,14 +5,14 @@ Complete these steps before making the repository public or linking it in a manu
 ## Author-controlled items
 
 - Choose and insert final license terms for code, data, figures, and documentation.
-- Confirm final CRediT author contributions.
+- Confirmed: final CRediT author contributions have been supplied for the manuscript.
 - Confirm missing ORCID records outside this data repository if they remain in manuscript files.
-- Create a GitHub release and, preferably, archive the release through Zenodo to obtain a DOI.
-- Replace the manuscript Data Availability record with the final public release URL or DOI.
+- Current manuscript wording may cite the stable GitHub commit URL: https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/78d16cbaa5ca55922b0ccdd2fc595e81b135abd7. A GitHub release or Zenodo DOI is optional for a later archive upgrade.
+- Replace manuscript placeholders with the stable GitHub commit URL already selected by the author.
 
 ## Evidence-strengthening items
 
-- Add second-reader VHR agreement or field validation if available.
+- Confirm that the completed second-reader VHR adjudication QA artifact remains described as image/VHR review, not in-situ validation, and that it is routed as submission supplementary material rather than as part of the public GitHub release.
 - Add NNDM/kNNDM or support-balanced spatial validation if run.
 - Add complete-case or alternative-imputation sensitivity if run.
 - Point-level public Sentinel-2 imagery-date audit is included in `results/point_imagery_dates/`; exact VHR basemap dates remain available only if recorded by the interpretation platform or author records.
@@ -23,4 +23,3 @@ Complete these steps before making the repository public or linking it in a manu
 - Confirm that main data do not include targeted-validation candidate queues as ground truth.
 - Confirm that no private access material or authentication files are present.
 - Confirm that raw third-party VHR imagery or restricted data are not redistributed without permission.
-

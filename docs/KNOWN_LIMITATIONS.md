@@ -2,8 +2,8 @@
 
 This repository intentionally preserves the main evidence limitations rather than smoothing them over.
 
-- Reference labels are image/VHR-verified, not field-validated.
-- No second-reader agreement file is included.
+- Reference labels are image/VHR-reviewed and evidence-reviewed; no in-situ validation records are claimed.
+- The blinded second-reader agreement/adjudication workpack is not included in this public GitHub release; it is provided separately as submission supplementary reproducibility material.
 - Point-level public Sentinel-2 acquisition-date coverage is now audited in `results/point_imagery_dates/`; exact VHR basemap acquisition dates are still not available for every reference point.
 - Sampling probabilities and design weights are not available, so reported OA and macro-F1 values are diagnostic sample-based metrics, not design-unbiased map accuracy estimates.
 - The q25 spatial validation is zero-leakage but support-sensitive; fold 3 has limited training support.
