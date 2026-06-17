@@ -1,6 +1,6 @@
 {
   "status": "OK",
-  "timestamp_utc": "2026-06-17T08:14:48Z",
+  "timestamp_utc": "2026-06-17T08:44:32Z",
   "payload_file_count_excluding_generated_manifest_files": 178,
   "generated_manifest_files": [
     "manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_20260616.txt",
@@ -9,7 +9,7 @@
   ],
   "expected_git_tracked_file_count_after_manifest_generation": 181,
   "git_tracked_file_count": 181,
-  "total_payload_bytes_excluding_generated_manifest_files": 25841401,
+  "total_payload_bytes_excluding_generated_manifest_files": 25841042,
   "required_root_entries": {
     "README.md": true,
     "LICENSE": true,
@@ -37,6 +37,7 @@
     "second_reader_entries_in_public_manifest": false,
     "block_distance_memo_marked_superseded": true,
     "block_distance_memo_mentions_final_q25": true,
+    "old_commit_url_removed_from_public_docs": true,
     "no_file_over_100mb": true
   },
   "large_files": [],
@@ -44,6 +45,7 @@
   "notes": [
     "Public manifest is generated from git-tracked files only, so local untracked submission-supplement files are not listed as public release contents.",
     "Second-reader VHR adjudication workpack is routed as submission supplementary reproducibility material, not as part of the public GitHub release.",
+    "Public repository docs avoid hard-coding a self-referential commit URL; the manuscript Data Availability statement cites the final stable commit URL.",
     "Expected result status terms are retained where they are genuine audit outcomes."
   ]
 }

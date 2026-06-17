@@ -4,7 +4,7 @@ This repository is a public reproducibility package for the evidence, code, figu
 
 ## Repository status
 
-This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. The manuscript Data Availability statement uses the stable commit URL: https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/78d16cbaa5ca55922b0ccdd2fc595e81b135abd7. A GitHub release or Zenodo DOI can still be added later, but is not required for the current stable-URL wording.
+This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. The manuscript Data Availability statement should cite the stable commit URL for the release used at submission. A GitHub release or Zenodo DOI can still be added later, but is not required for stable commit-URL wording.
 
 ## Main evidence line
 

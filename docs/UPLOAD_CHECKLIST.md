@@ -7,8 +7,8 @@ Complete these steps before making the repository public or linking it in a manu
 - Choose and insert final license terms for code, data, figures, and documentation.
 - Confirmed: final CRediT author contributions have been supplied for the manuscript.
 - Confirm missing ORCID records outside this data repository if they remain in manuscript files.
-- Current manuscript wording may cite the stable GitHub commit URL: https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/78d16cbaa5ca55922b0ccdd2fc595e81b135abd7. A GitHub release or Zenodo DOI is optional for a later archive upgrade.
-- Replace manuscript placeholders with the stable GitHub commit URL already selected by the author.
+- Current manuscript wording may cite the stable GitHub commit URL for the release used at submission. A GitHub release or Zenodo DOI is optional for a later archive upgrade.
+- Replace manuscript placeholders with the final stable GitHub commit URL selected by the author.
 
 ## Evidence-strengthening items
 
