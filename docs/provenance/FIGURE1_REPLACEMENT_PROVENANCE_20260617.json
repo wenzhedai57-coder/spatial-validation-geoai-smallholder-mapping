@@ -1,0 +1,38 @@
+{
+  "status": "OK",
+  "timestamp_utc": "2026-06-17T12:45:26Z",
+  "operation": "Figure 1 artwork replacement only; no numerical result tables or data-bearing result figures changed.",
+  "source_package_filename": "IJRS_Figure1_OptionA_package (1).zip",
+  "source_png": {
+    "filename": "IJRS_Figure1_OptionA_spatially_honest_workflow_600dpi_RGB.png",
+    "sha256": "ebdde9ddf89a6b0dc2fcca4ddafbcdf00fc7a096d7b0663f1b4f6e4fdf8d81fe",
+    "size_bytes": 690022,
+    "pixels": [4110, 2480],
+    "mode": "RGB",
+    "dpi": [599.9988, 599.9988]
+  },
+  "source_pdf": {
+    "filename": "IJRS_Figure1_OptionA_spatially_honest_workflow.pdf",
+    "sha256": "f0ccf6ea3156d97eef31d5f04b9bf9a433912836295474ba903f8521ba762ac2",
+    "size_bytes": 32054
+  },
+  "source_svg": {
+    "filename": "IJRS_Figure1_OptionA_spatially_honest_workflow.svg",
+    "sha256": "8e247388d70e08bdbf66d477761bc482aa3384d9b716a17f0694fd6dc3eeaec4",
+    "size_bytes": 25831
+  },
+  "verified_sample_count_check": {
+    "reference_csv": "data/reference_samples_verified_622_public.csv",
+    "row_count": 622,
+    "verified_true_count": 622
+  },
+  "targets_replaced": [
+    "figures/manuscript/Figure_1_workflow.png",
+    "figures/manuscript/Figure_1_workflow.pdf"
+  ],
+  "notes": [
+    "The 622-sample label in the artwork is taken from the locked verified public reference table.",
+    "The replacement preserves the existing submission-facing figure filename so manuscript references remain stable.",
+    "The new artwork is a workflow schematic and is not a recomputation of model metrics."
+  ]
+}

@@ -4,16 +4,21 @@
 from __future__ import annotations
 
 import csv
+import datetime as dt
 import hashlib
 import json
-import os
-import zipfile
+import subprocess
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "manifests_checksums"
 DATE_TAG = "20260616"
+GENERATED_MANIFEST_FILES = {
+    f"manifests_checksums/PUBLIC_REPO_MANIFEST_{DATE_TAG}.csv",
+    f"manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_{DATE_TAG}.txt",
+    f"manifests_checksums/PUBLIC_REPO_VERIFICATION_{DATE_TAG}.json",
+}
 
 
 def is_public_payload_file(path: Path) -> bool:
@@ -23,6 +28,31 @@ def is_public_payload_file(path: Path) -> bool:
     if path.suffix.lower() == ".pyc":
         return False
     return path.is_file()
+
+
+def git_ls_files() -> list[str]:
+    proc = subprocess.run(
+        ["git", "ls-files", "-z"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    )
+    return [
+        rel.replace("\\", "/")
+        for rel in proc.stdout.decode("utf-8").split("\0")
+        if rel
+    ]
+
+
+def git_tracked_payload_files() -> list[Path]:
+    files = []
+    for rel in git_ls_files():
+        if rel in GENERATED_MANIFEST_FILES:
+            continue
+        path = ROOT / rel
+        if is_public_payload_file(path):
+            files.append(path)
+    return sorted(files, key=lambda p: p.relative_to(ROOT).as_posix())
 
 
 def sha256_file(path: Path) -> str:
@@ -58,7 +88,7 @@ def main() -> int:
         if old.is_file():
             old.unlink()
 
-    files = sorted(p for p in ROOT.rglob("*") if is_public_payload_file(p))
+    files = git_tracked_payload_files()
     manifest_rows = []
     for path in files:
         rel = path.relative_to(ROOT).as_posix()
@@ -154,17 +184,15 @@ def main() -> int:
         if text and "C:\\Users\\m1761" in text:
             local_path_hits.append(rel)
 
-    generated_manifest_files = [
-        f"manifests_checksums/PUBLIC_REPO_MANIFEST_{DATE_TAG}.csv",
-        f"manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_{DATE_TAG}.txt",
-        f"manifests_checksums/PUBLIC_REPO_VERIFICATION_{DATE_TAG}.json",
-    ]
+    generated_manifest_files = sorted(GENERATED_MANIFEST_FILES)
     verification = {
         "status": "OK" if not large_files else "CHECK",
+        "timestamp_utc": dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "payload_file_count_excluding_generated_manifest_files": len(files),
         "generated_manifest_files": generated_manifest_files,
-        "expected_zip_entry_count_after_manifest_generation": len(files) + len(generated_manifest_files),
-        "total_bytes": sum(p.stat().st_size for p in files),
+        "expected_git_tracked_file_count_after_manifest_generation": len(files) + len(generated_manifest_files),
+        "git_tracked_file_count": len(git_ls_files()),
+        "total_payload_bytes_excluding_generated_manifest_files": sum(p.stat().st_size for p in files),
         "required_root_entries": {
             name: (ROOT / name).exists()
             for name in [
