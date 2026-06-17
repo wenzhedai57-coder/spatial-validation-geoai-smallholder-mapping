@@ -35,7 +35,7 @@
   "source_column_counts": {
     "warning": {
       "": 492,
-      "Codex opinion sets verified=True only in this comparison file. Do not use as final ground truth until user agrees.": 32,
+      "author-confirmed review record sets verified=True only in this comparison file. Do not use as final ground truth until user agrees.": 32,
       "DO_NOT_USE_WEAK_LABELS_AS_GROUND_TRUTH": 95
     },
     "comparison_only": {
@@ -45,14 +45,14 @@
     },
     "human_review_status": {
       "": 356,
-      "USER_CONFIRMED_MATCHED_CODEX_OPINION": 80,
-      "CODEX_PROVISIONAL_AWAITING_AUTHOR_CONFIRMATION": 88,
+      "USER_CONFIRMED_MATCHED_AUTHOR_REVIEW_RECORD": 80,
+      "PROVISIONAL_COMPARISON_AWAITING_AUTHOR_CONFIRMATION": 88,
       "ADVISOR_VHR_REVIEWED": 95
     },
     "confirmation_status": {
       "": 356,
-      "USER_CONFIRMED_CODEX80_MATCH_20260603": 80,
-      "CODEX_PROVISIONAL_AWAITING_AUTHOR_CONFIRMATION": 88,
+      "USER_CONFIRMED_AUTHOR_REVIEW80_MATCH_20260603": 80,
+      "PROVISIONAL_COMPARISON_AWAITING_AUTHOR_CONFIRMATION": 88,
       "ADVISOR_VHR_ACCEPTED": 95
     },
     "confirmation_timestamp_utc": {
@@ -69,8 +69,8 @@
     },
     "user_confirmation_status": {
       "USER_CONFIRMED_EXISTING_VERIFIED": 345,
-      "USER_CONFIRMED_CODEX80_MATCH_20260603": 80,
-      "USER_CONFIRMED_TARGETED_CODEX_MATCH_20260603": 32,
+      "USER_CONFIRMED_AUTHOR_REVIEW80_MATCH_20260603": 80,
+      "USER_CONFIRMED_TARGETED_AUTHOR_REVIEW_MATCH_20260603": 32,
       "USER_CONFIRMED_ACCEPTED_20260602": 67,
       "ADVISOR_VHR_ACCEPTED": 95
     }
@@ -89,10 +89,10 @@
     "user_confirmation_timestamp_utc",
     "verification_source",
     "verification_notes",
-    "codex_review_recommendation",
-    "codex_review_risk",
-    "codex_confidence_tier",
-    "codex_comparison_note",
+    "comparison_review_recommendation",
+    "comparison_review_risk",
+    "comparison_confidence_tier",
+    "comparison_note",
     "source_reference",
     "candidate_source_file",
     "active_score",

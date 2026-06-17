@@ -155,7 +155,7 @@ random_seed: 42
     "longitude_column": "longitude",
     "region_file": "data/reference_samples_verified_622_public.csv",
     "targeted_confirmation_note": "Baseline plus 95 advisor VHR accepted rows plus 3 Cao Wang teacher-reviewed fold-3 VHR accepted rows; weak products remain context only.",
-    "targeted_confirmation_source_file": "manuscript//targeted_user_confirmed_evidence_20260603//priority_candidates_CODEX_OPINION_80_DIRECT_COMPLETE_20260603.csv",
+    "targeted_confirmation_source_file": "manuscript//targeted_user_confirmed_evidence_20260603//priority_candidates_AUTHOR_REVIEW_80_DIRECT_COMPLETE_20260603.csv",
     "uncertain_rows_are_verified_false": true,
     "verified_column": "verified"
   },

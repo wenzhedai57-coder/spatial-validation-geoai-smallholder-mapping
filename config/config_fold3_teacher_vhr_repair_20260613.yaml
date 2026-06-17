@@ -144,7 +144,7 @@ reference_samples:
   lock_status: baseline_plus_advisor_vhr_95_plus_cao_wang_fold3_vhr_3
   lock_date: '20260613'
   uncertain_rows_are_verified_false: true
-  targeted_confirmation_source_file: manuscript\targeted_user_confirmed_evidence_20260603\priority_candidates_CODEX_OPINION_80_DIRECT_COMPLETE_20260603.csv
+  targeted_confirmation_source_file: manuscript\targeted_user_confirmed_evidence_20260603\priority_candidates_AUTHOR_REVIEW_80_DIRECT_COMPLETE_20260603.csv
   region_file: data/reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv
   targeted_confirmation_note: Baseline plus 95 advisor VHR accepted rows plus 3 Cao
     Wang teacher-reviewed fold-3 VHR accepted rows; weak products remain context only.

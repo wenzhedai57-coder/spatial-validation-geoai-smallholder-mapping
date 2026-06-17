@@ -12,7 +12,7 @@ This log records a submission-facing metadata cleanup of the accepted advisor-VH
 
 ## Rationale
 
-The source table already records all 619 rows as `verified == True` and `final_review_decision == ACCEPT`, with user-confirmation status fields documenting the accepted review state. However, three legacy review-state columns retained older warnings such as `DO_NOT_USE_WEAK_LABELS_AS_GROUND_TRUTH`, `comparison_only=True`, and provisional Codex review states. Those legacy columns contradicted the accepted final status and were removed from the submission-facing reference table.
+The source table already records all 619 rows as `verified == True` and `final_review_decision == ACCEPT`, with user-confirmation status fields documenting the accepted review state. However, three legacy review-state columns retained older warnings such as `DO_NOT_USE_WEAK_LABELS_AS_GROUND_TRUTH`, `comparison_only=True`, and provisional comparison-review states. Those legacy columns contradicted the accepted final status and were removed from the submission-facing reference table.
 
 ## Checks
 
