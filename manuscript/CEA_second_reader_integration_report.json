@@ -1,0 +1,111 @@
+{
+  "status": "OK",
+  "input_docx": "C:\\Users\\m1761\\Documents\\New project\\_cea_round1_metadata_fill_20260620\\CEA_trust_router_R12_CEA_FORMATTED_20260615_round1_metadata_filled.docx",
+  "output_docx": "C:\\Users\\m1761\\Documents\\New project\\_cea_round3_second_reader_integration_20260620\\CEA_trust_router_R12_CEA_FORMATTED_20260620_second_reader_integrated.docx",
+  "evidence_files": {
+    "v1_kappa": "C:\\Users\\m1761\\Documents\\New project\\_cao_wang_label_review_20260620\\kappa_results_cleaned\\second_reader_kappa_summary.csv",
+    "v1_class": "C:\\Users\\m1761\\Documents\\New project\\_cao_wang_label_review_20260620\\kappa_results_cleaned\\second_reader_agreement_by_reference_class.csv",
+    "v2_summary": "C:\\Users\\m1761\\Documents\\New project\\_cao_wang_rubber_rescreen_v2_review_20260620\\rescreen_v2_audit_outputs\\rescreen_v2_audit_summary.csv",
+    "v2_class": "C:\\Users\\m1761\\Documents\\New project\\_cao_wang_rubber_rescreen_v2_review_20260620\\rescreen_v2_audit_outputs\\rescreen_v2_agreement_by_reference_class.csv"
+  },
+  "primary_second_reader_values": {
+    "n_blind_rows": "524",
+    "n_scorable_pairs": "500",
+    "n_skipped_rows": "24",
+    "observed_agreement": "0.606",
+    "expected_agreement": "0.181032",
+    "cohens_kappa": "0.5189067216301492",
+    "rubber_agree": "5",
+    "rubber_scorable": "70",
+    "rubber_agreement_rate_scorable": "0.07142857142857142"
+  },
+  "rubber_rescreen_v2_values": {
+    "observed_agreement": "0.6",
+    "cohens_kappa": "0.5114420277110082",
+    "changed_row_count_vs_previous_completed": "14",
+    "rubber_agree": "8",
+    "rubber_scorable": "70",
+    "rubber_agreement_rate_scorable": "0.11428571428571428"
+  },
+  "paragraph_changes": [
+    {
+      "label": "abstract",
+      "old": "Smallholder land-cover mapping is often evaluated as classification, but agencies need a defensible rule for accepting, reviewing, or refusing map outputs when verified labels are scarce. We develop a spatially honest trust router combining Sentinel-1/2, AlphaEarth embeddings, an indicator variogram, zero-leakage spatial folds, class-conditional conformal sets, Area-of-Applicability, weak-reference audits, public-evidence checks, and explicit class-support gates. The variogram-derived block distance was approximately 151 km, and all 4 standard folds passed zero-leakage checks. In 4-fold outer spatial cross-validation, the B3 Random Forest forced-label diagnostic achieved mean OA 0.460 and macro-F1 0.331 (pooled OA 0.410; macro-F1 0.304). Only 174 of 524 B3 outer-test samples were router-evaluable; 350 were routed to field verification or refusal, including 86/86 oil-palm and 74/75 rubber samples. Support-density sensitivity showed that an approximately 83.0 km diagnostic block did not solve the locked six-class support gap (77/524 evaluable), while 0.25x recovered only 11/86 oil-palm and 28/75 rubber samples. Coarsening to agriculture/forest/built-up raised support to 445/524 at 151 km but sacrifices crop-specific inventory. The B3 risk gate released 32 cases (6.1% of all samples) with accuracy 0.938 (Wilson 95% CI [0.799, 0.983]). The result is a conservative verification-routing workflow, not an in-situ-validated automated map product.",
+      "new": "Smallholder land-cover mapping is often evaluated as classification, but agencies need a defensible rule for accepting, reviewing, or refusing map outputs when verified labels are scarce. We develop a spatially honest trust router combining Sentinel-1/2, AlphaEarth embeddings, an indicator variogram, zero-leakage spatial folds, class-conditional conformal sets, Area-of-Applicability, weak-reference audits, public-evidence checks, a blind second-reader visual audit, and explicit class-support gates. The variogram-derived block distance was approximately 151 km, and all 4 standard folds passed zero-leakage checks. In 4-fold outer spatial cross-validation, the B3 Random Forest forced-label diagnostic achieved mean OA 0.460 and macro-F1 0.331 (pooled OA 0.410; macro-F1 0.304). Only 174 of 524 B3 outer-test samples were router-evaluable; 350 were routed to field verification or refusal, including 86/86 oil-palm and 74/75 rubber samples. A completed blind second-reader audit produced readable-pair agreement of 0.606 and Cohen's kappa of 0.519 across 500 scorable pairs, while preserving 24 unreadable cases. Rubber remained unstable (5/70 agreement; 8/70 after a targeted rescreen sensitivity), supporting refusal of automatic rubber release rather than a crop-specific mapping claim. The B3 risk gate released 32 cases (6.1% of all samples) with accuracy 0.938 (Wilson 95% CI [0.799, 0.983]). The result is a conservative verification-routing workflow, not an in-situ-validated automated map product."
+    },
+    {
+      "label": "introduction_contributions",
+      "old": "The paper makes five contributions for Computers and Electronics in Agriculture. First, it reframes smallholder land-cover mapping as a verification-aware agricultural decision-support problem. Second, it implements a reproducible spatially honest validation workflow using an indicator empirical variogram and zero-leakage checks. Third, it evaluates audit-budget policies that prioritize model-visible uncertainty rather than random checks. Fourth, it adds AoA as a deployment safety gate and reports when the sample size is too small to prove singleton-error enrichment. Fifth, it reconciles evidence gates for blind remote audit, public ground-view availability, weak-reference contamination, leave-region transfer, and second-annotator agreement without converting missing evidence into unsupported claims.",
+      "new": "The paper makes five contributions for Computers and Electronics in Agriculture. First, it reframes smallholder land-cover mapping as a verification-aware agricultural decision-support problem. Second, it implements a reproducible spatially honest validation workflow using an indicator empirical variogram and zero-leakage checks. Third, it evaluates audit-budget policies that prioritize model-visible uncertainty rather than random checks. Fourth, it adds AoA as a deployment safety gate and reports when the sample size is too small to prove singleton-error enrichment. Fifth, it reconciles evidence gates for historical blind audit, completed second-reader visual agreement, public ground-view availability, weak-reference contamination, and leave-region transfer without converting remote visual review into field-truth validation."
+    },
+    {
+      "label": "conformal_label_noise_gate",
+      "old": "Conformal coverage in this manuscript is conditional on the locked verified-reference labels. The current data do not contain an independent label-noise estimate from geotagged field visits or a completed independent second-annotator table, so label-noise-adjusted conformal coverage remains SKIPPED rather than reported from an unsupported assumption.",
+      "new": "Conformal coverage in this manuscript is conditional on the locked verified-reference labels. The completed blind second-reader visual audit provides an inter-reader reliability check, but it is not a geotagged field survey and does not estimate the full label-noise process. Label-noise-adjusted conformal coverage therefore remains SKIPPED rather than reported from an unsupported assumption."
+    },
+    {
+      "label": "methods_historical_audit",
+      "old": "A previous author-confirmed blind remote audit is retained as historical package evidence, but it is no longer evaluated against the abandoned single-split denominator. The historical audit contains 70 samples; all 70 now overlap the B3 outer spatial cross-fit, 47 overlap the router-evaluable subset, and 14 overlap the risk-controlled auto-map subset. Because this historical table is not a locked independent second-annotator agreement table and is not geotagged field truth, it is used only as a membership audit; Cohen's kappa is not reported from this historical table.",
+      "new": "A previous author-confirmed blind remote audit is retained as historical package evidence, but it is no longer evaluated against the abandoned single-split denominator. The historical audit contains 70 samples; all 70 now overlap the B3 outer spatial cross-fit, 47 overlap the router-evaluable subset, and 14 overlap the risk-controlled auto-map subset. Because this historical table is not a locked second-reader agreement table and is not geotagged field truth, it is used only as a membership audit; Cohen's kappa is not reported from this historical table."
+    },
+    {
+      "label": "methods_alignment_to_new_r2",
+      "old": "The alignment result changes after moving to the outer spatial cross-fit: the old remote-audit rows are no longer absent from the evaluation universe, but they still do not close the validation gate. They cover only part of the router-evaluable and risk-auto subsets and cannot be promoted into field validation or independent inter-rater agreement.",
+      "new": "The alignment result changes after moving to the outer spatial cross-fit: the old remote-audit rows are no longer absent from the evaluation universe, but they still do not close the validation gate. They cover only part of the router-evaluable and risk-auto subsets and cannot be promoted into field validation. A separate completed R2 blind second-reader table now supplies a readable-pair inter-reader agreement audit for all 524 sample rows."
+    },
+    {
+      "label": "methods_completed_r2_gate",
+      "old": "No locked independent second-annotator CSV with completed blind labels was supplied. The second-annotator and Cohen's kappa tables are therefore written as MISSING. This prevents the manuscript from presenting author-confirmed remote review as independent inter-rater reliability evidence.",
+      "new": "The completed R2 blind second-reader table contains 524 rows, including 500 readable paired labels and 24 rows preserved as unreadable. On the 500 readable pairs, observed agreement was 0.606, expected agreement was 0.181, and Cohen's kappa was 0.519. A targeted rubber-rescreen sensitivity increased rubber agreement from 5/70 to 8/70 but reduced overall kappa from 0.519 to 0.511, so it is treated as sensitivity evidence rather than the primary audit."
+    },
+    {
+      "label": "results_old_audit_denominator",
+      "old": "The old author-confirmed blind remote audit covered 70 locations. Under the outer spatial cross-fit, those 70 locations all have B3 outer-test predictions, but only 47 fall in the retained-class router denominator and only 14 fall in the risk-controlled auto-map subset. The audit therefore supports denominator accounting, not an independent accuracy or kappa claim.",
+      "new": "The old author-confirmed blind remote audit covered 70 locations. Under the outer spatial cross-fit, those 70 locations all have B3 outer-test predictions, but only 47 fall in the retained-class router denominator and only 14 fall in the risk-controlled auto-map subset. The audit therefore supports denominator accounting, not an accuracy or kappa claim. The new R2 table is used for readable-pair inter-reader agreement instead."
+    },
+    {
+      "label": "results_new_second_reader_claim",
+      "old": "The scientific consequence is to weaken, not decorate, the claim. The manuscript does not use the historical remote-audit queue rates as current validation evidence. Instead, it reports the membership overlap as a reproducibility gate and keeps independent second-annotator agreement as an unresolved evidence gate until a completed locked table is supplied.",
+      "new": "The scientific consequence is to weaken, not decorate, the claim. The manuscript does not use the historical remote-audit queue rates as current validation evidence. Instead, it reports the membership overlap as a reproducibility gate and reports the completed R2 blind second-reader audit as remote visual inter-reader agreement, not as in-situ validation."
+    },
+    {
+      "label": "table9_caption",
+      "old": "Table 9. Blind remote-audit membership alignment against the B3 outer spatial cross-fit.",
+      "new": "Table 9. Blind remote-audit alignment and completed R2 second-reader visual agreement."
+    },
+    {
+      "label": "results_table9_followup",
+      "old": "The earlier remote-audit yield figure is not carried forward as validation evidence because the historical audit is remote, partial, and not a locked independent agreement table.",
+      "new": "The earlier remote-audit yield figure is not carried forward as validation evidence because the historical audit is remote and partial. The completed R2 audit replaces the previous MISSING kappa gate only for readable-pair visual agreement; it does not replace geotagged field validation."
+    },
+    {
+      "label": "discussion_operational_measures",
+      "old": "The field-audit, AoA, and open-evidence experiments provide concrete operational measures, but the manuscript separates what is demonstrated from what remains pending. The budget experiment shows that uncertainty-ranked queues can reduce checks per detected verified-key error within the router-evaluable held-out sample table. AoA adds a safety gate for deployment. The open-evidence audit shows that public ground-view evidence is unavailable in the current run. None of these outputs replaces geotagged field validation or independent inter-rater agreement.",
+      "new": "The field-audit, AoA, open-evidence, and second-reader experiments provide concrete operational measures, but the manuscript separates what is demonstrated from what remains pending. The budget experiment shows that uncertainty-ranked queues can reduce checks per detected verified-key error within the router-evaluable held-out sample table. AoA adds a safety gate for deployment. The completed R2 audit gives readable-pair inter-reader agreement for remote visual labels, while the open-evidence audit shows that public ground-view evidence is unavailable in the current run. None of these outputs replaces geotagged field validation."
+    },
+    {
+      "label": "discussion_rubber_story",
+      "old": "The support-density audit is the most important correction to the oil-palm and rubber story. A raw forced-label spatial confusion matrix makes oil palm look like a classifier failure with zero predicted cases, but the support-aware accounting shows that the router had no defensible oil-palm release denominator under the declared zero-leakage support rule. Block-distance sensitivity does not provide a clean rescue: the approximately 83 km diagnostic still leaves oil palm and rubber unsupported, and 0.25x only partially recovers them. Perennial-class merging is also insufficient at 151 km. Two valid repair paths remain. If the six-class crop inventory is the target product, the next experiment must add spatially separated verified support in the shortfall folds: the current static-fold lower-bound table records oil-palm fold-level shortfalls up to 35 and rubber shortfalls up to 35 samples, with additional gaps for other_agri (32), builtup_other (26), and paddy (13). If a coarser product is acceptable, the broad agriculture/forest/built-up legend is supportable but no longer answers the oil-palm-versus-rubber inventory question. Lowering the support threshold would make the table look better while weakening the calibration claim, so it is not used.",
+      "new": "The support-density and second-reader audits are the most important corrections to the oil-palm and rubber story. A raw forced-label spatial confusion matrix makes oil palm look like a classifier failure with zero predicted cases, but the support-aware accounting shows that the router had no defensible oil-palm release denominator under the declared zero-leakage support rule. Block-distance sensitivity does not provide a clean rescue: the approximately 83 km diagnostic still leaves oil palm and rubber unsupported, and 0.25x only partially recovers them. The blind second-reader audit adds a second warning: rubber agreement was only 5/70 in the primary audit and 8/70 after a targeted rescreen sensitivity. Two valid repair paths remain. If the six-class crop inventory is the target product, the next experiment must add spatially separated verified support in the shortfall folds and obtain stronger class-specific evidence for rubber. If a coarser product is acceptable, the broad agriculture/forest/built-up legend is supportable but no longer answers the oil-palm-versus-rubber inventory question. Lowering the support threshold would make the table look better while weakening the calibration claim, so it is not used."
+    },
+    {
+      "label": "discussion_skipped_to_useful",
+      "old": "The leave-region audit, AoA singleton-enrichment gate, and second-annotator tables are key changes. Instead of treating SKIPPED or MISSING as weaknesses to hide, the revised CEA framing treats them as deployment-readiness tests. A decision-support system should be allowed to say that the available evidence is insufficient for external-region release, singleton-enrichment inference, or independent kappa.",
+      "new": "The leave-region audit, AoA singleton-enrichment gate, and second-reader tables are key changes. Instead of treating SKIPPED, MISSING, or unreadable states as weaknesses to hide, the revised CEA framing treats them as deployment-readiness tests. A decision-support system should be allowed to say that the available evidence is insufficient for external-region release, singleton-enrichment inference, all-row visual agreement, or class-specific rubber release."
+    },
+    {
+      "label": "limitations_updated_gates",
+      "old": "No geotagged in-situ field survey, completed independent second-annotator table, or public DOI/stable public release for the exact CEA R12 package was supplied. These gates remain unresolved rather than being inferred.",
+      "new": "No geotagged in-situ field survey or public DOI/stable public release for the exact CEA R12 package was supplied. The completed R2 table addresses the previous second-annotator MISSING gate for readable-pair remote visual agreement, but it does not convert the reference labels into field truth. These remaining gates are therefore unresolved rather than inferred."
+    },
+    {
+      "label": "reproducibility_second_reader_artifacts",
+      "old": "All reported numeric results are read from CSV/JSON artifacts generated by repository scripts. The current build adds class-conditional outer spatial cross-fitted router tables, risk-threshold tables, denominator accounting, rerun open-evidence outputs, fold-design audits, and optimized-fold sensitivity outputs while preserving the variogram and weak-reference audit artifacts. Missing or unsupported results are reported as SKIPPED, MISSING, or ERROR rather than replaced with plausible values.",
+      "new": "All reported numeric results are read from CSV/JSON artifacts generated by repository scripts. The current build adds class-conditional outer spatial cross-fitted router tables, risk-threshold tables, denominator accounting, rerun open-evidence outputs, fold-design audits, optimized-fold sensitivity outputs, and second-reader agreement artifacts while preserving the variogram and weak-reference audit artifacts. Missing, unreadable, or unsupported results are reported as SKIPPED, MISSING, or ERROR rather than replaced with plausible values."
+    }
+  ],
+  "table_changes": [
+    "Updated Table 9 with completed R2 visual audit and V2 rubber-rescreen sensitivity.",
+    "Merged second-reader evidence paths into the existing Table 18 denominator/blind-audit evidence row."
+  ]
+}
