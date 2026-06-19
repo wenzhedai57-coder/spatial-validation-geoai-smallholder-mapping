@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "created_utc": "2026-06-19T19:15:48.611990+00:00",
+  "package_name": "CEA_R12_FINAL_PUBLIC_ARCHIVE_QA_PACKAGE_20260620",
+  "stable_tag": "cea-r12-final-public-archive-qa-20260620",
+  "stable_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/cea-r12-final-public-archive-qa-20260620",
+  "archive_zip_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/archive/refs/tags/cea-r12-final-public-archive-qa-20260620.zip",
+  "doi_status": "NOT_MINTED",
+  "manifest_file_count_excluding_manifest_and_verify": 228,
+  "manifest_total_bytes_excluding_manifest_and_verify": 48072655,
+  "manifest_sha256": "CEC12040E334292EDDA4377196BEB5AAB439FD5E5E810EAA5E8297C9018AF790",
+  "summary_sha256": "6643D8572271036467984016B6CE2C1C54DD97DFAA404551C2033EE5CDB56F6D",
+  "docx_reference_declaration_qa_status": "OK",
+  "figure_caption_count": 9,
+  "table_caption_count": 18,
+  "placeholder_hits": [],
+  "declaration_checks": {
+    "Funding": true,
+    "Competing interests": true,
+    "CRediT authorship contribution statement": true,
+    "Declaration of generative AI and AI-assisted technologies": true,
+    "Data and code availability": true,
+    "stable_tag_url_present": true,
+    "tag_archive_url_present": true,
+    "doi_not_fabricated": true
+  },
+  "render_qa_status": "OK",
+  "render_visual_inspection_status": "OK",
+  "render_page_png_count": 30,
+  "seed": "NOT_APPLICABLE"
+}

@@ -1,0 +1,23 @@
+{
+  "package_name": "CEA_R12_FINAL_PUBLIC_ARCHIVE_QA_PACKAGE_20260620",
+  "created_utc": "2026-06-19T19:15:44.046658+00:00",
+  "stable_tag": "cea-r12-final-public-archive-qa-20260620",
+  "stable_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/cea-r12-final-public-archive-qa-20260620",
+  "archive_zip_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/archive/refs/tags/cea-r12-final-public-archive-qa-20260620.zip",
+  "doi_status": "NOT_MINTED",
+  "source_branch": "codex/cea-round3-second-reader-integration",
+  "manifest_coverage": "All package files except PACKAGE_MANIFEST.csv and PACKAGE_VERIFY.json.",
+  "top_level_directories": [
+    "code",
+    "evidence",
+    "figures",
+    "manuscript",
+    "qa",
+    "repository_metadata"
+  ],
+  "qa_status_inputs": {
+    "docx_reference_declaration_qa": "qa/final_docx_reference_declaration_qa.json",
+    "render_qa": "qa/render_final_docx/final_render_qa.json"
+  },
+  "seed": "NOT_APPLICABLE"
+}

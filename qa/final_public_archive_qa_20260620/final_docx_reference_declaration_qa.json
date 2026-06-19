@@ -1,0 +1,244 @@
+{
+  "status": "OK",
+  "timestamp_utc": "2026-06-19T19:09:22.334286+00:00",
+  "input_docx": "C:\\Users\\m1761\\Documents\\New project\\_cea_final_public_archive_qa_20260620\\CEA_trust_router_R12_CEA_FORMATTED_20260620_final_public_archive_linked.docx",
+  "input_docx_sha256": "B0676D1C6C43FCE2A7A2C16A59CDD0AAA0A071FEBF4B5D0F1A49A81DA11314A9",
+  "seed": "NOT_APPLICABLE",
+  "structure": {
+    "paragraph_count": 203,
+    "table_count": 18,
+    "inline_shape_count": 9
+  },
+  "figure_reference_scan": {
+    "caption_labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "mention_labels_excluding_captions": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "captioned_but_not_mentioned": [],
+    "mentioned_but_no_caption": [],
+    "caption_count": 9,
+    "mention_count_excluding_captions": 9
+  },
+  "table_reference_scan": {
+    "caption_labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "mention_labels_excluding_captions": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "captioned_but_not_mentioned": [],
+    "mentioned_but_no_caption": [],
+    "caption_count": 18,
+    "mention_count_excluding_captions": 20
+  },
+  "declaration_checks": {
+    "Funding": true,
+    "Competing interests": true,
+    "CRediT authorship contribution statement": true,
+    "Declaration of generative AI and AI-assisted technologies": true,
+    "Data and code availability": true,
+    "stable_tag_url_present": true,
+    "tag_archive_url_present": true,
+    "doi_not_fabricated": true
+  },
+  "placeholder_hits": [],
+  "stable_archive": {
+    "tag": "cea-r12-final-public-archive-qa-20260620",
+    "tree_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/cea-r12-final-public-archive-qa-20260620",
+    "archive_zip_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/archive/refs/tags/cea-r12-final-public-archive-qa-20260620.zip",
+    "doi_status": "NOT_MINTED"
+  },
+  "caption_records": {
+    "figures": [
+      {
+        "label": "1",
+        "paragraph_index": 23,
+        "text": "Figure 1. Indicator empirical variogram used to select the spatial block distance. The selected block distance (approximately 151 km) was used to construct the zero-leakage spatial folds and the spatially separated conformal calibration and test partitions."
+      },
+      {
+        "label": "2",
+        "paragraph_index": 80,
+        "text": "Figure 2. Spatial cross-fitted classifier performance and risk-controlled router decisions."
+      },
+      {
+        "label": "3",
+        "paragraph_index": 88,
+        "text": "Figure 3. Field-verification budget curves under spatial evaluation."
+      },
+      {
+        "label": "S1",
+        "paragraph_index": 102,
+        "text": "Figure S1. Open public ground-view availability by queue. The zero-found result is retained because it is the computed outcome of the open-evidence search."
+      },
+      {
+        "label": "S2",
+        "paragraph_index": 104,
+        "text": "Figure S2. Public evidence query status. This figure documents search status rather than in-situ validation."
+      },
+      {
+        "label": "S3",
+        "paragraph_index": 110,
+        "text": "Figure S3. Weak-reference contamination against verified smallholder labels."
+      },
+      {
+        "label": "4",
+        "paragraph_index": 117,
+        "text": "Figure 4. AoA and conformal routing diagnostics. AoA is a safety gate; it is not reported as a proven singleton-error enrichment effect in the current sample set."
+      },
+      {
+        "label": "5",
+        "paragraph_index": 123,
+        "text": "Figure 5. Leave-region feasibility audit under zero-leakage constraints."
+      },
+      {
+        "label": "6",
+        "paragraph_index": 130,
+        "text": "Figure 6. Spatial-block sensitivity and effective spatial folds."
+      }
+    ],
+    "tables": [
+      {
+        "label": "1",
+        "paragraph_index": 36,
+        "text": "Table 1. Reference-label provenance recorded in the locked verified reference file."
+      },
+      {
+        "label": "2",
+        "paragraph_index": 39,
+        "text": "Table 2. Verified sample counts by final study class."
+      },
+      {
+        "label": "3",
+        "paragraph_index": 40,
+        "text": "Table 3. Verified sample counts by region key."
+      },
+      {
+        "label": "4",
+        "paragraph_index": 44,
+        "text": "Table 4. Feature stacks and agricultural roles."
+      },
+      {
+        "label": "5",
+        "paragraph_index": 56,
+        "text": "Table 5. Risk-controlled operational action mapping from conformal, AoA, and calibration evidence."
+      },
+      {
+        "label": "6",
+        "paragraph_index": 77,
+        "text": "Table 6. Random Forest spatial cross-fitted performance and risk-controlled routing."
+      },
+      {
+        "label": "7",
+        "paragraph_index": 78,
+        "text": "Table 7. B3 class-support accounting under zero-leakage spatial folds."
+      },
+      {
+        "label": "8",
+        "paragraph_index": 86,
+        "text": "Table 8. B3 outer spatial cross-fit field-audit budget summary at 20% audit share."
+      },
+      {
+        "label": "9",
+        "paragraph_index": 94,
+        "text": "Table 9. Blind remote-audit alignment and completed R2 second-reader visual agreement."
+      },
+      {
+        "label": "10",
+        "paragraph_index": 98,
+        "text": "Table 10. Open public-evidence audit metrics for the B3 outer spatial cross-fit."
+      },
+      {
+        "label": "11",
+        "paragraph_index": 100,
+        "text": "Table 11. Public ground-view API availability by trust-action queue."
+      },
+      {
+        "label": "12",
+        "paragraph_index": 109,
+        "text": "Table 12. Weak-reference contamination against verified smallholder labels."
+      },
+      {
+        "label": "13",
+        "paragraph_index": 116,
+        "text": "Table 13. AoA membership and interpretation under single-split and cross-fitted evaluations."
+      },
+      {
+        "label": "14",
+        "paragraph_index": 119,
+        "text": "Table 14. B3 spatial cross-fitted router summary by action policy."
+      },
+      {
+        "label": "15",
+        "paragraph_index": 122,
+        "text": "Table 15. Leave-region feasibility audit under zero-leakage constraints."
+      },
+      {
+        "label": "16",
+        "paragraph_index": 128,
+        "text": "Table 16. Spatial-block sensitivity for B3 Random Forest; rows are diagnostic and non-monotonic because fold composition changes."
+      },
+      {
+        "label": "17",
+        "paragraph_index": 129,
+        "text": "Table 17. Support-density frontier for block scale and legend-resolution diagnostics."
+      },
+      {
+        "label": "18",
+        "paragraph_index": 162,
+        "text": "Table 18. Evidence index for the full main manuscript."
+      }
+    ]
+  }
+}

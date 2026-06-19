@@ -1,0 +1,229 @@
+{
+  "status": "OK",
+  "timestamp_utc": "2026-06-19T19:12:05.938586+00:00",
+  "renderer": "LibreOffice soffice explicit path + Poppler pdftoppm",
+  "pdf": "CEA_trust_router_R12_CEA_FORMATTED_20260620_final_public_archive_linked.pdf",
+  "pdf_sha256": "AF6AAF14354BDC2EA57DEB350AB4AC29B932E69FAF2CA9FE428381168D85DF9F",
+  "page_png_count": 30,
+  "page_pngs": [
+    {
+      "file": "page-01.png",
+      "bytes": 287870,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "7DD66D1576DDA5AF7ABA61503246927AAF450100325F2BA642906F2876B2436B"
+    },
+    {
+      "file": "page-02.png",
+      "bytes": 399326,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "C6DEC571DD6362B2D083841E3229849A8937118872F86494161566A4B413D59C"
+    },
+    {
+      "file": "page-03.png",
+      "bytes": 307543,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "3139362A5C4FC93A648C17B1CFCED468804EB1E0CB270FDCD3911937444CD4D1"
+    },
+    {
+      "file": "page-04.png",
+      "bytes": 246414,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "CD1B4AD335C435478F22EE012EFDFD8BF381B2483AB56E73B00E36518BD7E293"
+    },
+    {
+      "file": "page-05.png",
+      "bytes": 341180,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "E973006BFDB2789B1AE5E2F06871CA719F4FA4D4FA9A9759548DCCBA62C14B1F"
+    },
+    {
+      "file": "page-06.png",
+      "bytes": 271843,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "E3FE6466068EDB4D969CA7D8EAA5C724849994778280B65BF4E29F6289F236B9"
+    },
+    {
+      "file": "page-07.png",
+      "bytes": 348857,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "773721927560ADA8D0C24D8C6E572475CBDB0DFC8E67581732A39C00BC39D548"
+    },
+    {
+      "file": "page-08.png",
+      "bytes": 356078,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "5106CFD17216E2627C6F833C223596014481A1CD967E05D5BC0DD301EFF9A1D3"
+    },
+    {
+      "file": "page-09.png",
+      "bytes": 368492,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "30307AF3EF72B67141B2194C1D195C28DA1D9F20B8134275E1435C555753848D"
+    },
+    {
+      "file": "page-10.png",
+      "bytes": 335182,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "DDB0C4F5D8E16373C19E6AE6DBED7B70047F5BDC563CB6263E690DEDA9A86382"
+    },
+    {
+      "file": "page-11.png",
+      "bytes": 117519,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "2F0EACA2FC4F3E3DF39DFBB00665BB6070F3B3D7F94ACCE6E625830DF615E9CE"
+    },
+    {
+      "file": "page-12.png",
+      "bytes": 301600,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "06918296DC9DEFBB841B3CFA185808EBC9697F80B0FA6690829AF19E13837C41"
+    },
+    {
+      "file": "page-13.png",
+      "bytes": 214220,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "51E1D3DD4DE2FFA4B1BF1396EE73AE401D55FE29343DCDE39838D9FE75A50803"
+    },
+    {
+      "file": "page-14.png",
+      "bytes": 237642,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "B9FAA0EDE23F02EC6D11A9692B4C898016FCD430B27B9E15287ED62A7138275E"
+    },
+    {
+      "file": "page-15.png",
+      "bytes": 242276,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "17A61CD73C54F0872B350B5BEFD7582112618300A8999050745CE348F9BD3FA6"
+    },
+    {
+      "file": "page-16.png",
+      "bytes": 238147,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "1FDC42712ACAF8B737E1EA3C2A9F1B28005AA9E188326DA5381E3D51AFBD5363"
+    },
+    {
+      "file": "page-17.png",
+      "bytes": 263493,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "22E8801295C8A716E818306CB7E2C0CB5F729704BBA02DFD0F1E7BAD5A8E1D97"
+    },
+    {
+      "file": "page-18.png",
+      "bytes": 325919,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "EB5319E16E2A471D0506A10D5D2C8DB781B3B01FB4344926A5919C85DB31C01A"
+    },
+    {
+      "file": "page-19.png",
+      "bytes": 136776,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "C8E9C2A59FCC22AB829BC085421774310C70CCCFC124A6B43AC34D28DD1679AA"
+    },
+    {
+      "file": "page-20.png",
+      "bytes": 212776,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "B7D753DE12C949CFD4EE045290ECA1EA94D0866EF37ACCB37DAB9116CE0B5A87"
+    },
+    {
+      "file": "page-21.png",
+      "bytes": 185903,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "38CF4CAD97581E6D6C03DC86D0B0D61BB1602D2498554474C539DD34D4F1D387"
+    },
+    {
+      "file": "page-22.png",
+      "bytes": 275351,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "7ABF41F5A4D838A3F2993BD2E9EA0AAA6A0EE59EFA9771F8550AC57A9D56D5B5"
+    },
+    {
+      "file": "page-23.png",
+      "bytes": 305747,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "28F94333320A7B894D553CDA9052B39FB5A39FEF0B871C37A3B4647B254648E3"
+    },
+    {
+      "file": "page-24.png",
+      "bytes": 389993,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "82068B4F8EF3975E9081385082C36F8D6372B5CF21F22EE80F610C06EB58E51A"
+    },
+    {
+      "file": "page-25.png",
+      "bytes": 345157,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "FB75365BD9FAA008CBA97F2930076EBCA9440741D47536E50AA33E0B50466FE3"
+    },
+    {
+      "file": "page-26.png",
+      "bytes": 334836,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "536295CAF99BE0A2B8F8AF858A42E2E567CCB128BB8845EFC091DDA7ABF7FC2E"
+    },
+    {
+      "file": "page-27.png",
+      "bytes": 286190,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "C66D816D08B03F32A46809DACC8199DEFF2B2AE70D3D6416CAA95993880A742B"
+    },
+    {
+      "file": "page-28.png",
+      "bytes": 386960,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "9A178686FC6C2436E1770961B98FBAB610ABA9BDCFC6822194B9A72B6F7E04E5"
+    },
+    {
+      "file": "page-29.png",
+      "bytes": 387884,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "03769B0F60540339FE006904A7508330339B3C49772B811EECA7AE50BB656E14"
+    },
+    {
+      "file": "page-30.png",
+      "bytes": 317811,
+      "width": 1224,
+      "height": 1584,
+      "sha256": "E78E3169F13E77E6D708A8AF34E167056F37C42CB38FBA819F0BF2184162A5C7"
+    }
+  ],
+  "contact_sheets": [
+    "contact_sheet_pages_01_10.png",
+    "contact_sheet_pages_11_20.png",
+    "contact_sheet_pages_21_30.png"
+  ],
+  "visual_inspection_status": "OK",
+  "seed": "NOT_APPLICABLE",
+  "visual_inspection_timestamp_utc": "2026-06-19T19:12:33.476410+00:00",
+  "visual_inspection_notes": "All 30 rendered page PNGs were reviewed via contact sheets pages 01-10, 11-20, and 21-30. No obvious clipping, overlap, broken tables, missing glyphs, or declaration/data-availability wrapping failure was observed."
+}

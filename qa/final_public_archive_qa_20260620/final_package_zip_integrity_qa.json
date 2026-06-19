@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "timestamp_utc": "2026-06-19T19:16:26.056153+00:00",
+  "zip_path": "C:\\Users\\m1761\\Documents\\New project\\_cea_final_public_archive_qa_20260620\\CEA_R12_FINAL_PUBLIC_ARCHIVE_QA_PACKAGE_20260620.zip",
+  "zip_bytes": 26332286,
+  "zip_sha256": "5BCE3F4255F168A1662D3D794E45AA52D4C6271162DC4CDFB4B8DA96A1B074BC",
+  "sidecar_sha256": "5BCE3F4255F168A1662D3D794E45AA52D4C6271162DC4CDFB4B8DA96A1B074BC",
+  "zip_testzip_bad_file": null,
+  "zip_entry_count": 230,
+  "required_missing": [],
+  "manifest_row_count": 228,
+  "manifest_sha256_from_zip": "CEC12040E334292EDDA4377196BEB5AAB439FD5E5E810EAA5E8297C9018AF790",
+  "manifest_sha256_in_verify": "CEC12040E334292EDDA4377196BEB5AAB439FD5E5E810EAA5E8297C9018AF790",
+  "sample_manifest_mismatches": [],
+  "package_verify_status": "OK",
+  "package_verify_render_pages": 30,
+  "seed": "NOT_APPLICABLE"
+}

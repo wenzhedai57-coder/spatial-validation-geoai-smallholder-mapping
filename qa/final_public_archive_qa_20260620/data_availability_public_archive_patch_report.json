@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "timestamp_utc": "2026-06-19T19:07:02.820175+00:00",
+  "source_docx": "C:\\Users\\m1761\\Documents\\New project\\_cea_round1_metadata_fill_20260620\\github_check_spatial_validation\\manuscript\\CEA_trust_router_R12_CEA_FORMATTED_20260620_second_reader_integrated.docx",
+  "output_docx": "C:\\Users\\m1761\\Documents\\New project\\_cea_final_public_archive_qa_20260620\\CEA_trust_router_R12_CEA_FORMATTED_20260620_final_public_archive_linked.docx",
+  "repo_docx_updated": "C:\\Users\\m1761\\Documents\\New project\\_cea_round1_metadata_fill_20260620\\github_check_spatial_validation\\manuscript\\CEA_trust_router_R12_CEA_FORMATTED_20260620_second_reader_integrated.docx",
+  "stable_tag": "cea-r12-final-public-archive-qa-20260620",
+  "stable_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/cea-r12-final-public-archive-qa-20260620",
+  "archive_zip_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/archive/refs/tags/cea-r12-final-public-archive-qa-20260620.zip",
+  "replacements": [
+    {
+      "paragraph_index": 158,
+      "replacement": "limitations_stable_archive_link"
+    },
+    {
+      "paragraph_index": 168,
+      "replacement": "data_code_availability_tag_archive"
+    }
+  ],
+  "output_docx_sha256": "6E1A470D7394DE7E42918A5B6E0618B48BB1FA3951EDF5BA1B46B9346EE7E0BF",
+  "seed": "NOT_APPLICABLE"
+}
