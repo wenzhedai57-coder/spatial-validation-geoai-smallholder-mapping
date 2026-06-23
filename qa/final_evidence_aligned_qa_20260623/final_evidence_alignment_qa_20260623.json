@@ -1,0 +1,712 @@
+{
+  "timestamp_utc": "2026-06-23T15:52:02Z",
+  "package_root": "C:\\Users\\m1761\\Desktop\\cea23\\s\\CEA_R12_FINAL_EVIDENCE_ALIGNED_QA_PACKAGE_20260623",
+  "docx": "manuscript\\CEA_trust_router_R12_CEA_FORMATTED_20260623_final_evidence_aligned.docx",
+  "file_count_current_before_manifest": 228,
+  "checks": [
+    {
+      "name": "active_docx_exists",
+      "status": "PASS",
+      "detail": {
+        "path": "manuscript\\CEA_trust_router_R12_CEA_FORMATTED_20260623_final_evidence_aligned.docx"
+      }
+    },
+    {
+      "name": "exactly_one_active_docx",
+      "status": "PASS",
+      "detail": {
+        "docx_files": [
+          "manuscript\\CEA_trust_router_R12_CEA_FORMATTED_20260623_final_evidence_aligned.docx"
+        ]
+      }
+    },
+    {
+      "name": "no_active_q25_rerun_files",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "no_622_public_reference_csv",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "has_524_targeted_reference_csv",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "docx_table_count_18",
+      "status": "PASS",
+      "detail": {
+        "count": 18
+      }
+    },
+    {
+      "name": "docx_inline_figure_count_9",
+      "status": "PASS",
+      "detail": {
+        "count": 9
+      }
+    },
+    {
+      "name": "no_placeholder_AUTHOR_INPUT_REQUIRED",
+      "status": "PASS",
+      "detail": {
+        "present": false
+      }
+    },
+    {
+      "name": "no_placeholder_ARCHIVE_DOI_OR_STABLE_URL_REQUIRED",
+      "status": "PASS",
+      "detail": {
+        "present": false
+      }
+    },
+    {
+      "name": "no_placeholder_FILL_",
+      "status": "PASS",
+      "detail": {
+        "present": false
+      }
+    },
+    {
+      "name": "no_placeholder_to be completed",
+      "status": "PASS",
+      "detail": {
+        "present": false
+      }
+    },
+    {
+      "name": "new_tag_present_in_docx",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "old_tag_absent_from_docx",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "new_package_name_present_in_docx",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "all_figure_labels_mentioned_in_paragraphs",
+      "status": "PASS",
+      "detail": {
+        "Figure 1": 2,
+        "Figure 2": 2,
+        "Figure 3": 2,
+        "Figure 4": 2,
+        "Figure 5": 2,
+        "Figure 6": 2,
+        "Figure S1": 2,
+        "Figure S2": 2,
+        "Figure S3": 2
+      }
+    },
+    {
+      "name": "all_table_labels_mentioned_in_paragraphs",
+      "status": "PASS",
+      "detail": {
+        "Table 1": 2,
+        "Table 2": 2,
+        "Table 3": 2,
+        "Table 4": 2,
+        "Table 5": 2,
+        "Table 6": 3,
+        "Table 7": 2,
+        "Table 8": 3,
+        "Table 9": 2,
+        "Table 10": 2,
+        "Table 11": 2,
+        "Table 12": 2,
+        "Table 13": 2,
+        "Table 14": 2,
+        "Table 15": 2,
+        "Table 16": 2,
+        "Table 17": 2,
+        "Table 18": 2
+      }
+    },
+    {
+      "name": "table18_artifact_paths_resolve",
+      "status": "PASS",
+      "detail": {
+        "resolved_count": 15,
+        "unresolved": []
+      }
+    },
+    {
+      "name": "reference_csv_row_count_524",
+      "status": "PASS",
+      "detail": {
+        "count": 524
+      }
+    },
+    {
+      "name": "reference_csv_verified_all_true",
+      "status": "PASS",
+      "detail": {
+        "values": [
+          "true"
+        ]
+      }
+    },
+    {
+      "name": "class_counts_match_524_r12",
+      "status": "PASS",
+      "detail": {
+        "counts": {
+          "oil_palm": 86,
+          "rubber": 75,
+          "paddy": 92,
+          "other_agri": 62,
+          "forest": 126,
+          "builtup_other": 83
+        },
+        "sum": 524
+      }
+    },
+    {
+      "name": "variogram_block_distance_150850_823m",
+      "status": "PASS",
+      "detail": {
+        "value": 150850.82331783767
+      }
+    },
+    {
+      "name": "variogram_range_method_exponential_model",
+      "status": "PASS",
+      "detail": {
+        "value": "exponential_model"
+      }
+    },
+    {
+      "name": "variogram_n_samples_524",
+      "status": "PASS",
+      "detail": {
+        "value": 524
+      }
+    },
+    {
+      "name": "spatial_fold_zero_leakage_all_4_folds",
+      "status": "PASS",
+      "detail": {
+        "rows": [
+          {
+            "timestamp": "20260613T204215Z",
+            "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+            "input_files": "verified_reference_samples",
+            "random_seed": "42",
+            "status": "OK",
+            "reason": "",
+            "fold": "1",
+            "train_count": "166",
+            "test_count": "116",
+            "buffered_out_count": "242",
+            "block_distance_m": "150850.82331783767",
+            "minimum_train_test_distance_m": "150960.85698558425",
+            "zero_leakage_assertion": "True"
+          },
+          {
+            "timestamp": "20260613T204215Z",
+            "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+            "input_files": "verified_reference_samples",
+            "random_seed": "42",
+            "status": "OK",
+            "reason": "",
+            "fold": "2",
+            "train_count": "134",
+            "test_count": "359",
+            "buffered_out_count": "31",
+            "block_distance_m": "150850.82331783767",
+            "minimum_train_test_distance_m": "167411.0670495409",
+            "zero_leakage_assertion": "True"
+          },
+          {
+            "timestamp": "20260613T204215Z",
+            "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+            "input_files": "verified_reference_samples",
+            "random_seed": "42",
+            "status": "OK",
+            "reason": "",
+            "fold": "3",
+            "train_count": "324",
+            "test_count": "30",
+            "buffered_out_count": "170",
+            "block_distance_m": "150850.82331783767",
+            "minimum_train_test_distance_m": "152569.29668584236",
+            "zero_leakage_assertion": "True"
+          },
+          {
+            "timestamp": "20260613T204215Z",
+            "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+            "input_files": "verified_reference_samples",
+            "random_seed": "42",
+            "status": "OK",
+            "reason": "",
+            "fold": "4",
+            "train_count": "136",
+            "test_count": "19",
+            "buffered_out_count": "369",
+            "block_distance_m": "150850.82331783767",
+            "minimum_train_test_distance_m": "171504.04650756263",
+            "zero_leakage_assertion": "True"
+          }
+        ]
+      }
+    },
+    {
+      "name": "b3_all_spatial_performance_matches_r12",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260614T093406Z",
+        "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+        "input_files": "C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\config_targeted_user_confirmed_80_no_leakage_20260603.yaml;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\data\\reference_samples_TARGETED_USER_CONFIRMED_80_20260603.csv;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\data\\features_targeted_user_confirmed_80_20260603\\B3.csv;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\results_revision9_variogram_20260614\\variogram_choice.json",
+        "random_seed": "42",
+        "status": "OK",
+        "reason": "",
+        "stack": "B3",
+        "stack_label": "AlphaEarth+S1/S2",
+        "model": "RandomForest",
+        "evaluation_scope": "all_outer_spatial_test",
+        "folds_ok": "4",
+        "folds_skipped": "0",
+        "folds_error": "0",
+        "n_test": "524",
+        "mean_fold_oa": "0.4596948950755527",
+        "mean_fold_macro_f1": "0.3309450851013908",
+        "pooled_oa": "0.41030534351145037",
+        "pooled_macro_f1": "0.30439700564735134",
+        "min_fold_test_n": "19",
+        "max_fold_test_n": "359"
+      }
+    },
+    {
+      "name": "b3_retained_spatial_performance_matches_r12",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260614T093406Z",
+        "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+        "input_files": "C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\config_targeted_user_confirmed_80_no_leakage_20260603.yaml;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\data\\reference_samples_TARGETED_USER_CONFIRMED_80_20260603.csv;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\data\\features_targeted_user_confirmed_80_20260603\\B3.csv;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\results_revision9_variogram_20260614\\variogram_choice.json",
+        "random_seed": "42",
+        "status": "OK",
+        "reason": "",
+        "stack": "B3",
+        "stack_label": "AlphaEarth+S1/S2",
+        "model": "RandomForest",
+        "evaluation_scope": "router_retained_classes_only",
+        "folds_ok": "4",
+        "folds_skipped": "0",
+        "folds_error": "0",
+        "n_test": "174",
+        "mean_fold_oa": "0.6587944664031621",
+        "mean_fold_macro_f1": "0.506783592946678",
+        "pooled_oa": "0.6379310344827587",
+        "pooled_macro_f1": "0.5961777199142568",
+        "min_fold_test_n": "5",
+        "max_fold_test_n": "115"
+      }
+    },
+    {
+      "name": "b3_risk_controlled_auto_map_32_accuracy_matches",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260614T104713Z",
+        "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+        "input_files": "C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\config_targeted_user_confirmed_80_no_leakage_20260603.yaml;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\data\\reference_samples_TARGETED_USER_CONFIRMED_80_20260603.csv;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\results_revision9_variogram_20260614\\variogram_choice.json",
+        "random_seed": "42",
+        "status": "OK",
+        "reason": "",
+        "stack": "B3",
+        "stack_label": "AlphaEarth+S1/S2",
+        "model": "RandomForest",
+        "conformal_mode": "mondrian_class",
+        "action_policy": "risk_controlled_dual_axis",
+        "action": "AUTO_MAP_RISK_CONTROLLED",
+        "n_samples": "32",
+        "share_of_evaluable": "0.1839080459770115",
+        "accuracy": "0.9375",
+        "accuracy_wilson95_low": "0.7985287685584542",
+        "accuracy_wilson95_high": "0.982689432968359",
+        "coverage": "0.9375",
+        "mean_prediction_set_size": "0.96875",
+        "errors": "2",
+        "error_capture_rate": "0.031746031746031744"
+      }
+    },
+    {
+      "name": "b3_risk_controlled_field_refuse_142_matches",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260614T104713Z",
+        "config_hash": "16178365c79ef9e241fd490f911ab9d5fbb716fe02eb795bc71bb2380062e365",
+        "input_files": "C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\config_targeted_user_confirmed_80_no_leakage_20260603.yaml;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\data\\reference_samples_TARGETED_USER_CONFIRMED_80_20260603.csv;C:\\Users\\m1761\\Documents\\New project\\cea_revision9_working_20260614\\cea\\results_revision9_variogram_20260614\\variogram_choice.json",
+        "random_seed": "42",
+        "status": "OK",
+        "reason": "",
+        "stack": "B3",
+        "stack_label": "AlphaEarth+S1/S2",
+        "model": "RandomForest",
+        "conformal_mode": "mondrian_class",
+        "action_policy": "risk_controlled_dual_axis",
+        "action": "FIELD_VERIFY_OR_REFUSE_TO_MAP",
+        "n_samples": "142",
+        "share_of_evaluable": "0.8160919540229885",
+        "accuracy": "0.5704225352112676",
+        "accuracy_wilson95_low": "0.4882071504195159",
+        "accuracy_wilson95_high": "0.6489280658744266",
+        "coverage": "0.6619718309859155",
+        "mean_prediction_set_size": "1.1126760563380282",
+        "errors": "61",
+        "error_capture_rate": "0.9682539682539683"
+      }
+    },
+    {
+      "name": "r12_frontier_locked_1x_174",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "r12_frontier_locked_025x_217",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "r12_frontier_locked_055x_77",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "r12_frontier_3class_1x_445",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "weak_reference_worldcover_values_match",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260605T163709Z",
+        "config_hash": "1da9ab6394644ba84372fca0c86c15a0206842bd5496342f8373e21180f79e84",
+        "input_files": "C:\\Users\\m1761\\Documents\\New project\\geoai_trust_landcover_20260601\\config_targeted_user_confirmed_80_no_leakage_20260603.yaml;C:\\Users\\m1761\\Documents\\New project\\geoai_trust_landcover_20260601\\data\\reference_samples_TARGETED_USER_CONFIRMED_80_20260603.csv",
+        "random_seed": "42",
+        "status": "OK",
+        "reason": "",
+        "weak_source": "worldcover_hint",
+        "n_verified_total": "524",
+        "n_with_weak_label": "168",
+        "weak_label_coverage_share": "0.32061068702290074",
+        "n_mapable_to_study_legend": "168",
+        "n_unsupported_weak_labels": "0",
+        "exact_match_rate_when_mapable": "0.39285714285714285",
+        "n_agricultural_with_weak_label": "98",
+        "agricultural_exact_match_rate": "0.10204081632653061",
+        "agricultural_mismatch_rate": "0.8979591836734694",
+        "agricultural_collapse_mismatch_rate": "0.8979591836734694"
+      }
+    },
+    {
+      "name": "weak_reference_dynamicworld_values_match",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260605T163709Z",
+        "config_hash": "1da9ab6394644ba84372fca0c86c15a0206842bd5496342f8373e21180f79e84",
+        "input_files": "C:\\Users\\m1761\\Documents\\New project\\geoai_trust_landcover_20260601\\config_targeted_user_confirmed_80_no_leakage_20260603.yaml;C:\\Users\\m1761\\Documents\\New project\\geoai_trust_landcover_20260601\\data\\reference_samples_TARGETED_USER_CONFIRMED_80_20260603.csv",
+        "random_seed": "42",
+        "status": "OK",
+        "reason": "",
+        "weak_source": "dynamicworld_mode_hint",
+        "n_verified_total": "524",
+        "n_with_weak_label": "168",
+        "weak_label_coverage_share": "0.32061068702290074",
+        "n_mapable_to_study_legend": "166",
+        "n_unsupported_weak_labels": "2",
+        "exact_match_rate_when_mapable": "0.463855421686747",
+        "n_agricultural_with_weak_label": "96",
+        "agricultural_exact_match_rate": "0.07291666666666667",
+        "agricultural_mismatch_rate": "0.9270833333333334",
+        "agricultural_collapse_mismatch_rate": "0.9270833333333334"
+      }
+    },
+    {
+      "name": "second_reader_v1_status_corrected_to_readable_pair_only",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260619T173924Z",
+        "status": "OK_READABLE_PAIR_ONLY",
+        "reason": "Readable-pair agreement computed for 500 scorable pairs; 24 unreadable rows are preserved and excluded from readable-pair kappa. This is not field truth.",
+        "config_hash": "95c48f9297249773b71d85336017599d242dc46f6d433f40a64982f349ed6b0f",
+        "input_reference_sha256": "a988f490e2f4b0bfafc20b94ca98748ca11da9b2c7087f345aa8c51a181b0431",
+        "input_blind_labels_sha256": "6a414724411501a6ab7a9d68404fe90aea1a8a768b2a50942ea5350368148c17",
+        "random_seed": "NOT_USED",
+        "n_reference_rows": "524",
+        "n_blind_rows": "524",
+        "n_scorable_pairs": "500",
+        "n_skipped_rows": "24",
+        "n_error_rows": "0",
+        "observed_agreement": "0.606",
+        "expected_agreement": "0.181032",
+        "cohens_kappa": "0.5189067216301492"
+      }
+    },
+    {
+      "name": "second_reader_v1_numeric_values_preserved",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260619T173924Z",
+        "status": "OK_READABLE_PAIR_ONLY",
+        "reason": "Readable-pair agreement computed for 500 scorable pairs; 24 unreadable rows are preserved and excluded from readable-pair kappa. This is not field truth.",
+        "config_hash": "95c48f9297249773b71d85336017599d242dc46f6d433f40a64982f349ed6b0f",
+        "input_reference_sha256": "a988f490e2f4b0bfafc20b94ca98748ca11da9b2c7087f345aa8c51a181b0431",
+        "input_blind_labels_sha256": "6a414724411501a6ab7a9d68404fe90aea1a8a768b2a50942ea5350368148c17",
+        "random_seed": "NOT_USED",
+        "n_reference_rows": "524",
+        "n_blind_rows": "524",
+        "n_scorable_pairs": "500",
+        "n_skipped_rows": "24",
+        "n_error_rows": "0",
+        "observed_agreement": "0.606",
+        "expected_agreement": "0.181032",
+        "cohens_kappa": "0.5189067216301492"
+      }
+    },
+    {
+      "name": "second_reader_v2_audit_summary_present",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "second_reader_v2_sensitivity_values_present",
+      "status": "PASS",
+      "detail": {
+        "timestamp": "20260619T183657Z",
+        "status": "OK",
+        "reason": "",
+        "config_hash": "a281047035aaf59e038f0f39fd72463178145ab38b15063fdf4d032f38582fcc",
+        "random_seed": "NOT_USED",
+        "row_count": "524",
+        "n_scorable": "500",
+        "n_unreadable": "24",
+        "n_agree": "300",
+        "n_disagree": "200",
+        "observed_agreement": "0.6",
+        "expected_agreement": "0.181264",
+        "cohens_kappa": "0.5114420277110082",
+        "changed_row_count_vs_previous_completed": "14"
+      }
+    }
+  ],
+  "pass_count": 38,
+  "warn_count": 0,
+  "fail_count": 0,
+  "table18_resolved": [
+    {
+      "role": "Indicator variogram and leakage audit",
+      "query": "results_revision9_variogram_20260614/variogram_choice.json",
+      "matches": [
+        "results_revision9_variogram_20260614/variogram_choice.json"
+      ],
+      "match_count": 1
+    },
+    {
+      "role": "Indicator variogram and leakage audit",
+      "query": "spatial_fold_leakage_audit.csv",
+      "matches": [
+        "results_revision9_variogram_20260614/spatial_fold_leakage_audit.csv"
+      ],
+      "match_count": 1
+    },
+    {
+      "role": "Class-conditional spatial cross-fitted risk router",
+      "query": "results_revision10_mondrian_router_standard_20260614/table_r10_*",
+      "matches": [
+        "results_revision10_mondrian_router_standard_20260614/table_r10_class_support_gaps.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_fold_design_audit.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_fold_metrics.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_fold_parameters.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_plain_spatial_predictions.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_risk_coverage_curve.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_router_summary.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_sample_decisions.csv",
+        "results_revision10_mondrian_router_standard_20260614/table_r10_spatial_crossfit_performance.csv"
+      ],
+      "match_count": 9
+    },
+    {
+      "role": "Denominator, budget, blind-audit, and second-reader agreement",
+      "query": "results_revision10_crossfit_supporting_audits_*/table_r10_*",
+      "matches": [
+        "results_revision10_crossfit_supporting_audits_20260614/table_r10_blind_audit_alignment.csv",
+        "results_revision10_crossfit_supporting_audits_20260614/table_r10_denominator_accounting.csv",
+        "results_revision10_crossfit_supporting_audits_20260614/table_r10_field_audit_budget_summary.csv",
+        "results_revision10_crossfit_supporting_audits_20260614/table_r10_field_audit_selected_samples.csv",
+        "results_revision10_crossfit_supporting_audits_20260614/table_r10_public_evidence_decision_input.csv"
+      ],
+      "match_count": 5
+    },
+    {
+      "role": "Denominator, budget, blind-audit, and second-reader agreement",
+      "query": "second_reader_evidence_20260620/*",
+      "matches": [
+        "second_reader_evidence_20260620/primary_v1_kappa",
+        "second_reader_evidence_20260620/rubber_rescreen_v2"
+      ],
+      "match_count": 2
+    },
+    {
+      "role": "Open public-evidence audit",
+      "query": "results_revision10_open_public_evidence_audit_20260614/table_*",
+      "matches": [
+        "results_revision10_open_public_evidence_audit_20260614/table_open_evidence_blind_annotator_form_TO_FILL.csv",
+        "results_revision10_open_public_evidence_audit_20260614/table_open_evidence_overall_metrics.csv",
+        "results_revision10_open_public_evidence_audit_20260614/table_open_evidence_sample_links.csv",
+        "results_revision10_open_public_evidence_audit_20260614/table_open_ground_view_api_status_by_sample.csv",
+        "results_revision10_open_public_evidence_audit_20260614/table_public_evidence_query_log.csv",
+        "results_revision10_open_public_evidence_audit_20260614/table_public_ground_view_availability_by_trust_action.csv",
+        "results_revision10_open_public_evidence_audit_20260614/table_public_ground_view_evidence_records.csv"
+      ],
+      "match_count": 7
+    },
+    {
+      "role": "Optimized-fold sensitivity",
+      "query": "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_*",
+      "matches": [
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_class_support_gaps.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_fold_design_audit.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_fold_metrics.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_fold_parameters.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_plain_spatial_predictions.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_risk_coverage_curve.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_router_summary.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_sample_decisions.csv",
+        "results_revision10_spatial_crossfit_router_optimized_20260614/table_r10_spatial_crossfit_performance.csv"
+      ],
+      "match_count": 9
+    },
+    {
+      "role": "Marginal conformal undercoverage diagnostic",
+      "query": "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_*",
+      "matches": [
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_class_support_gaps.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_fold_design_audit.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_fold_metrics.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_fold_parameters.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_plain_spatial_predictions.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_risk_coverage_curve.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_router_summary.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_sample_decisions.csv",
+        "results_revision10_spatial_crossfit_router_standard_20260614/table_r10_spatial_crossfit_performance.csv"
+      ],
+      "match_count": 9
+    },
+    {
+      "role": "AoA single-split diagnostic retained only for feature-space comparison",
+      "query": "results_revision9_aoa_conformal_20260614/table28-33",
+      "matches": [
+        "results_revision9_aoa_conformal_20260614/table28_aoa_parameters.csv",
+        "results_revision9_aoa_conformal_20260614/table29_aoa_sample_decisions.csv",
+        "results_revision9_aoa_conformal_20260614/table30_singleton_aoa_error_enrichment.csv",
+        "results_revision9_aoa_conformal_20260614/table31_dual_axis_routing_summary.csv",
+        "results_revision9_aoa_conformal_20260614/table32_dual_axis_budget_summary.csv",
+        "results_revision9_aoa_conformal_20260614/table33_aoa_conformal_axis_agreement.csv"
+      ],
+      "match_count": 6
+    },
+    {
+      "role": "Weak-reference audit",
+      "query": "results_weak_reference_contamination_20260606/table24-25",
+      "matches": [
+        "results_weak_reference_contamination_20260606/table24_weak_reference_agreement.csv",
+        "results_weak_reference_contamination_20260606/table25_weak_reference_confusion.csv"
+      ],
+      "match_count": 2
+    },
+    {
+      "role": "Spatial sensitivity",
+      "query": "results_revision9_spatial_sensitivity_20260614/table13_spatial_cv_sensitivity_summary.csv",
+      "matches": [
+        "results_revision9_spatial_sensitivity_20260614/table13_spatial_cv_sensitivity_summary.csv"
+      ],
+      "match_count": 1
+    },
+    {
+      "role": "Class-support repair audit",
+      "query": "results_revision11_class_support_repair_20260614/table_r11_*",
+      "matches": [
+        "results_revision11_class_support_repair_20260614/table_r11_b3_class_support_repair_summary.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_fold_class_support_feasibility.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_random_cv_per_class_diagnostic.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_random_cv_prediction_diagnostic.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_random_cv_summary_diagnostic.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_raw_spatial_forced_label_per_class_metrics.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_support_accounting_by_class.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_support_aware_per_class_metrics.csv",
+        "results_revision11_class_support_repair_20260614/table_r11_b3_support_aware_sample_decisions.csv"
+      ],
+      "match_count": 9
+    },
+    {
+      "role": "Class-support repair audit",
+      "query": "figures_revision11_class_support_repair_20260614/figure_r11_b3_supported_vs_unsupported_by_class.png",
+      "matches": [
+        "figures_revision11_class_support_repair_20260614/figure_r11_b3_supported_vs_unsupported_by_class.png"
+      ],
+      "match_count": 1
+    },
+    {
+      "role": "Support-density sensitivity and sampling shortfall",
+      "query": "results_revision12_support_density_sensitivity_20260614/table_r12_*",
+      "matches": [
+        "results_revision12_support_density_sensitivity_20260614/table_r12_block_support_density_by_class.csv",
+        "results_revision12_support_density_sensitivity_20260614/table_r12_block_support_density_by_fold_class.csv",
+        "results_revision12_support_density_sensitivity_20260614/table_r12_block_support_fold_audit.csv",
+        "results_revision12_support_density_sensitivity_20260614/table_r12_legend_block_support_frontier.csv",
+        "results_revision12_support_density_sensitivity_20260614/table_r12_targeted_sampling_shortfall_by_class.csv",
+        "results_revision12_support_density_sensitivity_20260614/table_r12_targeted_sampling_shortfall_by_fold.csv"
+      ],
+      "match_count": 6
+    },
+    {
+      "role": "Support-density sensitivity and sampling shortfall",
+      "query": "figures_revision12_support_density_sensitivity_20260614/figure_r12_support_density_frontier.png",
+      "matches": [
+        "figures_revision12_support_density_sensitivity_20260614/figure_r12_support_density_frontier.png"
+      ],
+      "match_count": 1
+    }
+  ],
+  "figure_mentions": {
+    "Figure 1": 2,
+    "Figure 2": 2,
+    "Figure 3": 2,
+    "Figure 4": 2,
+    "Figure 5": 2,
+    "Figure 6": 2,
+    "Figure S1": 2,
+    "Figure S2": 2,
+    "Figure S3": 2
+  },
+  "table_mentions": {
+    "Table 1": 2,
+    "Table 2": 2,
+    "Table 3": 2,
+    "Table 4": 2,
+    "Table 5": 2,
+    "Table 6": 3,
+    "Table 7": 2,
+    "Table 8": 3,
+    "Table 9": 2,
+    "Table 10": 2,
+    "Table 11": 2,
+    "Table 12": 2,
+    "Table 13": 2,
+    "Table 14": 2,
+    "Table 15": 2,
+    "Table 16": 2,
+    "Table 17": 2,
+    "Table 18": 2
+  }
+}

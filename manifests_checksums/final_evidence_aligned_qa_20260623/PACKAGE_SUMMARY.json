@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-06-23T15:54:15Z",
+  "package_name": "CEA_R12_FINAL_EVIDENCE_ALIGNED_QA_PACKAGE_20260623",
+  "planned_github_tag": "cea-r12-final-evidence-aligned-qa-20260623",
+  "planned_github_tree_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/tree/cea-r12-final-evidence-aligned-qa-20260623",
+  "planned_github_archive_url": "https://github.com/wenzhedai57-coder/spatial-validation-geoai-smallholder-mapping/archive/refs/tags/cea-r12-final-evidence-aligned-qa-20260623.zip",
+  "manifest_payload_file_count": 263,
+  "stage_file_count_including_root_metadata": 266,
+  "qa_pass_count": 38,
+  "qa_warn_count": 0,
+  "qa_fail_count": 0,
+  "render_pdf_pages": 30,
+  "render_page_png_count": 30,
+  "render_blank_like_pages": [],
+  "active_manuscript_docx": "manuscript/CEA_trust_router_R12_CEA_FORMATTED_20260623_final_evidence_aligned.docx",
+  "evidence_alignment": {
+    "reference_sample_count": 524,
+    "excluded_from_manuscript_evidence": [
+      "active_q25_rerun",
+      "data/reference_samples_verified_622_public.csv"
+    ],
+    "included_evidence_roots": [
+      "results_revision9_variogram_20260614",
+      "results_revision10_mondrian_router_standard_20260614",
+      "results_revision10_spatial_crossfit_router_standard_20260614",
+      "results_revision11_class_support_repair_20260614",
+      "results_revision12_support_density_sensitivity_20260614",
+      "results_weak_reference_contamination_20260606",
+      "second_reader_evidence_20260620"
+    ]
+  },
+  "second_reader_v1_status_policy": "OK_READABLE_PAIR_ONLY; numeric values preserved; 24 unreadable rows remain explicit"
+}

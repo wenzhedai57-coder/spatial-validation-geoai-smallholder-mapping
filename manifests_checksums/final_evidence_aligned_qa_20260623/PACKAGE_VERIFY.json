@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-06-23T15:54:15Z",
+  "package_name": "CEA_R12_FINAL_EVIDENCE_ALIGNED_QA_PACKAGE_20260623",
+  "manifest_sha256": "5b0f8c4d1df60f94399ea17243b9fd54d13fa092241fd2deeeb83f1845b8cbcb",
+  "summary_sha256": "80248aafe4f5e94caf3cc24b3938951365f6a3202826858950060d201ac5d909",
+  "manifest_payload_file_count": 263,
+  "stage_file_count_including_root_metadata": 266,
+  "qa_status": "PASS",
+  "zip_hash_note": "Overall ZIP SHA256 is written to the external .sha256.txt and ZIP_VERIFY.json sidecars after ZIP creation to avoid circular hashing."
+}

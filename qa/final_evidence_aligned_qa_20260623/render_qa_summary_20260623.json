@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-06-23T15:53:37Z",
+  "render_engine": "LibreOffice soffice headless + Poppler pdftoppm",
+  "docx": "manuscript/CEA_trust_router_R12_CEA_FORMATTED_20260623_final_evidence_aligned.docx",
+  "pdf": "qa/final_evidence_aligned_qa_20260623/rendered_docx/CEA_trust_router_R12_CEA_FORMATTED_20260623_final_evidence_aligned.pdf",
+  "pdf_exists": true,
+  "pdf_bytes": 1608711,
+  "page_png_count": 30,
+  "pdf_page_count_from_pdfinfo": 30,
+  "blank_like_pages": [],
+  "min_nonwhite_ratio": 0.038176536607909206,
+  "max_nonwhite_ratio": 0.19147553971083386,
+  "manual_contact_sheet_review": "PASS: contact sheet inspected; no blank render, gross overlap, or missing-figure failure observed. Large evidence-index table remains page-contained."
+}

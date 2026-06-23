@@ -1,45 +1,42 @@
-﻿# Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping
+# CEA R12 Evidence-Aligned Archive
 
-This repository is a public reproducibility package for the evidence, code, figures, and provenance supporting the manuscript "Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping".
+This repository contains the public release materials for the CEA R12 manuscript package:
 
-## Repository status
+**Spatially honest trust routing for smallholder land-cover mapping under scarce verified labels**.
 
-This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. The manuscript Data Availability statement should cite the stable commit URL for the release used at submission. A GitHub release or Zenodo DOI can still be added later, but is not required for stable commit-URL wording.
+## Current Release
 
-## Main evidence line
+The valid evidence-aligned release for this manuscript is:
 
-The active evidence line is the fold-3 teacher-VHR q25 rerun:
+- package: `submission_packages/CEA_R12_FINAL_EVIDENCE_ALIGNED_QA_PACKAGE_20260623.zip`
+- SHA256: `c34eca318fa94a545903d21e51dabbd9c428aa0ba85bcf77a6d3811951ea7cd0`
+- active manuscript: `manuscript/CEA_trust_router_R12_CEA_FORMATTED_20260623_final_evidence_aligned.docx`
+- QA: `qa/final_evidence_aligned_qa_20260623/`
+- manifest and package checks: `manifests_checksums/final_evidence_aligned_qa_20260623/`
 
-- hash-preserved original run configuration: `config/config_fold3_teacher_vhr_repair_20260613.yaml`
-- public path reproduction configuration: `config/config_public_reproduction_20260615.yaml`
-- verified reference table: `data/reference_samples_verified_622_public.csv`
-- reference provenance: `results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.*`; older reference-cleaning history is in `docs/provenance/legacy_reference_cleaning/`
-- feature stacks: `data/features_fold3_teacher_vhr_repair_20260613/`
-- active result tables and audits: `results/active_q25_rerun/`
-- spatial-sensitivity support artifacts: `results/spatial_sensitivity/`
-- review-planning support artifacts: `results/review_planning/`
-- point-level public Sentinel-2 imagery-date audit: `results/point_imagery_dates/`
-- variogram/block-distance evidence: `results/variogram/`
-- generated variogram figure: `figures/variogram/variogram_indicator_ranges.png`
-- manuscript figures: `figures/manuscript/`
-- package checksums and verification files: `manifests_checksums/`
+This package is anchored to the manuscript evidence index and the 524-sample CEA R12 evidence chain. It includes the manuscript, manuscript figures, result CSV/JSON evidence, second-reader evidence, final QA logs, manifest, package summary, package verification, and SHA256 sidecars.
 
-## Evidence boundaries
+## Evidence Boundary
 
-Final metric labels come only from rows with `verified == True` in `data/reference_samples_verified_622_public.csv`. ESA WorldCover, Google Dynamic World, GlobalOilPalm, and Forest Data Partnership probabilities are weak screening or contextual sources only; they are not ground truth.
+For the CEA R12 manuscript, use the evidence inside the current release ZIP. In particular, the manuscript evidence chain is based on:
 
-The reference labels are image/VHR-reviewed. The completed second-reader VHR adjudication QA workpack is a submission supplementary reproducibility artifact, not part of this public GitHub release. The primary manuscript metrics were computed on the locked 622-row reference table and must be rerun before using the adjudicated subset as a replacement metric base. No design weights or sampling probabilities are available for design-unbiased map accuracy. Reported OA and macro-F1 values should therefore be interpreted as sample-based validation diagnostics.
+- `data/reference_samples_TARGETED_USER_CONFIRMED_80_20260603.csv`
+- `results_revision9_variogram_20260614/`
+- `results_revision10_mondrian_router_standard_20260614/`
+- `results_revision10_spatial_crossfit_router_standard_20260614/`
+- `results_revision11_class_support_repair_20260614/`
+- `results_revision12_support_density_sensitivity_20260614/`
+- `results_weak_reference_contamination_20260606/`
+- `second_reader_evidence_20260620/`
 
-Targeted-validation candidate queues are not included as main data. They are review-planning/provenance artifacts only and must not be used as ground truth.
+Do not use the repository-level 622-sample `active_q25_rerun` files as evidence for this CEA R12 manuscript. They are retained only as legacy repository contents from an earlier public staging line and are not the active evidence base for the 2026-06-23 CEA R12 archive.
 
-## Reproducing the analysis
+## QA Status
 
-The main pipeline and supporting scripts are in `scripts/`. The active configuration is in `config/`. The original run logs, configuration hashes, input file names, random seed, and library/version records are preserved in `results/active_q25_rerun/`.
+The final evidence-alignment QA passed with 38 checks, 0 warnings, and 0 failures. The DOCX rendered to a 30-page PDF; all 30 page PNGs were generated, and no blank-like pages were detected.
 
-The generated figures in this staging repository are already present. The variogram figure was generated from the packaged variogram CSV/JSON outputs and does not change any result value.
+The second-reader V1 kappa status is interpreted as `OK_READABLE_PAIR_ONLY` in the rebuilt package. Numeric values are preserved from the source evidence: 500 scorable pairs, 24 unreadable rows, and Cohen's kappa 0.5189067216301492. This supports readable-pair remote visual agreement only; it is not field truth.
 
-Point-level public imagery-date coverage is documented in `results/point_imagery_dates/`. This is a Sentinel-2 metadata audit for the 2024 analysis year, not an exact VHR basemap acquisition-date record.
+## Data Availability Note
 
-## Remaining author-side checks
-
-Unknown ORCID values for Wang Cao and Xuehui Hou are intentionally omitted rather than guessed. Final manuscript render QA and any future GitHub release or Zenodo DOI remain author-side options.
+No DOI has been minted for this package. The stable public archive is the GitHub tag for this release. A DOI-bearing OSF, Zenodo, or figshare archive can be added later without changing the experimental results.

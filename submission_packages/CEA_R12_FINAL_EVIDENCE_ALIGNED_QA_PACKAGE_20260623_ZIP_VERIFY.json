@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-06-23T15:54:38Z",
+  "zip_path": "C:\\Users\\m1761\\Desktop\\cea23\\CEA_R12_FINAL_EVIDENCE_ALIGNED_QA_PACKAGE_20260623.zip",
+  "zip_sha256": "c34eca318fa94a545903d21e51dabbd9c428aa0ba85bcf77a6d3811951ea7cd0",
+  "zip_bytes": 17880396,
+  "zip_entry_count": 266,
+  "zip_testzip_bad_entry": null,
+  "root_entry_prefix": "CEA_R12_FINAL_EVIDENCE_ALIGNED_QA_PACKAGE_20260623/",
+  "sidecar": "C:\\Users\\m1761\\Desktop\\cea23\\CEA_R12_FINAL_EVIDENCE_ALIGNED_QA_PACKAGE_20260623.zip.sha256.txt",
+  "manifest_sha256_inside_package": "5b0f8c4d1df60f94399ea17243b9fd54d13fa092241fd2deeeb83f1845b8cbcb",
+  "package_verify_sha256_inside_package": "01f056a58b71acb80c70cc0e70d90a16c0a2991ba1f95d7d9c92528bc5bfe138"
+}
