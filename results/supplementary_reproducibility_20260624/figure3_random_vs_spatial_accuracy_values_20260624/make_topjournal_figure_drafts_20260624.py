@@ -1344,7 +1344,7 @@ def main() -> int:
             "Figure_7": "Strict q25 spatial validation exposes class- and fold-specific failures rather than a uniform accuracy drop.",
             "Figure_8": "Trust routing converts disagreement, conformal set size, rubber-transfer risk, and q25 distance support into review/calibration burden.",
             "Figure_12": "Leave-region-out transfer varies with feature-space distance, geographic isolation, and dominant-class imbalance.",
-            "Figure_13": "Oblique shaded-relief diagnostic maps show where random-CV disagreement, strict-spatial error, and trust-routing burden concentrate in occupied cells, without implying wall-to-wall map accuracy.",
+            "Figure_13": "Planar validation-risk diagnostic maps show where random-CV disagreement, strict-spatial error, and trust-routing burden concentrate in occupied cells, without implying wall-to-wall map accuracy.",
         },
         "outputs": outputs,
         "derived_tables": {
