@@ -1,6 +1,6 @@
 {
   "status": "OK",
-  "timestamp_utc": "2026-06-24T11:59:51Z",
+  "timestamp_utc": "2026-06-24T12:19:01Z",
   "payload_file_count_excluding_generated_manifest_files": 312,
   "generated_manifest_files": [
     "manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_20260624.txt",
@@ -9,7 +9,7 @@
   ],
   "expected_git_tracked_file_count_after_manifest_generation": 315,
   "git_tracked_file_count": 315,
-  "total_payload_bytes_excluding_generated_manifest_files": 47860878,
+  "total_payload_bytes_excluding_generated_manifest_files": 47860914,
   "required_root_entries": {
     "README.md": true,
     "LICENSE": true,

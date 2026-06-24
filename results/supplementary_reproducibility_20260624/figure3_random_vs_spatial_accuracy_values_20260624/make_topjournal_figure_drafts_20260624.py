@@ -1064,7 +1064,7 @@ def figure13_3d_validation_risk(disagree: pd.DataFrame, trust: pd.DataFrame) -> 
         fontsize=6.4,
         color="#333333",
     )
-    return savefig(fig, "draft_Figure_13_3D_validation_risk_map"), str(grid_path)
+    return savefig(fig, "draft_Figure_13_planar_validation_risk_map"), str(grid_path)
 
 
 def project_oblique(points, extent, shear=0.56, yscale=0.24):
@@ -1287,7 +1287,7 @@ def figure13_perspective_validation_map(disagree: pd.DataFrame, trust: pd.DataFr
         fontsize=5.7,
         color="#333333",
     )
-    return savefig(fig, "draft_Figure_13_3D_validation_risk_map"), str(grid_path)
+    return savefig(fig, "draft_Figure_13_planar_validation_risk_map"), str(grid_path)
 
 
 def main() -> int:
