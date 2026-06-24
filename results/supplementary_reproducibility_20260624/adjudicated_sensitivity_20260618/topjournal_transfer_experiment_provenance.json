@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "20260618T154403Z",
+  "config": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\config\\config_adjudicated_sensitivity_20260618.yaml",
+  "config_hash": "2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1",
+  "reference_rows": 525,
+  "regions": [
+    "advisor_vhr_cell_39_1",
+    "advisor_vhr_cell_39_2",
+    "advisor_vhr_cell_40_2",
+    "fold3_teacher_vhr_cell_88_2",
+    "fold3_teacher_vhr_cell_88_3",
+    "fold3_teacher_vhr_cell_88_4",
+    "johor_negeri_pahang_rubber_belt",
+    "kedah_perlis_paddy_belt",
+    "study_area"
+  ],
+  "outputs": [
+    "table10_leave_region_out_transfer.csv",
+    "table10_leave_region_out_transfer_per_class.csv",
+    "table11_region_transfer_conformal.csv",
+    "table12_region_transfer_morans_i.csv",
+    "transfer_missing_value_policy_audit.csv"
+  ],
+  "note": "Leave-region-out transfer uses fixed configured models and no per-region tuning."
+}

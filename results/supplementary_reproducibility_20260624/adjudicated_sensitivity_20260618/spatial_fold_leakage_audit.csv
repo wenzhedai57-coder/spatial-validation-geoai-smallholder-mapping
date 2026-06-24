@@ -1,0 +1,5 @@
+timestamp,config_hash,input_files,random_seed,status,reason,fold,train_count,test_count,buffered_out_count,block_distance_m,minimum_train_test_distance_m,zero_leakage_assertion,available_spatial_blocks,required_spatial_blocks
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,verified_reference_samples,42,SKIPPED,Empty train or test partition after spatial buffering.,1,0,299,210,158475.67167120945,inf,True,17,4
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,verified_reference_samples,42,OK,,2,187,15,307,158475.67167120945,158816.90308141639,True,17,4
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,verified_reference_samples,42,OK,,3,15,179,315,158475.67167120945,160938.72207022156,True,17,4
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,verified_reference_samples,42,OK,,4,160,16,333,158475.67167120945,159314.24618233828,True,17,4

@@ -1,0 +1,131 @@
+{
+  "status": "OK",
+  "timestamp_utc": "2026-06-24T11:59:51Z",
+  "payload_file_count_excluding_generated_manifest_files": 312,
+  "generated_manifest_files": [
+    "manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_20260624.txt",
+    "manifests_checksums/PUBLIC_REPO_MANIFEST_20260624.csv",
+    "manifests_checksums/PUBLIC_REPO_VERIFICATION_20260624.json"
+  ],
+  "expected_git_tracked_file_count_after_manifest_generation": 315,
+  "git_tracked_file_count": 315,
+  "total_payload_bytes_excluding_generated_manifest_files": 47860878,
+  "required_root_entries": {
+    "README.md": true,
+    "LICENSE": true,
+    "CITATION.cff": true,
+    "config": true,
+    "scripts": true,
+    "data": true,
+    "results": true,
+    "figures": true,
+    "manifests_checksums": true,
+    "docs": true
+  },
+  "checks": {
+    "active_reference_rows": 622,
+    "active_reference_all_verified": true,
+    "feature_stack_count": 4,
+    "manuscript_png_count": 13,
+    "manuscript_pdf_count": 13,
+    "variogram_png_exists": true,
+    "variogram_pdf_exists": true,
+    "spatial_sensitivity_table13_exists": true,
+    "review_planning_summary_exists": true,
+    "point_level_public_sentinel2_imagery_date_audit_exists": true,
+    "full_targeted_review_queues_excluded": true,
+    "no_file_over_100mb": true
+  },
+  "marker_scan_excluding_manifests": {
+    "unresolved_author_placeholders": {
+      "file_count": 0,
+      "occurrences": 0,
+      "sample_files": []
+    },
+    "legacy_template_placeholders": {
+      "file_count": 0,
+      "occurrences": 0,
+      "sample_files": []
+    },
+    "expected_result_status_terms": {
+      "file_count": 28,
+      "occurrences": 184,
+      "sample_files": [
+        "results/active_q25_rerun/RUN_LOG_20260612T172442Z.txt",
+        "results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.csv",
+        "results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.json",
+        "results/active_q25_rerun/fold3_teacher_vhr_rerun_QA_summary_20260613.json",
+        "results/active_q25_rerun/table12_region_transfer_morans_i.csv",
+        "results/evidence_summary/fold3_teacher_vhr_q25_block_distance_rule_selection_audit_20260613.md",
+        "results/evidence_summary/targeted_user_confirmed_80_result_summary.json",
+        "results/second_round_evidence/sample_design_audit_20260613.csv",
+        "results/second_round_evidence/temporal_alignment_audit_20260613.csv",
+        "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/ADJUDICATED_SENSITIVITY_MANUSCRIPT_SUMMARY_20260618.md"
+      ]
+    },
+    "review_queue_boundary_terms": {
+      "file_count": 2,
+      "occurrences": 11,
+      "sample_files": [
+        "results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.csv",
+        "results/review_planning/targeted_validation_candidate_summary_review_planning_20260613.csv"
+      ]
+    }
+  },
+  "local_absolute_path_hits": [
+    "config/config_fold3_teacher_vhr_repair_20260613.yaml",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/ADJUDICATED_SENSITIVITY_MANUSCRIPT_SUMMARY_20260618.md",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/adjudicated_reference_build_status.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/class_counts_verified.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/class_merge_drop_conformal_log.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/class_merge_drop_log.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/feature_missing_value_policy_audit.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/gee_asset_verification.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/per_class_metrics.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/predictions_by_fold.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/reference_sample_audit.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/run_status.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/study_area_audit.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table10_leave_region_out_transfer.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table10_leave_region_out_transfer_per_class.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table11_region_transfer_conformal.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table12_region_transfer_morans_i.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table3_accuracy_by_stack_split.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table6_ece.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table7_conformal.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table8_morans_i.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/table9_landscape_regression.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/transfer_missing_value_policy_audit.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/variogram_bins.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/variogram_indicator_bins_20260618.csv",
+    "results/supplementary_reproducibility_20260624/adjudicated_sensitivity_20260618/variogram_indicator_ranges_20260618.csv",
+    "results/supplementary_reproducibility_20260624/figure13_planar_validation_risk_20260624/make_topjournal_figure_drafts_20260624.py",
+    "results/supplementary_reproducibility_20260624/figure3_random_vs_spatial_accuracy_values_20260624/figure3_random_vs_spatial_accuracy_values_20260624.csv",
+    "results/supplementary_reproducibility_20260624/figure3_random_vs_spatial_accuracy_values_20260624/make_topjournal_figure_drafts_20260624.py",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_conformal_class_policy_20260619.csv",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_conformal_per_class_20260619.csv",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_conformal_point_sets_20260619.csv",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_conformal_split_audit_20260619.csv",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_conformal_summary_20260619.csv",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_conformal_thresholds_20260619.csv",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_feature_missing_value_policy_audit_20260619.csv",
+    "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_vs_global_conformal_comparison_20260619.csv",
+    "results/supplementary_reproducibility_20260624/q25_nndm_style_distance_audit_20260619/Q25_NNDM_STYLE_DISTANCE_AUDIT_20260619.md",
+    "results/supplementary_reproducibility_20260624/q25_nndm_style_distance_audit_20260619/config_fold3_teacher_vhr_repair_20260613.yaml",
+    "results/supplementary_reproducibility_20260624/q25_nndm_style_distance_audit_20260619/q25_nndm_style_class_policy_20260619.csv",
+    "results/supplementary_reproducibility_20260624/q25_nndm_style_distance_audit_20260619/q25_nndm_style_fold_distance_audit_20260619.csv",
+    "results/supplementary_reproducibility_20260624/q25_nndm_style_distance_audit_20260619/q25_nndm_style_point_distance_audit_20260619.csv",
+    "results/supplementary_reproducibility_20260624/q25_nndm_style_distance_audit_20260619/q25_nndm_style_summary_20260619.csv",
+    "results/supplementary_reproducibility_20260624/trust_routing_diagnostics_20260624/trust_routing_error_capture_20260624.csv",
+    "results/supplementary_reproducibility_20260624/trust_routing_diagnostics_20260624/trust_routing_point_assignments_20260624.csv",
+    "results/supplementary_reproducibility_20260624/trust_routing_diagnostics_20260624/trust_routing_route_summary_20260624.csv",
+    "results/supplementary_reproducibility_20260624/trust_routing_diagnostics_20260624/trust_routing_split_summary_20260624.csv"
+  ],
+  "large_files": [],
+  "full_targeted_review_queue_files": [],
+  "notes": [
+    "The hash-preserved original run configuration may contain original local provenance strings; use config_public_reproduction_20260615.yaml for repository-relative reruns.",
+    "Expected result status terms are retained where they are genuine audit outcomes.",
+    "Review-planning summaries are retained outside data/ and are not ground truth."
+  ]
+}

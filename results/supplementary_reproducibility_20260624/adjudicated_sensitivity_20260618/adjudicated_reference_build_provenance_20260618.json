@@ -1,0 +1,31 @@
+{
+  "adjudicated_included": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\second_reader_vhr_adjudication\\reference_samples_second_reader_adjudicated_INCLUDED_20260617.csv",
+  "adjudicated_included_sha256": "7eee1183664b178c50788b48e65e924cc45ef0b14967a2f1cee893c08f98d935",
+  "class_counts": {
+    "builtup_other": 121,
+    "forest": 150,
+    "oil_palm": 105,
+    "other_agri": 62,
+    "paddy": 71,
+    "rubber": 16
+  },
+  "class_map": {
+    "builtup_other": 6,
+    "forest": 5,
+    "oil_palm": 1,
+    "other_agri": 4,
+    "paddy": 3,
+    "rubber": 2
+  },
+  "input_adjudicated_rows": 525,
+  "input_locked_rows": 622,
+  "locked_reference": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples_verified_622_public.csv",
+  "locked_reference_sha256": "d7dd76401018b1f3366ecd1880638f59a84046046c35babce85878dbb875a0df",
+  "note": "Converted existing two-reader adjudicated INCLUDED labels only; no labels were inferred or fabricated.",
+  "output_reference": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples.csv",
+  "output_reference_sha256": "d2d7a47ab4c218112190a51cd60676f09c85982c7084de57758b05e52d6830ff",
+  "output_verified_rows": 525,
+  "script": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\scripts\\pipeline\\build_adjudicated_reference_sensitivity_20260618.py",
+  "skipped_rows": 0,
+  "timestamp": "20260618T153422Z"
+}

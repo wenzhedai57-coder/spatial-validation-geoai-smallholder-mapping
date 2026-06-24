@@ -1,0 +1,50 @@
+protocol_status: PROSPECTIVE_ONLY_NO_CURRENT_METRICS
+created_at: "2026-06-19T01:45:01+08:00"
+purpose: "Future probability-sampled validation extension for design-based map-accuracy assessment."
+status_note: >
+  This addendum defines a prospective probability-validation extension only.
+  No probability sample has been drawn for the current manuscript, and these
+  fields are not used in any reported metric, table, or figure.
+
+sampling_frame:
+  prediction_domain: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+  frame_file: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+  frame_version: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+  coordinate_reference_system: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+  strata:
+    primary_strata: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+    secondary_strata: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+    low_support_priority_classes:
+      - rubber
+      - other_agri
+      - builtup_other
+
+probability_design:
+  design_type: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+  selection_seed: TO_BE_DEFINED_BEFORE_FUTURE_PROBABILITY_SAMPLE
+  inclusion_probability_field: inclusion_probability
+  design_weight_field: design_weight
+  area_adjusted_accuracy_enabled: false
+  reason_area_adjusted_accuracy_disabled: "No future probability sample has been drawn yet."
+
+label_adjudication:
+  reader1: TO_BE_ASSIGNED_BEFORE_FUTURE_INDEPENDENT_ADJUDICATION
+  reader2: TO_BE_ASSIGNED_BEFORE_FUTURE_INDEPENDENT_ADJUDICATION
+  third_reader: TO_BE_ASSIGNED_BEFORE_FUTURE_INDEPENDENT_ADJUDICATION
+  third_reader_required_when:
+    - reader_disagreement
+    - low_confidence
+    - rubber_or_confusable_tree_crop
+    - field_or_vhr_conflict
+
+field_or_vhr_anchor:
+  random_subset_rule: TO_BE_DEFINED_BEFORE_FUTURE_FIELD_OR_VHR_ANCHORING
+  acceptable_vhr_sources: TO_BE_DEFINED_BEFORE_FUTURE_FIELD_OR_VHR_ANCHORING
+  feature_year: 2024
+  temporal_alignment_rule: TO_BE_DEFINED_BEFORE_FUTURE_FIELD_OR_VHR_ANCHORING
+
+metric_gate:
+  min_class_count: 30
+  verified_only: true
+  weak_products_ground_truth_allowed: false
+  missing_or_unverified_rows_enter_metrics: false

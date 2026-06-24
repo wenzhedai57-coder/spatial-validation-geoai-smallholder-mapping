@@ -1,0 +1,2 @@
+timestamp,config_hash,input_files,random_seed,status,reason,method,scope,policy,stack,model,class_code,class_name,sample_count
+20260618T163557Z,d3a51614aff30e8a8fb911715c1237164a2c427fdc17169e8c62170c04ff20b7,C:\Users\m1761\Documents\New project\IJRS_ADJUDICATED_SENSITIVITY_20260618\data\reference_samples_verified_622_public.csv,42,OK,No calibration class below min_class_count in retained Mondrian conformal runs.,mondrian_class_conditional,all_mondrian_conformal_splits,drop,,,,,

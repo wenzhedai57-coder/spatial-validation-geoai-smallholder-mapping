@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-24T18:58:30",
+  "status": "OK",
+  "figure": "Figure_3_random_vs_spatial_accuracy",
+  "source_table": {
+    "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\active_q25_rerun\\table3_accuracy_by_stack_split.csv",
+    "sha256": "824ddc9273f1171529f8c888b0ba4dba80975b9882ead9866d600e83f0a0d01e",
+    "rows": 64
+  },
+  "filter": {
+    "model": "RandomForest",
+    "status": "OK",
+    "stacks": [
+      "B0",
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "splits": [
+      "random",
+      "spatial"
+    ]
+  },
+  "computed_metrics": "fold mean and sample standard deviation from source fold rows",
+  "display_rule": "bar labels are source-computed means rounded to two decimals by this script",
+  "values_csv": {
+    "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\figure3_random_vs_spatial_accuracy_values_20260624.csv",
+    "sha256": "3d08aac35b43b8cd7771858d694adac14d9faf07059df0fd82c8d0fe981340af",
+    "rows": 16
+  }
+}

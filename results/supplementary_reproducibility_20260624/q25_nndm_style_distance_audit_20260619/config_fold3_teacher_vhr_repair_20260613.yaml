@@ -1,0 +1,196 @@
+project:
+  name: spatially_honest_trust_aware_smallholder_landcover
+  target_journal: International Journal of Applied Earth Observation and Geoinformation
+  manuscript_focus: GeoAI, spatial validation, conformal uncertainty, smallholder
+    land-cover mapping
+gee:
+  project: geoai-trust-landcover
+study_area:
+  name: Expanded Johor Kedah Perlis rubber paddy study area
+  bbox:
+  - 99.6404969
+  - 1.1956685
+  - 104.7512029
+  - 6.726082
+  subareas: []
+  bbox_source: combined bounding box of Johor, Kedah-Perlis, and rubber supplement
+    samples
+  bbox_query: Johor, Malaysia
+  bbox_timestamp_utc: 20260601T133906Z
+extension_study_areas:
+  kedah_perlis_paddy_belt:
+    name: Kedah-Perlis paddy belt, Malaysia
+    bbox:
+    - 99.6404969
+    - 5.0763369
+    - 101.127939
+    - 6.726082
+    bbox_source: Nominatim OpenStreetMap search API
+    bbox_queries:
+    - Kedah, Malaysia
+    - Perlis, Malaysia
+    role: second_region_leave_region_out_transfer
+  johor_negeri_pahang_rubber_belt:
+    name: Johor-Negeri Sembilan-Pahang rubber supplement belt, Malaysia
+    bbox:
+    - 101.331594
+    - 1.1956685
+    - 104.7512029
+    - 4.7811216
+    bbox_source: Nominatim OpenStreetMap search API plus existing Johor bbox
+    bbox_queries:
+    - Johor, Malaysia
+    - Negeri Sembilan, Malaysia
+    - Pahang, Malaysia
+    role: rubber_sample_supplement
+year: 2024
+classes:
+- code: 1
+  name: oil_palm
+- code: 2
+  name: rubber
+- code: 3
+  name: paddy
+- code: 4
+  name: other_agri
+- code: 5
+  name: forest
+- code: 6
+  name: builtup_other
+min_class_count: 30
+low_count_policy: drop
+cv:
+  k_folds: 4
+  conformal_alpha: 0.1
+  random_test_fraction: 0.2
+  random_calibration_fraction: 0.5
+  spatial_conformal_split_strategy: class_aware
+  spatial_conformal_required_class_codes:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  spatial_conformal_max_test_cell_sets: 120
+  spatial_conformal_max_calibration_cell_sets_per_test: 120
+seeds:
+  global: 42
+assets:
+  alphaearth: GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL
+  s2_sr: COPERNICUS/S2_SR_HARMONIZED
+  s1_grd: COPERNICUS/S1_GRD
+  worldcover: ESA/WorldCover/v200
+  dynamicworld: GOOGLE/DYNAMICWORLD/V1
+  dem: USGS/SRTMGL1_003
+  global_oil_palm_2019: BIOPAMA/GlobalOilPalm/v1
+  fdp_palm_2025a: projects/forestdatapartnership/assets/palm/model_2025a
+  fdp_rubber_2025a: projects/forestdatapartnership/assets/rubber/model_2025a
+reference_screening:
+  candidates_per_class: 80
+  min_spacing_km: 2.0
+  weak_assets_are_not_ground_truth: true
+  thresholds:
+    oil_palm_palm_probability_high: 0.85
+    oil_palm_palm_probability_strict: 0.95
+    rubber_probability_high: 0.35
+    rubber_probability_strict: 0.6
+    paddy_dynamicworld_crops_high: 0.25
+    forest_dynamicworld_trees_high: 0.6
+    built_dynamicworld_built_high: 0.25
+top_journal_extension:
+  objective: spatial_phenological_trust_transfer
+  weak_disagreement_guided_sampling: true
+  final_labels_require_human_verified_true: true
+  active_sampling_targets:
+  - region_key: kedah_perlis_paddy_belt
+    proposed_class_name: paddy
+    active_stratum: paddy_core
+    target_candidates: 120
+  - region_key: kedah_perlis_paddy_belt
+    proposed_class_name: paddy
+    active_stratum: paddy_disagreement
+    target_candidates: 120
+  - region_key: johor_negeri_pahang_rubber_belt
+    proposed_class_name: rubber
+    active_stratum: rubber_core
+    target_candidates: 140
+  - region_key: johor_negeri_pahang_rubber_belt
+    proposed_class_name: rubber
+    active_stratum: rubber_disagreement
+    target_candidates: 100
+  - region_key: study_area
+    proposed_class_name: paddy
+    active_stratum: johor_paddy_supplement
+    target_candidates: 80
+preprocessing:
+  s2_cloudy_pixel_percentage_max: 20
+  missing_feature_sentinel: -9999
+  missing_feature_policy: sentinel_to_nan_then_median_impute
+  imputer_strategy: median
+paths:
+  data: data/
+  results: results_fold3_teacher_vhr_repair_20260613/
+  figures: figures_fold3_teacher_vhr_repair_20260613/
+  manuscript: manuscript/
+reference_samples:
+  file: data/reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv
+  id_column: sample_id
+  verified_column: verified
+  longitude_column: longitude
+  latitude_column: latitude
+  class_code_column: class_code
+  class_name_column: class_name
+  lock_status: baseline_plus_advisor_vhr_95_plus_cao_wang_fold3_vhr_3
+  lock_date: '20260613'
+  uncertain_rows_are_verified_false: true
+  targeted_confirmation_source_file: manuscript\targeted_user_confirmed_evidence_20260603\priority_candidates_AUTHOR_REVIEW_80_DIRECT_COMPLETE_20260603.csv
+  region_file: data/reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv
+  targeted_confirmation_note: Baseline plus 95 advisor VHR accepted rows plus 3 Cao
+    Wang teacher-reviewed fold-3 VHR accepted rows; weak products remain context only.
+  advisor_vhr_source_zip: C:\Users\m1761\Documents\New project\advisor_verified_review_DaiWenzhe_20260611.zip
+  advisor_vhr_merge_audit: results_advisor_vhr_repair_20260612/advisor_vhr_merge_audit_20260612.csv
+  fold3_teacher_vhr_merge_audit: results_fold3_teacher_vhr_repair_20260613/fold3_teacher_vhr_merge_audit_20260613.csv
+feature_stacks:
+  B0:
+    label: S2 spectral+indices
+    file: data/features_fold3_teacher_vhr_repair_20260613/B0.csv
+  B1:
+    label: S1+S2
+    file: data/features_fold3_teacher_vhr_repair_20260613/B1.csv
+  B2:
+    label: AlphaEarth 64-dim embedding
+    file: data/features_fold3_teacher_vhr_repair_20260613/B2.csv
+  B3:
+    label: AlphaEarth+S1/S2
+    file: data/features_fold3_teacher_vhr_repair_20260613/B3.csv
+random_forest:
+  n_estimators: 500
+  max_depth: null
+  min_samples_leaf: 1
+  n_jobs: -1
+xgboost:
+  n_estimators: 150
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  tree_method: hist
+  n_jobs: -1
+  verbosity: 0
+variogram:
+  variable: one_vs_rest_indicator_summary
+  precomputed_indicator_summary_file: results_fold3_teacher_vhr_variogram_20260613/block_distance_practical_rule_summary_20260613.json
+  n_bins: 12
+  max_pair_count: 250000
+  sill_fraction_for_range: 0.95
+tables:
+  table3: results_fold3_teacher_vhr_repair_20260613/table3_accuracy_by_stack_split.csv
+  table4: results_fold3_teacher_vhr_repair_20260613/table4_optimism_gap.csv
+  table5: results_fold3_teacher_vhr_repair_20260613/table5_alphaearth_contrasts.csv
+  table6: results_fold3_teacher_vhr_repair_20260613/table6_ece.csv
+  table7: results_fold3_teacher_vhr_repair_20260613/table7_conformal.csv
+  table8: results_fold3_teacher_vhr_repair_20260613/table8_morans_i.csv
+  table9: results_fold3_teacher_vhr_repair_20260613/table9_landscape_regression.csv
+landscape_covariates:
+  file: data/landscape_covariates_TARGETED_USER_CONFIRMED_80_20260603.csv

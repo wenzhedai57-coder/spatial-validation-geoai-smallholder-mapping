@@ -1,0 +1,16 @@
+{
+  "created_at_local": "2026-06-19T01:45:01+08:00",
+  "folder": "04_supplementary_reproducibility/prospective_probability_validation_protocol_20260619",
+  "source_request": "User asked to address data-quality limitations by defining Tier 1 probability sampling and independent third-reader/VHR/field anchoring steps.",
+  "status": "PROSPECTIVE_ONLY_NO_CURRENT_METRICS",
+  "current_metrics_added": false,
+  "verified_labels_added": false,
+  "sample_rows_added": false,
+  "design_weights_available": false,
+  "field_or_vhr_evidence_added": false,
+  "notes": [
+    "This folder contains SOP text and header-only templates.",
+    "The current manuscript remains a validation-sensitivity diagnostic study until a real probability sample and adjudicated labels exist.",
+    "No numerical accuracy result was computed or edited by this prospective protocol."
+  ]
+}

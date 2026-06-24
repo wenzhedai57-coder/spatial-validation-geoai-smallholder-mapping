@@ -1,0 +1,7 @@
+timestamp,class_code,class_name,verified_count,status,reason
+20260618T153422Z,1,oil_palm,105,OK,
+20260618T153422Z,2,rubber,16,LOW_COUNT_BELOW_MIN_CLASS_COUNT_30,Class has fewer than config.min_class_count=30 and must be dropped or marked unstable by downstream metrics.
+20260618T153422Z,3,paddy,71,OK,
+20260618T153422Z,4,other_agri,62,OK,
+20260618T153422Z,5,forest,150,OK,
+20260618T153422Z,6,builtup_other,121,OK,

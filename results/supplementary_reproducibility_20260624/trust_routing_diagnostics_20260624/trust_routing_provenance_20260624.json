@@ -1,0 +1,58 @@
+{
+  "timestamp": "20260624T082749Z",
+  "status": "OK",
+  "script": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\scripts\\compute_trust_routing_diagnostics_20260624.py",
+  "repo_root": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618",
+  "supplement_root": "C:\\Users\\m1761\\Documents\\New project\\IJRS_R20260624\\supplement_work",
+  "out_dir": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\supplement_work\\trust_routing_diagnostics_20260624",
+  "inputs": {
+    "predictions_by_fold": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\active_q25_rerun\\predictions_by_fold.csv",
+      "sha256": "eaee1f77746f6762bd3b03293d6eb9cd0534c662a5eb89a8613f85f91bdea52a"
+    },
+    "reference_samples": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples_verified_622_public.csv",
+      "sha256": "d7dd76401018b1f3366ecd1880638f59a84046046c35babce85878dbb875a0df"
+    },
+    "mondrian_conformal_point_sets": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_R20260624\\supplement_work\\mondrian_conformal_sensitivity_20260619\\mondrian_conformal_point_sets_20260619.csv",
+      "sha256": "b881ba255d8717381aa62981b21574894498b2fd5c214274af544301fdbbc3fd"
+    },
+    "q25_distance_audit": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_R20260624\\supplement_work\\q25_nndm_style_distance_audit_20260619\\q25_nndm_style_point_distance_audit_20260619.csv",
+      "sha256": "364a272519fbe2fa93c628a317a8a5ef2e36eb481d17212ac38611d1d3abeacd"
+    }
+  },
+  "routing_rules": {
+    "manual_vhr_field_review": [
+      "Mondrian conformal prediction-set size >= 4",
+      "predicted rubber, rubber included in prediction set, or rubber region/extension stratum"
+    ],
+    "local_calibration_required": [
+      "nearest training distance >= q25 block distance",
+      "Mondrian conformal prediction-set size == 3"
+    ],
+    "low_risk_screening_only": [
+      "set size <= 2, no rubber-transfer risk, and within q25 support distance"
+    ]
+  },
+  "stacks": [
+    "B2",
+    "B3"
+  ],
+  "models": [
+    "RandomForest"
+  ],
+  "conformal_method": "mondrian_class_conditional",
+  "min_route_n_for_macro_f1": 10,
+  "joined_assignment_rows": 534,
+  "random_seed": 42,
+  "python_executable": "C:\\Users\\m1761\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "python_version": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "library_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0"
+  }
+}

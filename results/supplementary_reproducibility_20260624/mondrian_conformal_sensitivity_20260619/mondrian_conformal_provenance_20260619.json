@@ -1,0 +1,37 @@
+{
+  "alpha": 0.1,
+  "config_hash_sha256": "d3a51614aff30e8a8fb911715c1237164a2c427fdc17169e8c62170c04ff20b7",
+  "config_path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\config\\config_public_reproduction_20260615.yaml",
+  "global_conformal_table_path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\active_q25_rerun\\table7_conformal.csv",
+  "global_conformal_table_sha256": "75f1213f8077a8d3d6c64f089aa37f035819c8970187228427da265e18453512",
+  "library_versions": {
+    "ee": "1.7.28",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "xgboost": "2.1.4"
+  },
+  "low_count_policy": "drop",
+  "method": "mondrian_class_conditional_split_conformal",
+  "min_class_count": 30,
+  "outputs": {
+    "comparison_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\mondrian_conformal_sensitivity_20260619\\mondrian_vs_global_conformal_comparison_20260619.csv",
+    "per_class_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\mondrian_conformal_sensitivity_20260619\\mondrian_conformal_per_class_20260619.csv",
+    "point_sets_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\mondrian_conformal_sensitivity_20260619\\mondrian_conformal_point_sets_20260619.csv",
+    "split_audit_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\mondrian_conformal_sensitivity_20260619\\mondrian_conformal_split_audit_20260619.csv",
+    "summary_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\mondrian_conformal_sensitivity_20260619\\mondrian_conformal_summary_20260619.csv",
+    "thresholds_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\mondrian_conformal_sensitivity_20260619\\mondrian_conformal_thresholds_20260619.csv"
+  },
+  "random_seed": 42,
+  "reference_path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples_verified_622_public.csv",
+  "reference_sha256": "d7dd76401018b1f3366ecd1880638f59a84046046c35babce85878dbb875a0df",
+  "status": "OK",
+  "target_coverage": 0.9,
+  "timestamp_utc": "20260618T163557Z",
+  "variogram_choice_path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\active_q25_rerun\\variogram_choice.json",
+  "variogram_choice_sha256": "0b852b94f6e14732e1ec2d169cc37b61d2093022af6731ac041125881b72a647"
+}

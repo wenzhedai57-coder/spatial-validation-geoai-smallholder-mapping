@@ -1,0 +1,7 @@
+heldout_majority_baseline_oa,heldout_majority_class,heldout_majority_count,heldout_region_n,interpretation_status,macro_f1,metric,model,n_test,n_train,oa,ok_spatial_folds,optimism_gap,random_value,reason,rubber_f1,rubber_precision,rubber_recall,rubber_support,scope,skipped_spatial_folds,spatial_fold_condition,spatial_value,stack,status,timestamp
+,,,,,,oa,RandomForest,,,,3,0.3284579621004951,0.848748154527559,nan,,,,,adjudicated_subset_table4_random_vs_spatial,1,INCOMPLETE_Q25_SPATIAL_FOLDS,0.5202901924270639,B2,OK,20260618T154527Z
+,,,,,,macro_f1,RandomForest,,,,3,0.3629048813342413,0.8205637478590871,nan,,,,,adjudicated_subset_table4_random_vs_spatial,1,INCOMPLETE_Q25_SPATIAL_FOLDS,0.4576588665248458,B2,OK,20260618T154527Z
+,,,,,,oa,RandomForest,,,,3,0.3679580601591177,0.8506551427165354,nan,,,,,adjudicated_subset_table4_random_vs_spatial,1,INCOMPLETE_Q25_SPATIAL_FOLDS,0.4826970825574177,B3,OK,20260618T154527Z
+,,,,,,macro_f1,RandomForest,,,,3,0.3630748684789926,0.8208195596468644,nan,,,,,adjudicated_subset_table4_random_vs_spatial,1,INCOMPLETE_Q25_SPATIAL_FOLDS,0.4577446911678717,B3,OK,20260618T154527Z
+0.5192307692307693,forest,27,52,UNSTABLE_RUBBER_SUPPORT_BELOW_MIN_CLASS_COUNT_30,0.4095238095238094,,RandomForest,52,473,0.6538461538461539,,,,nan,0.0,0.0,0.0,3,adjudicated_subset_rubber_belt_transfer,,,,B2,OK,20260618T154527Z
+0.5192307692307693,forest,27,52,UNSTABLE_RUBBER_SUPPORT_BELOW_MIN_CLASS_COUNT_30,0.4837331127653708,,RandomForest,52,473,0.7115384615384616,,,,nan,0.0,0.0,0.0,3,adjudicated_subset_rubber_belt_transfer,,,,B3,OK,20260618T154527Z

@@ -1,0 +1,100 @@
+{
+  "timestamp_tag": "20260624",
+  "status": "DRAFTS_CREATED_NOT_SUBMISSION_REPLACEMENTS",
+  "script": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\scripts\\make_topjournal_figure_drafts_20260624.py",
+  "output_dir": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624",
+  "inputs": {
+    "reference_samples": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples_verified_622_public.csv",
+      "sha256": "d7dd76401018b1f3366ecd1880638f59a84046046c35babce85878dbb875a0df",
+      "rows": 622
+    },
+    "predictions_by_fold": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\active_q25_rerun\\predictions_by_fold.csv",
+      "sha256": "eaee1f77746f6762bd3b03293d6eb9cd0534c662a5eb89a8613f85f91bdea52a",
+      "rows": 9952
+    },
+    "table3_accuracy_by_stack_split": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\active_q25_rerun\\table3_accuracy_by_stack_split.csv",
+      "sha256": "824ddc9273f1171529f8c888b0ba4dba80975b9882ead9866d600e83f0a0d01e",
+      "rows": 64
+    },
+    "sample_level_failure_disagreement": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\review_planning\\sample_level_failure_disagreement.csv",
+      "sha256": "96a2e2984dbc302f3ba50d3a0005d6c38e12086be6d45d1b0f97d4097b45e2de",
+      "rows": 622
+    },
+    "trust_routing_point_assignments": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\supplement_work\\trust_routing_diagnostics_20260624\\trust_routing_point_assignments_20260624.csv",
+      "sha256": "b2120a2ac0e85121258f018aa4ca11ea5c17e1081fc10005d41360999fa5b32c",
+      "rows": 534
+    },
+    "region_transfer_similarity": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\second_round_evidence\\region_transfer_similarity_20260613.csv",
+      "sha256": "03227d230439ff4b209d8dd4a030fdb7b420f069dc63135629e85057bf81b4aa",
+      "rows": 6
+    },
+    "figure13_shaded_relief_basemap": {
+      "status": "OK",
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\figure13_esri_world_shaded_relief_basemap_20260624.png",
+      "sha256": "696a6029d15e405af29d1b76ce4defb36d7f7420ab2761f0c6049ea035879b4d",
+      "metadata": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\figure13_esri_world_shaded_relief_basemap_20260624.json",
+      "source": "Esri WorldShadedRelief via contextily"
+    }
+  },
+  "figure_claims": {
+    "Figure_2": "The verified reference set is spatially clustered across a Johor core, a Kedah-Perlis paddy belt, a rubber belt, and small VHR extension cells.",
+    "Figure_3": "Random cross-validation remains optimistic relative to strict q25 spatial validation across feature stacks.",
+    "Figure_7": "Strict q25 spatial validation exposes class- and fold-specific failures rather than a uniform accuracy drop.",
+    "Figure_8": "Trust routing converts disagreement, conformal set size, rubber-transfer risk, and q25 distance support into review/calibration burden.",
+    "Figure_12": "Leave-region-out transfer varies with feature-space distance, geographic isolation, and dominant-class imbalance.",
+    "Figure_13": "Oblique shaded-relief diagnostic maps show where random-CV disagreement, strict-spatial error, and trust-routing burden concentrate in occupied cells, without implying wall-to-wall map accuracy."
+  },
+  "outputs": {
+    "Figure_2": {
+      "png": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_2_GIS_reference_samples.png",
+      "pdf": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_2_GIS_reference_samples.pdf"
+    },
+    "Figure_3": {
+      "png": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_3_random_vs_spatial_accuracy.png",
+      "pdf": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_3_random_vs_spatial_accuracy.pdf"
+    },
+    "Figure_7": {
+      "png": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_7_spatial_error_diagnostics.png",
+      "pdf": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_7_spatial_error_diagnostics.pdf"
+    },
+    "Figure_8": {
+      "png": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_8_trust_routing_disagreement.png",
+      "pdf": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_8_trust_routing_disagreement.pdf"
+    },
+    "Figure_12": {
+      "png": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_12_transfer_similarity_map.png",
+      "pdf": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_12_transfer_similarity_map.pdf"
+    },
+    "Figure_13": {
+      "png": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_13_3D_validation_risk_map.png",
+      "pdf": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\draft_Figure_13_3D_validation_risk_map.pdf"
+    }
+  },
+  "derived_tables": {
+    "figure13_planar_validation_risk_grid": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\figure13_planar_validation_risk_grid_20260624.csv",
+      "sha256": "79f2e61478a4ba41cc202c347865d5069bd8f4f38a0b7768a3938210ac2f20bb",
+      "rows": 221
+    },
+    "figure3_random_vs_spatial_accuracy_values": {
+      "path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\figure3_random_vs_spatial_accuracy_values_20260624.csv",
+      "sha256": "3d08aac35b43b8cd7771858d694adac14d9faf07059df0fd82c8d0fe981340af",
+      "rows": 16,
+      "provenance": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\figure_redesign_drafts_20260624\\figure3_random_vs_spatial_accuracy_provenance_20260624.json"
+    }
+  },
+  "python_executable": "C:\\Users\\m1761\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "python_version": "3.12.10",
+  "library_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "matplotlib": "3.10.9",
+    "contextily": "1.7.0"
+  }
+}

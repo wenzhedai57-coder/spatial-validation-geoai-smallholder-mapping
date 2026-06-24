@@ -1,0 +1,21 @@
+{
+  "chosen_block_distance_m": 158475.67167120945,
+  "chosen_block_distance_source": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\block_distance_practical_rule_summary_20260618.json",
+  "config_hash": "2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1",
+  "input_files": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\config\\config_adjudicated_sensitivity_20260618.yaml;C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\block_distance_practical_rule_summary_20260618.json",
+  "method": "one_vs_rest_indicator_empirical_variogram_practical_q25_rule",
+  "n_samples": 525,
+  "pair_count_used": "",
+  "random_seed": 42,
+  "range_threshold": "",
+  "reason": "Using code-generated one-vs-rest indicator variogram summary as the spatial block-distance source.",
+  "sill": "",
+  "sill_fraction_for_range": "",
+  "source_block_distance_rule": "q25_of_ok_one_vs_rest_indicator_ranges",
+  "source_reference_file": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples.csv",
+  "source_reference_sha256": "d2d7a47ab4c218112190a51cd60676f09c85982c7084de57758b05e52d6830ff",
+  "source_summary_sha256": "37bc5c8f39ea47fea129a5ad8e6a6c482697ac5754c253bc5e97e10d2030a6e5",
+  "status": "OK",
+  "timestamp": "20260618T153855Z",
+  "variable": "one_vs_rest_indicator_summary"
+}

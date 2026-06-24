@@ -1,0 +1,25 @@
+{
+  "chosen_block_distance_m": 126783.51747145985,
+  "config_hash_sha256": "8c4cc91de21372175adee471eeab6f4ce3f9e978759bf72ec198c2225bda087c",
+  "config_path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\config\\config_fold3_teacher_vhr_repair_20260613.yaml",
+  "interpretation_boundary": "This is a nearest-neighbour distance audit inspired by NNDM/kNNDM reviewer concerns. It is not a full NNDM/kNNDM design because no prediction-domain target grid or reference prediction points were supplied.",
+  "k_folds": 4,
+  "low_count_policy": "drop",
+  "min_class_count": 30,
+  "nndm_knddm_status": "NOT_FULL_NNDM_OR_KNNDM_PREDICTION_DOMAIN_UNAVAILABLE",
+  "outputs": {
+    "class_policy_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\q25_nndm_style_distance_audit_20260619\\q25_nndm_style_class_policy_20260619.csv",
+    "fold_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\q25_nndm_style_distance_audit_20260619\\q25_nndm_style_fold_distance_audit_20260619.csv",
+    "point_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\q25_nndm_style_distance_audit_20260619\\q25_nndm_style_point_distance_audit_20260619.csv",
+    "summary_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\q25_nndm_style_distance_audit_20260619\\q25_nndm_style_summary_20260619.csv"
+  },
+  "random_seed": 42,
+  "reference_path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples_verified_622_public.csv",
+  "reference_sha256": "d7dd76401018b1f3366ecd1880638f59a84046046c35babce85878dbb875a0df",
+  "source_variogram_config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+  "status": "OK",
+  "timestamp": "20260618T162321Z",
+  "variogram_choice_path": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\active_q25_rerun\\variogram_choice.json",
+  "variogram_choice_sha256": "0b852b94f6e14732e1ec2d169cc37b61d2093022af6731ac041125881b72a647",
+  "verified_rows_after_policy": 622
+}

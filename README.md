@@ -4,7 +4,7 @@ This repository is a public reproducibility package for the evidence, code, figu
 
 ## Repository status
 
-This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. The manuscript Data Availability statement should cite the stable commit URL for the release used at submission. A GitHub release or Zenodo DOI can still be added later, but is not required for stable commit-URL wording.
+This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. The 20260624 update also adds the submission supplementary reproducibility artifacts needed to inspect the late-stage QA and sensitivity analyses. The manuscript Data Availability statement should cite the stable commit URL for the release used at submission. A GitHub release or Zenodo DOI can still be added later, but is not required for stable commit-URL wording.
 
 ## Main evidence line
 
@@ -22,13 +22,14 @@ The active evidence line is the fold-3 teacher-VHR q25 rerun:
 - variogram/block-distance evidence: `results/variogram/`
 - generated variogram figure: `figures/variogram/variogram_indicator_ranges.png`
 - manuscript figures: `figures/manuscript/`
+- submission supplementary reproducibility artifacts: `results/supplementary_reproducibility_20260624/`
 - package checksums and verification files: `manifests_checksums/`
 
 ## Evidence boundaries
 
 Final metric labels come only from rows with `verified == True` in `data/reference_samples_verified_622_public.csv`. ESA WorldCover, Google Dynamic World, GlobalOilPalm, and Forest Data Partnership probabilities are weak screening or contextual sources only; they are not ground truth.
 
-The reference labels are image/VHR-reviewed. The completed second-reader VHR adjudication QA workpack is a submission supplementary reproducibility artifact, not part of this public GitHub release. The primary manuscript metrics were computed on the locked 622-row reference table and must be rerun before using the adjudicated subset as a replacement metric base. No design weights or sampling probabilities are available for design-unbiased map accuracy. Reported OA and macro-F1 values should therefore be interpreted as sample-based validation diagnostics.
+The reference labels are image/VHR-reviewed. The completed second-reader VHR adjudication QA workpack is included under `results/supplementary_reproducibility_20260624/` as a submission supplementary reproducibility artifact. The primary manuscript metrics were computed on the locked 622-row reference table and must be rerun before using the adjudicated subset as a replacement metric base. No design weights or sampling probabilities are available for design-unbiased map accuracy. Reported OA and macro-F1 values should therefore be interpreted as sample-based validation diagnostics.
 
 Targeted-validation candidate queues are not included as main data. They are review-planning/provenance artifacts only and must not be used as ground truth.
 
@@ -36,7 +37,7 @@ Targeted-validation candidate queues are not included as main data. They are rev
 
 The main pipeline and supporting scripts are in `scripts/`. The active configuration is in `config/`. The original run logs, configuration hashes, input file names, random seed, and library/version records are preserved in `results/active_q25_rerun/`.
 
-The generated figures in this staging repository are already present. The variogram figure was generated from the packaged variogram CSV/JSON outputs and does not change any result value.
+The generated manuscript figures in `figures/manuscript/` are supplied as 13 paired PNG/PDF figure files. The PNG files in the 20260624 update carry 600 DPI metadata. The variogram figure was generated from the packaged variogram CSV/JSON outputs and does not change any result value.
 
 Point-level public imagery-date coverage is documented in `results/point_imagery_dates/`. This is a Sentinel-2 metadata audit for the 2024 analysis year, not an exact VHR basemap acquisition-date record.
 

@@ -1,0 +1,63 @@
+{
+  "generated_timestamp_utc": "2026-06-16T16:32:02Z",
+  "status": "OK",
+  "errors": [],
+  "inputs": {
+    "reference_file": "C:\\Users\\m1761\\Documents\\New project\\IJRS_GITHUB_READY_REPO_20260615_233332\\data\\reference_samples_verified_622_public.csv",
+    "reference_sha256": "df1ba783d4092c8d8481a3fd0f4d3ee497263c469981653fc52ff4cfa57bb392",
+    "second_reader_file": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\second_reader_blind_vhr_interpretation_FILLED_BY_WD_20260616.csv",
+    "second_reader_sha256": "428079787be2dcada7a413d41a8e954c1db7e9e0357303cf96c4972a56fcb64e",
+    "adjudication_queue_file": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\adjudication_outputs_20260616\\second_reader_adjudication_queue_20260616.csv",
+    "adjudication_queue_sha256": "877921140338dcd2eff24a64e8397931388740fc343ae91a2eaea5532878e148",
+    "manifest_file": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\vhr_review_tiles\\review_manifest_z18.csv",
+    "manifest_sha256": "9df4211ba9b837f8d681be093a83a9b7eb6736e7bc20039f9ec8825f8245f3f6"
+  },
+  "pre_adjudication_second_reader_agreement": {
+    "scorable_primary_label_rows": 530,
+    "agreement_rows": 370,
+    "disagreement_rows": 160,
+    "non_scorable_rows": 92,
+    "observed_agreement": 0.6981132075471698,
+    "expected_agreement": 0.17874688501245994,
+    "cohen_kappa": 0.6324071264467467,
+    "note": "Metrics exclude second-reader uncertain/uninterpretable rows."
+  },
+  "adjudication_decisions_on_160_disagreements": {
+    "accept_second_reader": 147,
+    "keep_original": 8,
+    "needs_third_reader": 5
+  },
+  "final_resolution_counts_622_rows": {
+    "AGREED_ORIGINAL_AND_SECOND_READER": 370,
+    "NOT_SCORABLE_SECOND_READER_UNINTERPRETABLE": 19,
+    "ADJUDICATED_ACCEPT_SECOND_READER": 147,
+    "NOT_SCORABLE_SECOND_READER_UNCERTAIN": 73,
+    "ADJUDICATED_KEEP_ORIGINAL": 8,
+    "UNRESOLVED_NEEDS_THIRD_READER": 5
+  },
+  "final_two_reader_adjudicated_reference": {
+    "included_rows": 525,
+    "excluded_or_unresolved_rows": 97,
+    "included_class_counts": {
+      "oil_palm": 105,
+      "builtup_other": 121,
+      "forest": 150,
+      "other_agri": 62,
+      "rubber": 16,
+      "paddy": 71
+    },
+    "exclusion_rule": "Exclude needs_third_reader, merge_or_drop, exclude_from_reference, and second-reader uncertain/uninterpretable rows from strict two-reader/adjudicated reference."
+  },
+  "output_files": {
+    "full_audit_csv": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\adjudication_outputs_20260616\\reference_samples_second_reader_adjudicated_AUDIT_20260617.csv",
+    "included_reference_csv": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\adjudication_outputs_20260616\\reference_samples_second_reader_adjudicated_INCLUDED_20260617.csv",
+    "resolution_counts_csv": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\adjudication_outputs_20260616\\second_reader_final_resolution_counts_20260617.csv",
+    "included_class_counts_csv": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\adjudication_outputs_20260616\\second_reader_final_included_class_counts_20260617.csv",
+    "adjudication_decision_counts_csv": "C:\\Users\\m1761\\Documents\\New project\\SECOND_READER_VHR_LOCAL_WORKPACK_20260616\\second_reader_vhr_agreement\\adjudication_outputs_20260616\\second_reader_adjudication_decision_counts_20260617.csv"
+  },
+  "claim_boundary": [
+    "This is VHR second-reader/adjudication evidence; no in-situ reference record is claimed.",
+    "Esri VHR imagery dates remain unknown where not visible in the contact sheets.",
+    "Rows marked needs_third_reader or second-reader uncertain/uninterpretable are not final ground truth."
+  ]
+}

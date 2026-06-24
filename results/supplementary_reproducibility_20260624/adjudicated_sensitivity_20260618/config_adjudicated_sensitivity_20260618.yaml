@@ -1,0 +1,199 @@
+# Adjudicated-reference sensitivity config generated 2026-06-18.
+# This rerun uses the two-reader adjudicated INCLUDED subset as data/reference_samples.csv.
+# It is a sensitivity analysis, not a replacement for the locked 622-row primary analysis.
+
+project:
+  name: spatially_honest_trust_aware_smallholder_landcover
+  target_journal: International Journal of Remote Sensing
+  manuscript_focus: GeoAI, spatial validation, conformal uncertainty, smallholder
+    land-cover mapping
+gee:
+  project: geoai-trust-landcover
+study_area:
+  name: Expanded Johor Kedah Perlis rubber paddy study area
+  bbox:
+  - 99.6404969
+  - 1.1956685
+  - 104.7512029
+  - 6.726082
+  subareas: []
+  bbox_source: combined bounding box of Johor, Kedah-Perlis, and rubber supplement
+    samples
+  bbox_query: Johor, Malaysia
+  bbox_timestamp_utc: 20260601T133906Z
+extension_study_areas:
+  kedah_perlis_paddy_belt:
+    name: Kedah-Perlis paddy belt, Malaysia
+    bbox:
+    - 99.6404969
+    - 5.0763369
+    - 101.127939
+    - 6.726082
+    bbox_source: Nominatim OpenStreetMap search API
+    bbox_queries:
+    - Kedah, Malaysia
+    - Perlis, Malaysia
+    role: second_region_leave_region_out_transfer
+  johor_negeri_pahang_rubber_belt:
+    name: Johor-Negeri Sembilan-Pahang rubber supplement belt, Malaysia
+    bbox:
+    - 101.331594
+    - 1.1956685
+    - 104.7512029
+    - 4.7811216
+    bbox_source: Nominatim OpenStreetMap search API plus existing Johor bbox
+    bbox_queries:
+    - Johor, Malaysia
+    - Negeri Sembilan, Malaysia
+    - Pahang, Malaysia
+    role: rubber_sample_supplement
+year: 2024
+classes:
+- code: 1
+  name: oil_palm
+- code: 2
+  name: rubber
+- code: 3
+  name: paddy
+- code: 4
+  name: other_agri
+- code: 5
+  name: forest
+- code: 6
+  name: builtup_other
+min_class_count: 30
+low_count_policy: drop
+cv:
+  k_folds: 4
+  conformal_alpha: 0.1
+  random_test_fraction: 0.2
+  random_calibration_fraction: 0.5
+  spatial_conformal_split_strategy: class_aware
+  spatial_conformal_required_class_codes:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  spatial_conformal_max_test_cell_sets: 120
+  spatial_conformal_max_calibration_cell_sets_per_test: 120
+seeds:
+  global: 42
+assets:
+  alphaearth: GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL
+  s2_sr: COPERNICUS/S2_SR_HARMONIZED
+  s1_grd: COPERNICUS/S1_GRD
+  worldcover: ESA/WorldCover/v200
+  dynamicworld: GOOGLE/DYNAMICWORLD/V1
+  dem: USGS/SRTMGL1_003
+  global_oil_palm_2019: BIOPAMA/GlobalOilPalm/v1
+  fdp_palm_2025a: projects/forestdatapartnership/assets/palm/model_2025a
+  fdp_rubber_2025a: projects/forestdatapartnership/assets/rubber/model_2025a
+reference_screening:
+  candidates_per_class: 80
+  min_spacing_km: 2.0
+  weak_assets_are_not_ground_truth: true
+  thresholds:
+    oil_palm_palm_probability_high: 0.85
+    oil_palm_palm_probability_strict: 0.95
+    rubber_probability_high: 0.35
+    rubber_probability_strict: 0.6
+    paddy_dynamicworld_crops_high: 0.25
+    forest_dynamicworld_trees_high: 0.6
+    built_dynamicworld_built_high: 0.25
+top_journal_extension:
+  objective: spatial_phenological_trust_transfer
+  weak_disagreement_guided_sampling: true
+  final_labels_require_human_verified_true: true
+  active_sampling_targets:
+  - region_key: kedah_perlis_paddy_belt
+    proposed_class_name: paddy
+    active_stratum: paddy_core
+    target_candidates: 120
+  - region_key: kedah_perlis_paddy_belt
+    proposed_class_name: paddy
+    active_stratum: paddy_disagreement
+    target_candidates: 120
+  - region_key: johor_negeri_pahang_rubber_belt
+    proposed_class_name: rubber
+    active_stratum: rubber_core
+    target_candidates: 140
+  - region_key: johor_negeri_pahang_rubber_belt
+    proposed_class_name: rubber
+    active_stratum: rubber_disagreement
+    target_candidates: 100
+  - region_key: study_area
+    proposed_class_name: paddy
+    active_stratum: johor_paddy_supplement
+    target_candidates: 80
+preprocessing:
+  s2_cloudy_pixel_percentage_max: 20
+  missing_feature_sentinel: -9999
+  missing_feature_policy: sentinel_to_nan_then_median_impute
+  imputer_strategy: median
+paths:
+  data: data/
+  results: results/adjudicated_sensitivity_20260618/
+  figures: figures/adjudicated_sensitivity_20260618/
+  manuscript: manuscript/
+reference_samples:
+  file: data/reference_samples.csv
+  id_column: sample_id
+  verified_column: verified
+  longitude_column: longitude
+  latitude_column: latitude
+  class_code_column: class_code
+  class_name_column: class_name
+  lock_status: two_reader_adjudicated_included_sensitivity_subset
+  lock_date: '20260617'
+  uncertain_rows_are_verified_false: true
+  targeted_confirmation_source_file: results/second_reader_vhr_adjudication/reference_samples_second_reader_adjudicated_INCLUDED_20260617.csv
+  region_file: data/reference_samples.csv
+  targeted_confirmation_note: Two-reader adjudicated INCLUDED subset converted by scripts/pipeline/build_adjudicated_reference_sensitivity_20260618.py; weak products remain context only.
+  advisor_vhr_source_zip: docs/provenance/external_author_review_archive_not_redistributed.zip
+  advisor_vhr_merge_audit: docs/provenance/advisor_vhr_merge_audit_not_in_public_slim_repo.csv
+  fold3_teacher_vhr_merge_audit: results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.csv
+feature_stacks:
+  B0:
+    label: S2 spectral+indices
+    file: data/features_fold3_teacher_vhr_repair_20260613/B0.csv
+  B1:
+    label: S1+S2
+    file: data/features_fold3_teacher_vhr_repair_20260613/B1.csv
+  B2:
+    label: AlphaEarth 64-dim embedding
+    file: data/features_fold3_teacher_vhr_repair_20260613/B2.csv
+  B3:
+    label: AlphaEarth+S1/S2
+    file: data/features_fold3_teacher_vhr_repair_20260613/B3.csv
+random_forest:
+  n_estimators: 500
+  max_depth: null
+  min_samples_leaf: 1
+  n_jobs: -1
+xgboost:
+  n_estimators: 150
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  tree_method: hist
+  n_jobs: -1
+  verbosity: 0
+variogram:
+  variable: one_vs_rest_indicator_summary
+  precomputed_indicator_summary_file: results/adjudicated_sensitivity_20260618/block_distance_practical_rule_summary_20260618.json
+  n_bins: 12
+  max_pair_count: 250000
+  sill_fraction_for_range: 0.95
+tables:
+  table3: results/adjudicated_sensitivity_20260618/table3_accuracy_by_stack_split.csv
+  table4: results/adjudicated_sensitivity_20260618/table4_optimism_gap.csv
+  table5: results/adjudicated_sensitivity_20260618/table5_alphaearth_contrasts.csv
+  table6: results/adjudicated_sensitivity_20260618/table6_ece.csv
+  table7: results/adjudicated_sensitivity_20260618/table7_conformal.csv
+  table8: results/adjudicated_sensitivity_20260618/table8_morans_i.csv
+  table9: results/adjudicated_sensitivity_20260618/table9_landscape_regression.csv
+landscape_covariates:
+  file: data/landscape_covariates.csv

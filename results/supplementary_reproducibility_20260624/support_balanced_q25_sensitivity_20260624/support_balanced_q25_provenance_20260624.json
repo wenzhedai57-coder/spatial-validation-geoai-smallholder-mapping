@@ -1,0 +1,41 @@
+{
+  "timestamp": "20260624T082339Z",
+  "status": "INSUFFICIENT_SUPPORT_NO_OK_SPLITS",
+  "script": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\scripts\\compute_support_balanced_q25_sensitivity_20260624.py",
+  "repo_root": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618",
+  "out_dir": "C:\\Users\\m1761\\Documents\\New project\\IJRS_TRUST_REVISION_20260624\\supplement_work\\support_balanced_q25_sensitivity_20260624",
+  "config_path": "config\\config_fold3_teacher_vhr_repair_20260613.yaml",
+  "config_sha256": "8c4cc91de21372175adee471eeab6f4ce3f9e978759bf72ec198c2225bda087c",
+  "reference_path": "data\\reference_samples_verified_622_public.csv",
+  "reference_sha256": "d7dd76401018b1f3366ecd1880638f59a84046046c35babce85878dbb875a0df",
+  "variogram_path": "results\\active_q25_rerun\\variogram_choice.json",
+  "variogram_sha256": "0b852b94f6e14732e1ec2d169cc37b61d2093022af6731ac041125881b72a647",
+  "block_distance_m": 126783.51747145985,
+  "seed_count": 500,
+  "primary_random_seed": 42,
+  "k_folds": 4,
+  "total_train_min": 100,
+  "per_class_train_min": 30,
+  "ok_support_balanced_candidates": 0,
+  "diagnostic_rerun_candidates": [
+    177,
+    146,
+    429
+  ],
+  "random_forest_params": {
+    "n_estimators": 500,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "python_executable": "C:\\Users\\m1761\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "python_version": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "library_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "scipy": "1.17.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source": "Esri WorldShadedRelief via contextily",
+  "requested_lonlat_extent": [
+    99.55,
+    104.45,
+    1.05,
+    6.65
+  ],
+  "downloaded_web_mercator_extent": [
+    10958012.374962866,
+    11897270.578531113,
+    -7.081154551613622e-10,
+    939258.2035682457
+  ],
+  "lonlat_extent": [
+    98.43749999999999,
+    106.875,
+    -6.361109362927033e-15,
+    8.407168163601074
+  ],
+  "zoom": 7,
+  "sha256": "696a6029d15e405af29d1b76ce4defb36d7f7420ab2761f0c6049ea035879b4d"
+}

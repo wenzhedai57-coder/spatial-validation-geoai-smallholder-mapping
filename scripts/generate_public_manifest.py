@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "manifests_checksums"
-DATE_TAG = "20260616"
+DATE_TAG = "20260624"
 GENERATED_MANIFEST_FILES = {
     f"manifests_checksums/PUBLIC_REPO_MANIFEST_{DATE_TAG}.csv",
     f"manifests_checksums/PUBLIC_REPO_CHECKSUMS_SHA256_{DATE_TAG}.txt",

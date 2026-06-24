@@ -1,0 +1,66 @@
+{
+  "timestamp": "20260613T101215Z",
+  "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+  "script": "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//run_region_specific_calibration.py",
+  "script_sha256": "e0abfff2988bf5de262ca412428a6f78ba30b1378a472c0c87a0376e19aaad4c",
+  "input_files": [
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///config_fold3_teacher_vhr_repair_20260613.yaml",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//features_fold3_teacher_vhr_repair_20260613//B2.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//features_fold3_teacher_vhr_repair_20260613//B3.csv"
+  ],
+  "input_sha256": {
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///config_fold3_teacher_vhr_repair_20260613.yaml": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv": "abac92866b1925ec132cd26273a3a34fcbf4601e45fa83a80cea0dd2d3692779",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//features_fold3_teacher_vhr_repair_20260613//B2.csv": "0c704cf370157bf1a3e7dfeaf91e2fb8fa030b62cbc9be843caf05c97118ef33",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//extracted_tar///data//features_fold3_teacher_vhr_repair_20260613//B3.csv": "caa3d31c380f92dbac2eac1558ae130727ecc731c1e900e19e9f6f8686bbb915"
+  },
+  "outputs": [
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/region_calibration_evidence//rubber_belt_region_specific_calibration_detail_20260613.csv",
+    "C://Users//m1761//Documents//New project//claude_geoai_jag_review_handoff_20260613//source_package_scripts_not_in_public_slim_repo//results/region_calibration_evidence//rubber_belt_region_specific_calibration_summary_20260613.csv"
+  ],
+  "target_region": "johor_negeri_pahang_rubber_belt",
+  "model": "RandomForest",
+  "stacks": [
+    "B2",
+    "B3"
+  ],
+  "calibration_fractions": [
+    0.2,
+    0.33,
+    0.5
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71
+  ],
+  "interpretation": "Diagnostic target-region calibration experiment. It uses verified labels from the held-out rubber-belt region for calibration and evaluates only the remaining rubber-belt samples. It is not an external field-validation result."
+}

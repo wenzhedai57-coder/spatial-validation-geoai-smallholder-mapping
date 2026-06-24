@@ -1,0 +1,88 @@
+{
+  "class_counts": [
+    {
+      "class_code": 1,
+      "class_name": "oil_palm",
+      "reason": NaN,
+      "status": "OK",
+      "timestamp": "20260618T153422Z",
+      "verified_count": 105
+    },
+    {
+      "class_code": 2,
+      "class_name": "rubber",
+      "reason": "Class has fewer than config.min_class_count=30 and must be dropped or marked unstable by downstream metrics.",
+      "status": "LOW_COUNT_BELOW_MIN_CLASS_COUNT_30",
+      "timestamp": "20260618T153422Z",
+      "verified_count": 16
+    },
+    {
+      "class_code": 3,
+      "class_name": "paddy",
+      "reason": NaN,
+      "status": "OK",
+      "timestamp": "20260618T153422Z",
+      "verified_count": 71
+    },
+    {
+      "class_code": 4,
+      "class_name": "other_agri",
+      "reason": NaN,
+      "status": "OK",
+      "timestamp": "20260618T153422Z",
+      "verified_count": 62
+    },
+    {
+      "class_code": 5,
+      "class_name": "forest",
+      "reason": NaN,
+      "status": "OK",
+      "timestamp": "20260618T153422Z",
+      "verified_count": 150
+    },
+    {
+      "class_code": 6,
+      "class_name": "builtup_other",
+      "reason": NaN,
+      "status": "OK",
+      "timestamp": "20260618T153422Z",
+      "verified_count": 121
+    }
+  ],
+  "input_sha256": {
+    "class_counts": "664b6d4ecd2194922f2b3f06cce4022dcc7ca3138a5d962987f819fbcb303289",
+    "reference": "d2d7a47ab4c218112190a51cd60676f09c85982c7084de57758b05e52d6830ff",
+    "spatial_audit": "a45bba8fcb772c34ea03a1b04c6c7ca2c29036cb4bc07c534484ee918cf74626",
+    "table4": "0e1180ccb64035991872ec753217fd56219d8e103fad1420c74348e4d9d2cda5",
+    "transfer": "9705e0d4536101abe4862bb77069c2c865059c1dcf8ed26eacf31925f1b71b1d",
+    "transfer_per_class": "2406929c8f37e06f75380475c622dc2a2e9587991de715e0bbf251b0fa82d783",
+    "variogram_summary": "37bc5c8f39ea47fea129a5ad8e6a6c482697ac5754c253bc5e97e10d2030a6e5"
+  },
+  "inputs": {
+    "class_counts": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\adjudicated_reference_class_counts_20260618.csv",
+    "reference": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\data\\reference_samples.csv",
+    "spatial_audit": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\spatial_fold_leakage_audit.csv",
+    "table4": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\table4_optimism_gap.csv",
+    "transfer": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\table10_leave_region_out_transfer.csv",
+    "transfer_per_class": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\table10_leave_region_out_transfer_per_class.csv",
+    "variogram_summary": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\block_distance_practical_rule_summary_20260618.json"
+  },
+  "note": "All summary values are copied or computed from adjudicated-subset CSV/JSON outputs; no manuscript numbers were hand-entered.",
+  "ok_spatial_folds": 3,
+  "output_csv": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\results\\adjudicated_sensitivity_20260618\\adjudicated_sensitivity_manuscript_summary_20260618.csv",
+  "output_csv_sha256": "4cb02bbcc3c05d01b7a887fd791a35634e360ae9426071e1e440cf722cc47c4a",
+  "rubber_belt_region_counts": {
+    "builtup_other": 7,
+    "forest": 27,
+    "oil_palm": 5,
+    "other_agri": 9,
+    "paddy": 1,
+    "rubber": 3
+  },
+  "script": "C:\\Users\\m1761\\Documents\\New project\\IJRS_ADJUDICATED_SENSITIVITY_20260618\\scripts\\pipeline\\summarize_adjudicated_sensitivity_20260618.py",
+  "skipped_spatial_folds": 1,
+  "suggested_block_distance_m": 158475.67167120945,
+  "timestamp": "20260618T154527Z",
+  "variogram_status": "SKIPPED",
+  "verified_rows": 525
+}

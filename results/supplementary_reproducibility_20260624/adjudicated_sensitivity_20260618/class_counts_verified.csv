@@ -1,0 +1,7 @@
+timestamp,config_hash,input_files,random_seed,status,reason,class_code,class_name,verified_count
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,C:\Users\m1761\Documents\New project\IJRS_ADJUDICATED_SENSITIVITY_20260618\data\reference_samples.csv,42,OK,,1,oil_palm,105
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,C:\Users\m1761\Documents\New project\IJRS_ADJUDICATED_SENSITIVITY_20260618\data\reference_samples.csv,42,OK,,2,rubber,16
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,C:\Users\m1761\Documents\New project\IJRS_ADJUDICATED_SENSITIVITY_20260618\data\reference_samples.csv,42,OK,,3,paddy,71
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,C:\Users\m1761\Documents\New project\IJRS_ADJUDICATED_SENSITIVITY_20260618\data\reference_samples.csv,42,OK,,4,other_agri,62
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,C:\Users\m1761\Documents\New project\IJRS_ADJUDICATED_SENSITIVITY_20260618\data\reference_samples.csv,42,OK,,5,forest,150
+20260618T153855Z,2669ca471fe766df3b3392c7d3416b47e081e412214a4c36dca25c8f8ce306a1,C:\Users\m1761\Documents\New project\IJRS_ADJUDICATED_SENSITIVITY_20260618\data\reference_samples.csv,42,OK,,6,builtup_other,121
