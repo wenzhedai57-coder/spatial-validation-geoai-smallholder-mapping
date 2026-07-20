@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-07-20T14:52:16.169372+00:00",
+  "figure_1": {
+    "method": "Author-designed deterministic schematic drawn with Python and Matplotlib; no generative image model used.",
+    "outputs": [
+      "Figure_1_workflow.png",
+      "Figure_1_workflow.pdf"
+    ]
+  },
+  "figure_2": {
+    "source_table": "data/reference_samples_verified_622_public.csv",
+    "historical_schema_note": "The filename and verified field are historical inclusion identifiers, not independent-verification claims.",
+    "basemap": "Natural Earth 1:10m land, ocean, coastline, and country boundary vector data (public domain).",
+    "software": "Python, Matplotlib, Cartopy",
+    "outputs": [
+      "Figure_2_original_label_benchmark_map.png",
+      "Figure_2_original_label_benchmark_map.pdf"
+    ]
+  },
+  "figure_13": {
+    "source_table": "figure13_planar_validation_risk_grid_20260624.csv",
+    "interpretation": "Descriptive planar sample-support diagnostics; not a calibrated risk surface.",
+    "outputs": [
+      "Figure_13_planar_validation_risk_map.png",
+      "Figure_13_planar_validation_risk_map.pdf"
+    ]
+  },
+  "versions": {
+    "python": "3.12.10",
+    "matplotlib": "3.10.9",
+    "cartopy": "0.25.0",
+    "pandas": "3.0.3"
+  }
+}

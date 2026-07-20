@@ -1,5 +1,5 @@
-# Public Reuse Notes
+# Public reuse notes
 
-The main metric base remains `data/reference_samples_verified_622_public.csv`, which contains the locked 622 verified rows used for the primary manuscript metrics.
+Reuse the label tables only with their documented estimand. The 622-row table is an original-label sensitivity benchmark. The 525-row table is an author-resolved working label set produced by W.D.'s internal re-review. Neither is an independently adjudicated probability sample.
 
-The 20260624 supplementary reproducibility directory includes late-stage QA, sensitivity, and prospective-protocol materials. Files in `results/supplementary_reproducibility_20260624/prospective_probability_validation_protocol_20260619/` are templates or future-protocol records only; they are not observed validation results and must not be used as current ground truth.
+Do not interpret machine fields such as `verified`, `OK`, or support-status codes outside their schema documentation. Reader-facing conclusions should use the natural-language boundaries in the manuscript and README.

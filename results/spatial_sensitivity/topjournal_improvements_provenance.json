@@ -1,6 +1,6 @@
 {
   "timestamp_utc": "20260612T173903Z",
-  "config_path": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///config_fold3_teacher_vhr_repair_20260613.yaml",
+  "config_path": "${REPOSITORY_ROOT}/config_fold3_teacher_vhr_repair_20260613.yaml",
   "config_hash_sha256": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
   "random_seed": 42,
   "inputs": {
@@ -23,11 +23,11 @@
         "file": "data/features_fold3_teacher_vhr_repair_20260613/B3.csv"
       }
     },
-    "locked_results": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///results_fold3_teacher_vhr_repair_20260613"
+    "locked_results": "${REPOSITORY_ROOT}/results_fold3_teacher_vhr_repair_20260613"
   },
   "outputs": {
-    "results_dir": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///results_fold3_teacher_vhr_improvements_20260613",
-    "figures_dir": "D://Moved_From_C_2026-06-12//Users//m1761//Documents//New project///figures_fold3_teacher_vhr_improvements_20260613"
+    "results_dir": "${REPOSITORY_ROOT}/results_fold3_teacher_vhr_improvements_20260613",
+    "figures_dir": "${REPOSITORY_ROOT}/figures_fold3_teacher_vhr_improvements_20260613"
   },
   "library_versions": {
     "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",

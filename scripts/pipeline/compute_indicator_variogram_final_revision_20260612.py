@@ -100,7 +100,7 @@ def compute_for_class(
     }
 
     if n < 3:
-        reason = "SKIPPED: fewer than 3 verified samples with coordinates."
+        reason = "SKIPPED: fewer than 3 original-label benchmark records with coordinates."
         return [], {**provenance(timestamp, "SKIPPED", reason), **base}
     if n_positive < MIN_CLASS_COUNT:
         reason = "SKIPPED: positive class count below configured min_class_count."
@@ -222,7 +222,7 @@ def make_plot_with_pillow(bin_rows: list[dict[str, Any]], summary_rows: list[dic
 
     draw.line((left, top, left, top + plot_h), fill="black", width=2)
     draw.line((left, top + plot_h, left + plot_w, top + plot_h), fill="black", width=2)
-    draw.text((left, 25), "One-vs-rest indicator variograms for verified reference classes", fill="black", font=font)
+    draw.text((left, 25), "One-vs-rest indicator variograms for original-label benchmark classes", fill="black", font=font)
     draw.text((left + 360, height - 45), "Pair distance midpoint (km)", fill="black", font=font)
     draw.text((left, top - 28), "Empirical semivariance", fill="black", font=font)
 
@@ -287,7 +287,7 @@ def make_plot(bin_rows: list[dict[str, Any]], summary_rows: list[dict[str, Any]]
 
         ax.set_xlabel("Pair distance midpoint (km)")
         ax.set_ylabel("Empirical semivariance")
-        ax.set_title("One-vs-rest indicator variograms for verified reference classes")
+        ax.set_title("One-vs-rest indicator variograms for original-label benchmark classes")
         ax.grid(True, linewidth=0.3, alpha=0.5)
         ax.legend(loc="best", fontsize=8)
         fig.tight_layout()
@@ -309,7 +309,7 @@ def write_decision_memo(timestamp: str, summary: dict[str, Any]) -> None:
         "",
         "## Purpose",
         "",
-        "This memo records a one-vs-rest indicator variogram diagnostic computed from the cleaned 619-row verified reference table. It is added because the previous 95.1 km distance was derived from a nominal `class_code` variogram and should not be treated as an ecological range or a design-based map-accuracy scale.",
+        "This memo records a one-vs-rest indicator variogram diagnostic computed from the historical 619-row original-label benchmark table. It is added because the previous 95.1 km distance was derived from a nominal `class_code` variogram and should not be treated as an ecological range or a design-based map-accuracy scale.",
         "",
         "## Input",
         "",

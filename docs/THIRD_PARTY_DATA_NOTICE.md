@@ -1,9 +1,7 @@
-﻿# Third-Party Data Notice
+# Third-party data and figure sources
 
-This repository may include derived feature matrices, contextual covariates, weak-reference hints, result tables, and provenance generated from public or third-party Earth-observation sources.
+Figures 2, 7, 8, and 12 use Natural Earth vector data for geographic context. Natural Earth identifies these data as public domain. The figure captions state the source. Cartopy was used to access and render the vectors.
 
-Raw third-party products are not redistributed here unless redistribution is allowed by the source provider. Users should retrieve source products from their original catalogues and follow the provider terms.
+The author-led VHR re-review used Esri World Imagery through an ArcGIS REST viewer at zoom level 18. The underlying licensed imagery and contact sheets are not redistributed. Imagery dates and native resolution were not consistently visible in the viewer and are recorded as unknown where unavailable.
 
-Weak products such as ESA WorldCover, Google Dynamic World, GlobalOilPalm, and Forest Data Partnership probabilities are not ground truth in this study. They support candidate screening, contextual checks, or diagnostic covariates only.
-
-Very-high-resolution imagery or platform screenshots used during visual interpretation are not included in this staging repository unless the authors have explicit redistribution rights.
+Other remote-sensing products and their catalogue identifiers are listed in the configurations and asset-verification tables. They are feature or contextual sources, not reference ground truth.

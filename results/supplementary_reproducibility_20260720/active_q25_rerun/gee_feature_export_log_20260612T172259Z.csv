@@ -1,0 +1,2 @@
+timestamp,config_hash,stack,mode,task_id,status,output,rows,feature_columns,missing_sentinel_cells,rows_with_missing_sentinel
+20260612T172259Z,13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5,B3,local,,OK,data/features_fold3_teacher_vhr_repair_20260613/B3.csv,622,82,196,14

@@ -450,7 +450,7 @@ def compute_variogram(ctx: RunContext, ref: pd.DataFrame) -> Optional[Dict[str, 
 
     work = ref[needed].dropna().copy()
     if len(work) < 3:
-        reason = "Cannot compute variogram; fewer than 3 verified samples with coordinates and variable."
+        reason = "Cannot compute variogram; fewer than 3 original-label benchmark records with coordinates and variable."
         ctx.report("variogram", "ERROR", reason, [ref_path])
         write_csv(ctx.results_dir / "variogram_bins.csv", BASE_TABLE_COLUMNS, [error_row(ctx, reason, [ref_path])])
         return None
@@ -679,7 +679,7 @@ def read_feature_stack(ctx: RunContext, stack_key: str, stack_cfg: Dict[str, Any
         return None, f"{path} has no numeric feature columns"
     merged = ref.merge(feat[[id_col] + numeric], on=id_col, how="inner")
     if merged.empty:
-        return None, f"{path} has no sample_id overlap with verified reference samples"
+        return None, f"{path} has no sample_id overlap with original-label benchmark records"
     merged = apply_missing_feature_policy(ctx, stack_key, path, merged, numeric)
     merged.attrs["feature_columns"] = numeric
     return merged, ""
@@ -1139,7 +1139,7 @@ def evaluate_feature_stacks(
     lat_col = ref_cfg.get("latitude_column", "latitude")
 
     if ref is None:
-        reason = "Verified reference samples are unavailable."
+        reason = "Original-label benchmark records are unavailable."
         for stack, cfg in ctx.config.get("feature_stacks", {}).items():
             for key, rows in [("table3", table3_rows), ("table6", table6_rows)]:
                 row = error_row(ctx, reason, [cfg.get("file", "")])
@@ -1351,7 +1351,7 @@ def compute_conformal(
     lat_col = ref_cfg.get("latitude_column", "latitude")
 
     if ref is None:
-        reason = "Verified reference samples are unavailable; conformal coverage cannot be computed."
+        reason = "Original-label benchmark records are unavailable; conformal coverage cannot be computed."
         for stack, cfg in ctx.config.get("feature_stacks", {}).items():
             for model_name in ["RandomForest", "XGBoost"]:
                 for split in ["random", "spatial"]:

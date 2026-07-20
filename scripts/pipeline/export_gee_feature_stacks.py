@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Export B0-B3 feature stacks from Google Earth Engine for verified samples.
+"""Export B0-B3 feature stacks from Google Earth Engine for original-label benchmark records.
 
 The script queries asset band names at runtime and writes the band inventory to
 disk before any export. It does not create labels and does not use weak
@@ -57,7 +57,7 @@ def load_verified_points(config: Dict[str, Any], root: Path) -> pd.DataFrame:
     ref_cfg = config.get("reference_samples", {})
     ref_path = root / ref_cfg.get("file", "data/reference_samples.csv")
     if not ref_path.exists():
-        raise RuntimeError(f"Missing verified reference sample file: {ref_path}")
+        raise RuntimeError(f"Missing original-label benchmark file: {ref_path}")
     df = pd.read_csv(ref_path)
     required = [
         ref_cfg.get("id_column", "sample_id"),

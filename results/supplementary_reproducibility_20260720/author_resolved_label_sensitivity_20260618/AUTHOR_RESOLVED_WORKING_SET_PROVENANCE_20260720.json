@@ -1,0 +1,10 @@
+{
+  "generated_date": "2026-07-20",
+  "input_author_resolved_working_labels": "author_led_vhr_label_rereview_20260720/reference_samples_author_resolved_INCLUDED_20260720.csv",
+  "input_rows": 525,
+  "analysis_reference_table": "author_resolved_label_sensitivity_20260618/reference_samples.csv",
+  "analysis_reference_rows": 525,
+  "source_sha256": "51b81ec506082e920c5ff408d03f5f22ce66002dc0286f1b90e07f230ea62781",
+  "analysis_reference_sha256": "804d12a5af5c19e88e21b8a6f7b3d0819a5c4e0d5f9e8cdcf22276cd9ed950cf",
+  "claim_boundary": "Author-led internal re-review; not independent validation. Complete four-fold q25 performance is not estimable under current class support."
+}

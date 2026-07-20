@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "20260612T171912Z",
+  "status": "OK",
+  "base_reference": "data/reference_samples_DAI_WENZHE_ADVISOR_VHR_ACCEPTED_95_CLEANED_20260612.csv",
+  "base_reference_rows": 619,
+  "accepted_additions": 3,
+  "skipped_rows": [
+    {
+      "sample_id": "TJ04_032",
+      "status": "SKIPPED_NOT_VERIFIED_OR_NOT_ELIGIBLE",
+      "reason": "NOT_VERIFIED"
+    }
+  ],
+  "merged_reference": "data/reference_samples_verified_622_public.csv",
+  "merged_reference_rows": 622,
+  "accepted_by_class": {
+    "forest": 2,
+    "builtup_other": 1
+  },
+  "outputs": {
+    "additions_csv": "data/verified_sample_additions_CAO_WANG_FOLD3_VHR_ACCEPTED_3_20260613.csv",
+    "merged_reference_csv": "data/reference_samples_verified_622_public.csv",
+    "audit_csv": "results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.csv"
+  },
+  "no_fabrication_note": "Only teacher-reviewed TRUE/eligible rows were promoted. Weak labels and NOT_VERIFIED rows were not merged."
+}

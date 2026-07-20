@@ -1,20 +1,10 @@
-﻿# File Map
+# File map
 
-## Root
-
-- `README.md`: repository overview and evidence boundary.
-- `LICENSE`: license status; must be replaced before public release.
-- `CITATION.cff`: citation metadata for the staging repository; repository URL/DOI is omitted until minted.
-- `requirements.txt`: Python dependencies from the source package.
-
-## Main folders
-
-- `config/`: hash-preserved original run configuration plus a public path reproduction configuration.
-- `scripts/`: public-oriented pipeline, export, variogram, manifest, and verification scripts. Old handoff/package scripts that required missing review queues were removed from the slim public repo.
-- `data/`: cleaned active reference data, feature matrices, and landscape covariates.
-- `results/`: active results, variogram outputs, evidence summaries, reviewer-risk audits, spatial-sensitivity support artifacts, review-planning support artifacts, point-level public Sentinel-2 imagery-date audit artifacts, and the 20260624 submission supplementary reproducibility artifacts.
-- `figures/`: manuscript figure files, including 13 paired PNG/PDF files in the 20260624 update, and regenerated variogram plot.
-- `manifests_checksums/`: source package records plus newly generated staging manifest/checksum/verification.
-- `docs/`: data availability, reproducibility, limitations, and upload notes.
-- `docs/POINT_LEVEL_IMAGERY_DATES.md`: scope and wording for the public Sentinel-2 point-level imagery-date audit.
-
+- `data/`: historical original-label table, feature matrices, and label-semantics note.
+- `config/`: active and public-path configurations targeting the International Journal of Remote Sensing.
+- `scripts/`: analysis and reproduction code.
+- `results/active_q25_rerun/`: original 622-label q25 sensitivity outputs.
+- `results/supplementary_reproducibility_20260720/`: exact current submission supplement and its index.
+- `figures/manuscript/`: 13 current figures in PNG and PDF.
+- `docs/`: data availability, limitations, reproduction, and third-party data notes.
+- `manifests_checksums/`: file-level public repository manifest and SHA-256 checksums.

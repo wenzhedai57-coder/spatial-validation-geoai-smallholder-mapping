@@ -1,0 +1,19 @@
+predictor,reader_facing_label
+dw_flooded_vegetation,Dynamic World flooded vegetation
+dw_water,Dynamic World water
+dw_crops,Dynamic World crops
+dw_entropy_full_8class,Dynamic World entropy (8-class)
+dw_entropy,Dynamic World entropy
+dw_entropy_partial_5class,Dynamic World entropy (5-class)
+fdp_rubber_probability_2023,FDP rubber probability (2023)
+active_score,Active-review score
+screening_score,Candidate-screening score
+dw_trees,Dynamic World trees
+fdp_palm_probability_2023,FDP palm probability (2023)
+dw_built,Dynamic World built area
+dw_margin_partial_5class,Dynamic World margin (5-class)
+dw_margin,Dynamic World margin
+dw_max_probability_partial_5class,Dynamic World max probability (5-class)
+dw_margin_full_8class,Dynamic World margin (8-class)
+dw_max_probability,Dynamic World max probability
+dw_max_probability_full_8class,Dynamic World max probability (8-class)

@@ -1,0 +1,86 @@
+{
+  "timestamp_utc": "2026-06-27T00:00:00+08:00",
+  "generator": "updated from supplementary CSV/JSON artifacts; added package-relative paths and active_q25_rerun mirror entry; no metric recomputation beyond counts/sums stated in notes",
+  "rows": [
+    {
+      "manuscript_claim": "Original-label sensitivity benchmark records",
+      "reported_value": "622 historical-inclusion rows out of 622 rows",
+      "source_file": "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/reference_samples_verified_622_public.csv",
+      "source_field": "row count; verified column",
+      "status": "OK",
+      "notes": "Primary public repository path is data/reference_samples_verified_622_public.csv. Package-relative path in submitted supplementary ZIP: mondrian_conformal_sensitivity_20260619/reference_samples_verified_622_public.csv."
+    },
+    {
+      "manuscript_claim": "B2 RandomForest random versus q25 spatial accuracy",
+      "reported_value": "random OA/macro-F1 0.7347394540942929/0.7285807795252841; spatial OA/macro-F1 0.4942423505801129/0.4266405344781539",
+      "source_file": "results/supplementary_reproducibility_20260624/figure3_random_vs_spatial_accuracy_values_20260624/figure3_random_vs_spatial_accuracy_values_20260624.csv",
+      "source_field": "stack, split, metric, mean",
+      "status": "OK",
+      "notes": "Full precision retained in source CSV. Package-relative path in submitted supplementary ZIP: figure3_random_vs_spatial_accuracy_values_20260624/figure3_random_vs_spatial_accuracy_values_20260624.csv."
+    },
+    {
+      "manuscript_claim": "B3 RandomForest random versus q25 spatial accuracy",
+      "reported_value": "random OA/macro-F1 0.721887923904053/0.7150943640558723; spatial OA/macro-F1 0.48323341579245915/0.4111026704447638",
+      "source_file": "results/supplementary_reproducibility_20260624/figure3_random_vs_spatial_accuracy_values_20260624/figure3_random_vs_spatial_accuracy_values_20260624.csv",
+      "source_field": "stack, split, metric, mean",
+      "status": "OK",
+      "notes": "Full precision retained in source CSV. Package-relative path in submitted supplementary ZIP: figure3_random_vs_spatial_accuracy_values_20260624/figure3_random_vs_spatial_accuracy_values_20260624.csv."
+    },
+    {
+      "manuscript_claim": "q25 block distance and zero-leakage audit",
+      "reported_value": "block_distance_m 126783.51747145985; folds_zero_leakage 4/4; leakage_count 0; median_distance_ratio 36.392980541316454",
+      "source_file": "results/supplementary_reproducibility_20260624/q25_nndm_style_distance_audit_20260619/q25_nndm_style_summary_20260619.csv",
+      "source_field": "block_distance_m; folds_zero_leakage; leakage_count_below_block_distance; median_distance_ratio_q25_spatial_over_random",
+      "status": "OK",
+      "notes": "NNDM-style audit, not full NNDM/kNNDM prediction-domain design. Package-relative path in submitted supplementary ZIP: q25_nndm_style_distance_audit_20260619/q25_nndm_style_summary_20260619.csv."
+    },
+    {
+      "manuscript_claim": "B2 support sensitivity excluding fold 3",
+      "reported_value": "all-fold spatial OA/macro-F1 0.4942423505801129/0.4266405344781539; excluding-fold-3 OA/macro-F1 0.5357021295406071/0.5006793823994791",
+      "source_file": "results/supplementary_reproducibility_20260624/fold3_support_sensitivity_20260613/primary_b2_rf_headline_audit_20260613.csv",
+      "source_field": "diagnostic; mean_oa; mean_macro_f1",
+      "status": "OK",
+      "notes": "Fold-3 train-count detail is in the separate table file and manuscript table markers. Package-relative path in submitted supplementary ZIP: fold3_support_sensitivity_20260613/primary_b2_rf_headline_audit_20260613.csv."
+    },
+    {
+      "manuscript_claim": "Support-balanced q25 audit",
+      "reported_value": "seed_count 500; ok_support_balanced_candidates 0; best_candidate_seed 177; best_min_train_class_count 14",
+      "source_file": "results/supplementary_reproducibility_20260624/support_balanced_q25_sensitivity_20260624/support_balanced_q25_summary_20260624.csv",
+      "source_field": "seed_count; ok_support_balanced_candidates; best_candidate_seed; best_min_train_class_count",
+      "status": "OK",
+      "notes": "Status remains INSUFFICIENT_SUPPORT_NO_OK_SPLITS in source rows. Package-relative path in submitted supplementary ZIP: support_balanced_q25_sensitivity_20260624/support_balanced_q25_summary_20260624.csv."
+    },
+    {
+      "manuscript_claim": "Rubber-belt local calibration versus no-information baseline",
+      "reported_value": "B2 residual-test baseline/calibrated/no-info OA 0.26333333333333336/0.41000000000000003/0.84; B3 residual-test baseline/calibrated/no-info OA 0.266/0.42533333333333334/0.84",
+      "source_file": "results/supplementary_reproducibility_20260624/rubber_belt_calibration_evidence_20260613/rubber_belt_calibration_majority_baseline_summary_20260613.csv",
+      "source_field": "calibration_fraction=0.33; mean_baseline_oa; mean_calibrated_oa; mean_no_information_residual_test_oa",
+      "status": "OK",
+      "notes": "Random stratified within held-out region; not a spatial calibration design. Package-relative path in submitted supplementary ZIP: rubber_belt_calibration_evidence_20260613/rubber_belt_calibration_majority_baseline_summary_20260613.csv."
+    },
+    {
+      "manuscript_claim": "Global versus Mondrian conformal informativeness",
+      "reported_value": "B2 global/mondrian spatial set size 5.619718309859155/3.387323943661972; mondrian coverage 0.9859154929577464; B3 global/mondrian spatial set size 5.647887323943662/3.316901408450704; mondrian coverage 0.9929577464788732; B2 random Mondrian coverage 0.88",
+      "source_file": "results/supplementary_reproducibility_20260624/mondrian_conformal_sensitivity_20260619/mondrian_vs_global_conformal_comparison_20260619.csv",
+      "source_field": "global_average_set_size; mondrian_average_set_size; mondrian_empirical_coverage",
+      "status": "OK",
+      "notes": "Target coverage is stored in source CSV. Package-relative path in submitted supplementary ZIP: mondrian_conformal_sensitivity_20260619/mondrian_vs_global_conformal_comparison_20260619.csv."
+    },
+    {
+      "manuscript_claim": "Trust-routing diagnostic burden and error capture",
+      "reported_value": "B2 random routed 51, low_risk 74, routed_errors 21/33; B2 spatial routed 142, low_risk 0, routed_errors 62/62; B3 random routed 47, low_risk 78, routed_errors 23/37; B3 spatial routed 142, low_risk 0, routed_errors 66/66",
+      "source_file": "results/supplementary_reproducibility_20260624/trust_routing_diagnostics_20260624/trust_routing_route_summary_20260624.csv",
+      "source_field": "route; n; incorrect_count by stack/split",
+      "status": "OK",
+      "notes": "Derived by summing included route summary rows. Package-relative path in submitted supplementary ZIP: trust_routing_diagnostics_20260624/trust_routing_route_summary_20260624.csv."
+    },
+    {
+      "manuscript_claim": "Primary active q25 source tables and predictions",
+      "reported_value": "source files included; no additional metric value",
+      "source_file": "active_q25_rerun/table3_accuracy_by_stack_split.csv; active_q25_rerun/table4_optimism_gap.csv; active_q25_rerun/table5_alphaearth_contrasts.csv; active_q25_rerun/table6_ece.csv; active_q25_rerun/table7_conformal.csv; active_q25_rerun/table8_morans_i.csv; active_q25_rerun/table9_landscape_regression.csv; active_q25_rerun/table10_leave_region_out_transfer.csv; active_q25_rerun/table11_region_transfer_conformal.csv; active_q25_rerun/table12_region_transfer_morans_i.csv; active_q25_rerun/predictions_by_fold.csv; active_q25_rerun/per_class_metrics.csv; active_q25_rerun/spatial_fold_leakage_audit.csv; active_q25_rerun/spatial_conformal_split_audit.csv; active_q25_rerun/variogram_choice.json; active_q25_rerun/provenance.json; active_q25_rerun/RUN_LOG_20260612T173210Z.txt",
+      "source_field": "complete packaged files",
+      "status": "OK",
+      "notes": "Mirrors public GitHub results/active_q25_rerun/ at commit e21440fb5656292f800b798ccbd7ee4001c749cc so primary Table 3-12, fold-level predictions, and leakage/conformal audit sources are inspectable inside the submitted supplementary ZIP."
+    }
+  ]
+}

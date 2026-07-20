@@ -1,46 +1,35 @@
-﻿# Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping
+# Validation distance, training support, and label re-review jointly shape GeoAI performance estimates in Malaysian smallholder mapping
 
-This repository is a public reproducibility package for the evidence, code, figures, and provenance supporting the manuscript "Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping".
+This repository is the public code, data, result, figure, and provenance package supporting the IJRS manuscript *Validation distance, training support, and label re-review jointly shape GeoAI performance estimates in Malaysian smallholder mapping*.
 
-## Repository status
+## Two label versions, two estimands
 
-This staging repository has been cleaned from the IJRS submission package so that the main repository folders contain the active evidence line rather than draft review queues or legacy package history. The 20260624 update also adds the submission supplementary reproducibility artifacts needed to inspect the late-stage QA and sensitivity analyses. The manuscript Data Availability statement should cite the stable commit URL for the release used at submission. A GitHub release or Zenodo DOI can still be added later, but is not required for stable commit-URL wording.
+The repository intentionally distinguishes two evidence branches:
 
-## Main evidence line
+1. **525-record author-resolved working label set.** W.D. (Dai Wenzhe) repeated the VHR interpretation and performed the internal resolution. This is an author-led internal re-review, not independent validation. It supports label-provenance and sensitivity analysis, but a complete four-fold q25 estimate is not available under current class support. Only 16 rubber records remain.
+2. **622-record original-label sensitivity benchmark.** This preserves all four evaluable q25 folds and supports complete-fold sensitivity comparisons. It is not independently verified ground truth, and its results are conditional on the original labels and uneven training support.
 
-The active evidence line is the fold-3 teacher-VHR q25 rerun:
+The historical filename `data/reference_samples_verified_622_public.csv` and its Boolean `verified` field mean that a row was included in the original benchmark. They do **not** indicate independent verification, adjudicated gold-standard status, or design-based map accuracy. See `data/REFERENCE_LABEL_SEMANTICS.md`.
 
-- hash-preserved original run configuration: `config/config_fold3_teacher_vhr_repair_20260613.yaml`
-- public path reproduction configuration: `config/config_public_reproduction_20260615.yaml`
-- verified reference table: `data/reference_samples_verified_622_public.csv`
-- reference provenance: `results/active_q25_rerun/fold3_teacher_vhr_merge_audit_20260613.*`; older reference-cleaning history is in `docs/provenance/legacy_reference_cleaning/`
-- feature stacks: `data/features_fold3_teacher_vhr_repair_20260613/`
-- active result tables and audits: `results/active_q25_rerun/`
-- spatial-sensitivity support artifacts: `results/spatial_sensitivity/`
-- review-planning support artifacts: `results/review_planning/`
-- point-level public Sentinel-2 imagery-date audit: `results/point_imagery_dates/`
-- variogram/block-distance evidence: `results/variogram/`
-- generated variogram figure: `figures/variogram/variogram_indicator_ranges.png`
-- manuscript figures: `figures/manuscript/`
-- submission supplementary reproducibility artifacts: `results/supplementary_reproducibility_20260624/`
-- package checksums and verification files: `manifests_checksums/`
+## Current evidence map
 
-## Evidence boundaries
+- Canonical supplementary package: `results/supplementary_reproducibility_20260720/`
+- Manuscript-to-file index: `results/supplementary_reproducibility_20260720/SUPPLEMENT_INDEX.md`
+- Author-led re-review log: `results/supplementary_reproducibility_20260720/author_led_vhr_label_rereview_20260720/`
+- 525-record working-label sensitivity: `results/supplementary_reproducibility_20260720/author_resolved_label_sensitivity_20260618/`
+- 622-record original-label q25 sensitivity: `results/active_q25_rerun/` and `results/supplementary_reproducibility_20260720/active_q25_rerun/`
+- Feature stacks: `data/features_fold3_teacher_vhr_repair_20260613/`
+- Configurations: `config/`
+- Analysis scripts: `scripts/`
+- Current manuscript figures: `figures/manuscript/`
+- Public-repository manifest and checksums: `manifests_checksums/`
 
-Final metric labels come only from rows with `verified == True` in `data/reference_samples_verified_622_public.csv`. ESA WorldCover, Google Dynamic World, GlobalOilPalm, and Forest Data Partnership probabilities are weak screening or contextual sources only; they are not ground truth.
+## Interpretation boundary
 
-The reference labels are image/VHR-reviewed. The completed second-reader VHR adjudication QA workpack is included under `results/supplementary_reproducibility_20260624/` as a submission supplementary reproducibility artifact. The primary manuscript metrics were computed on the locked 622-row reference table and must be rerun before using the adjudicated subset as a replacement metric base. No design weights or sampling probabilities are available for design-unbiased map accuracy. Reported OA and macro-F1 values should therefore be interpreted as sample-based validation diagnostics.
+The current reference sample is not a probability sample and has no design weights. Reported overall accuracy (OA) and macro-averaged F1 (macro-F1) are sample-based validation diagnostics, not design-unbiased map-accuracy estimates. The q25 split is an approximately 126.8 km spatial-separation stress test for the 622-record original-label benchmark under the observed training support. Fold means and pooled out-of-fold metrics answer different aggregation questions and are both retained.
 
-Targeted-validation candidate queues are not included as main data. They are review-planning/provenance artifacts only and must not be used as ground truth.
+The VHR review log records Esri World Imagery viewed at zoom level 18. Imagery dates and native resolution were not consistently exposed, so unknown values are retained rather than inferred. Licensed VHR contact sheets are not redistributed. Natural Earth vector data used for map context are public domain; source and licence notes are in figure captions and `docs/THIRD_PARTY_DATA_NOTICE.md`.
 
-## Reproducing the analysis
+## Reproduction
 
-The main pipeline and supporting scripts are in `scripts/`. The active configuration is in `config/`. The original run logs, configuration hashes, input file names, random seed, and library/version records are preserved in `results/active_q25_rerun/`.
-
-The generated manuscript figures in `figures/manuscript/` are supplied as 13 paired PNG/PDF figure files. The PNG files in the 20260624 update carry 600 DPI metadata. The variogram figure was generated from the packaged variogram CSV/JSON outputs and does not change any result value.
-
-Point-level public imagery-date coverage is documented in `results/point_imagery_dates/`. This is a Sentinel-2 metadata audit for the 2024 analysis year, not an exact VHR basemap acquisition-date record.
-
-## Remaining author-side checks
-
-Unknown ORCID values for Wang Cao and Xuehui Hou are intentionally omitted rather than guessed. Final manuscript render QA and any future GitHub release or Zenodo DOI remain author-side options.
+Use `config/config_public_reproduction_20260615.yaml` as the public-path configuration. The original run configuration, seeds, hashes, logs, prediction files, fold-support audits, and result tables are retained. Start with `docs/REPRODUCIBILITY.md` and the supplement index.

@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-06-24T14:18:34.427962+00:00",
+  "status": "OK",
+  "method": "plain_geographic_grid_no_third_party_basemap",
+  "input_file": "figure13_planar_validation_risk_grid_20260624.csv",
+  "input_sha256": "79f2e61478a4ba41cc202c347865d5069bd8f4f38a0b7768a3938210ac2f20bb",
+  "output_png": "Figure_13_planar_validation_risk_map_plain_grid.png",
+  "output_png_sha256": "70d5fee7d2376adff3498951c2a08187716cc608b10c459c6fe7bd531befb00b",
+  "output_pdf": "Figure_13_planar_validation_risk_map_plain_grid.pdf",
+  "output_pdf_sha256": "bae522be9dd9d3729443dbc83e3d26b1f3c75f1c1aa99d22802b5d832befed56",
+  "random_seed": "NOT_USED",
+  "note": "No metric values are changed; the plot redraws occupied-grid means from the packaged grid CSV.",
+  "script": "results/supplementary_reproducibility_20260624/figure13_planar_validation_risk_20260624/make_figure13_plain_grid_20260624.py",
+  "submission_output_png": "03_Figure_files/Figure_13_planar_validation_risk_map.png",
+  "submission_output_png_sha256": "70d5fee7d2376adff3498951c2a08187716cc608b10c459c6fe7bd531befb00b",
+  "submission_output_pdf": "03_Figure_files/Figure_13_planar_validation_risk_map.pdf",
+  "submission_output_pdf_sha256": "bae522be9dd9d3729443dbc83e3d26b1f3c75f1c1aa99d22802b5d832befed56",
+  "removed_third_party_basemap_files_status": "REMOVED_FROM_SUBMISSION_PACKAGE",
+  "removed_third_party_basemap_files": [
+    "removed_third_party_basemap_png",
+    "removed_third_party_basemap_metadata_json"
+  ],
+  "removed_third_party_basemap_file_count": 2,
+  "removed_third_party_basemap_file_names_redacted": true,
+  "removed_third_party_basemap_redaction_reason": "Removed stale third-party basemap artifacts are not distributed in this submission package; names are generalized to prevent false-positive dependency scans."
+}

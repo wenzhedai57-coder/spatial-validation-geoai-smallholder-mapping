@@ -1,0 +1,167 @@
+{
+  "table3_accuracy_by_stack_split.csv": {
+    "rows": 64,
+    "status_counts": {
+      "OK": 64
+    }
+  },
+  "table4_optimism_gap.csv": {
+    "rows": 16,
+    "status_counts": {
+      "OK": 16
+    }
+  },
+  "table5_alphaearth_contrasts.csv": {
+    "rows": 16,
+    "status_counts": {
+      "OK": 16
+    }
+  },
+  "table6_ece.csv": {
+    "rows": 64,
+    "status_counts": {
+      "OK": 64
+    }
+  },
+  "table7_conformal.csv": {
+    "rows": 16,
+    "status_counts": {
+      "OK": 16
+    }
+  },
+  "table8_morans_i.csv": {
+    "rows": 64,
+    "status_counts": {
+      "OK": 64
+    }
+  },
+  "table9_landscape_regression.csv": {
+    "rows": 18,
+    "status_counts": {
+      "OK": 18
+    }
+  },
+  "table10_leave_region_out_transfer.csv": {
+    "rows": 72,
+    "status_counts": {
+      "OK": 72
+    }
+  },
+  "table11_region_transfer_conformal.csv": {
+    "rows": 72,
+    "status_counts": {
+      "OK": 72
+    }
+  },
+  "table12_region_transfer_morans_i.csv": {
+    "rows": 72,
+    "status_counts": {
+      "OK": 48,
+      "SKIPPED": 24
+    }
+  },
+  "table13_spatial_cv_sensitivity.csv": {
+    "rows": 160,
+    "status_counts": {
+      "OK": 160
+    }
+  },
+  "table13_spatial_cv_sensitivity_summary.csv": {
+    "rows": 40,
+    "status_counts": {
+      "OK": 40
+    }
+  },
+  "table15_error_guided_validation_plan.csv": {
+    "rows": 13,
+    "status_counts": {
+      "OK": 13
+    }
+  },
+  "targeted_validation_candidate_summary_review_planning_20260613.csv": {
+    "rows": 7,
+    "status_counts": {
+      "OK": 7
+    }
+  },
+  "fold3": [
+    {
+      "timestamp": "20260612T173210Z",
+      "config_hash": "13c231aedc6c4af000cc8e3d111c543a4f647b4d8bedc4a01eb286ff8f65d8e5",
+      "input_files": "verified_reference_samples",
+      "random_seed": 42,
+      "status": "OK",
+      "reason": null,
+      "fold": 3,
+      "train_count": 30,
+      "test_count": 219,
+      "buffered_out_count": 373,
+      "block_distance_m": 126783.51747145984,
+      "minimum_train_test_distance_m": 127599.30429506733,
+      "zero_leakage_assertion": true,
+      "available_spatial_blocks": 16,
+      "required_spatial_blocks": 4
+    }
+  ],
+  "table3_models_status": {
+    "RandomForest|OK": 32,
+    "XGBoost|OK": 32
+  },
+  "figures": [
+    {
+      "path": "figures/manuscript/figure1_reproducible_workflow.png",
+      "bytes": 331190,
+      "legacy_source_path": "figures_fold3_teacher_vhr_repair_20260613/figure1_reproducible_workflow.png"
+    },
+    {
+      "path": "figures/manuscript/figure2_locked_verified_samples_map.png",
+      "bytes": 262042,
+      "legacy_source_path": "figures_fold3_teacher_vhr_repair_20260613/figure2_locked_verified_samples_map.png"
+    },
+    {
+      "path": "figures/manuscript/figure3_random_vs_spatial_accuracy.png",
+      "bytes": 64976,
+      "legacy_source_path": "figures_fold3_teacher_vhr_repair_20260613/figure3_random_vs_spatial_accuracy.png"
+    },
+    {
+      "path": "figures/manuscript/figure4_random_spatial_conformal_coverage.png",
+      "bytes": 56919,
+      "legacy_source_path": "figures_fold3_teacher_vhr_repair_20260613/figure4_random_spatial_conformal_coverage.png"
+    },
+    {
+      "path": "figures/manuscript/figure5_leave_region_out_transfer_accuracy.png",
+      "bytes": 115837,
+      "legacy_source_path": "figures_fold3_teacher_vhr_repair_20260613/figure5_leave_region_out_transfer_accuracy.png"
+    },
+    {
+      "path": "figures/manuscript/figure6_landscape_regression_coefficients.png",
+      "bytes": 91255,
+      "legacy_source_path": "figures_fold3_teacher_vhr_repair_20260613/figure6_landscape_regression_coefficients.png"
+    },
+    {
+      "path": "figures/manuscript/figure10_error_guided_validation_plan.png",
+      "bytes": 681869,
+      "legacy_source_path": "figures_fold3_teacher_vhr_improvements_20260613/figure10_error_guided_validation_plan.png"
+    },
+    {
+      "path": "figures/manuscript/figure7_strict_spatial_error_map.png",
+      "bytes": 296747,
+      "legacy_source_path": "figures_fold3_teacher_vhr_improvements_20260613/figure7_strict_spatial_error_map.png"
+    },
+    {
+      "path": "figures/manuscript/figure8_prediction_disagreement_map.png",
+      "bytes": 493980,
+      "legacy_source_path": "figures_fold3_teacher_vhr_improvements_20260613/figure8_prediction_disagreement_map.png"
+    },
+    {
+      "path": "figures/manuscript/figure9_spatial_cv_sensitivity.png",
+      "bytes": 240224,
+      "legacy_source_path": "figures_fold3_teacher_vhr_improvements_20260613/figure9_spatial_cv_sensitivity.png"
+    }
+  ],
+  "review_planning_full_queue_lineage_excluded_from_public_data": {
+    "rows_in_original_review_planning_queue": 108,
+    "public_package_status": "not included as data or ground truth",
+    "retained_summary": "results/review_planning/targeted_validation_candidate_summary_review_planning_20260613.csv"
+  }
+}

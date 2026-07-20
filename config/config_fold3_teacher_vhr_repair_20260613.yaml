@@ -1,6 +1,6 @@
 project:
   name: spatially_honest_trust_aware_smallholder_landcover
-  target_journal: International Journal of Applied Earth Observation and Geoinformation
+  target_journal: International Journal of Remote Sensing
   manuscript_focus: GeoAI, spatial validation, conformal uncertainty, smallholder
     land-cover mapping
 gee:
@@ -148,7 +148,7 @@ reference_samples:
   region_file: data/reference_samples_CAO_WANG_FOLD3_VHR_ACCEPTED_3_CLEANED_20260613.csv
   targeted_confirmation_note: Baseline plus 95 advisor VHR accepted rows plus 3 Cao
     Wang teacher-reviewed fold-3 VHR accepted rows; weak products remain context only.
-  advisor_vhr_source_zip: C:\Users\m1761\Documents\New project\advisor_verified_review_DaiWenzhe_20260611.zip
+  advisor_vhr_source_zip: ${REPOSITORY_ROOT}/advisor_verified_review_DaiWenzhe_20260611.zip
   advisor_vhr_merge_audit: results_advisor_vhr_repair_20260612/advisor_vhr_merge_audit_20260612.csv
   fold3_teacher_vhr_merge_audit: results_fold3_teacher_vhr_repair_20260613/fold3_teacher_vhr_merge_audit_20260613.csv
 feature_stacks:

@@ -1,8 +1,8 @@
 ﻿cff-version: 1.2.0
 message: "If you use this code or data, cite the archived public release when available and the associated manuscript."
-title: "Spatial validation choices reshape GeoAI accuracy estimates in Malaysian smallholder mapping"
-version: "v1.0-ijrs-staging"
-date-released: "2026-06-15"
+title: "Validation distance, training support, and label re-review jointly shape GeoAI performance estimates in Malaysian smallholder mapping"
+version: "v1.1-ijrs-provenance-aligned"
+date-released: "2026-07-20"
 authors:
   - family-names: "Dai"
     given-names: "Wenzhe"

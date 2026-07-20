@@ -1,0 +1,36 @@
+{
+  "generated_date": "2026-07-20",
+  "status": "AUTHOR_LED_INTERNAL_REREVIEW_COMPLETE_WITH_FIVE_UNRESOLVED",
+  "reviewer": "W.D. (Dai Wenzhe)",
+  "review_independence_status": "AUTHOR_LED_INTERNAL_REREVIEW",
+  "blinding_status": "NOT_APPLICABLE_SAME_AUTHOR_REREVIEW",
+  "original_rows": 622,
+  "scorable_rows": 530,
+  "matched_original_rows": 370,
+  "discordant_rows": 160,
+  "non_scorable_rows": 92,
+  "internal_resolution": {
+    "accept_author_rereview": 147,
+    "keep_original": 8,
+    "unresolved_after_internal_resolution": 5
+  },
+  "author_resolved_subset": {
+    "included_rows": 525,
+    "excluded_or_unresolved_rows": 97,
+    "class_counts": {
+      "forest": 150,
+      "builtup_other": 121,
+      "oil_palm": 105,
+      "paddy": 71,
+      "other_agri": 62,
+      "rubber": 16
+    },
+    "rubber_support_status": "INSUFFICIENT_SUPPORT_MIN_CLASS_COUNT_30"
+  },
+  "claim_boundary": [
+    "This is an author-led repeat interpretation and internal provenance audit.",
+    "It is not an independent validation study.",
+    "Five records remain unresolved after internal resolution.",
+    "No in-situ ground truth is claimed."
+  ]
+}
