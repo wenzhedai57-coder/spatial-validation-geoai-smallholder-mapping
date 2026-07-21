@@ -138,7 +138,7 @@ def make_figure1() -> None:
         "Internal author-led re-review and resolution\n"
         "Rubber: 16 records\n"
         "q25 separation: approximately 158.5 km\n"
-        "One fold has no rubber training records",
+        "One fold has no training records after buffering",
         "#E9F4F1",
         "#1F7A68",
     )
@@ -341,7 +341,11 @@ def write_provenance() -> None:
     provenance = {
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "figure_1": {
-            "method": "Author-designed deterministic schematic drawn with Python and Matplotlib; no generative image model used.",
+            "method": (
+                "Author-designed deterministic schematic drawn with Python "
+                f"{__import__('platform').python_version()} and Matplotlib {matplotlib.__version__}; "
+                "no generative image model used."
+            ),
             "outputs": ["Figure_1_workflow.png", "Figure_1_workflow.pdf"],
         },
         "figure_2": {

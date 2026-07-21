@@ -11,6 +11,8 @@ The repository intentionally distinguishes two evidence branches:
 
 The historical filename `data/reference_samples_verified_622_public.csv` and its Boolean `verified` field mean that a row was included in the original benchmark. They do **not** indicate independent verification, adjudicated gold-standard status, or design-based map accuracy. See `data/REFERENCE_LABEL_SEMANTICS.md`.
 
+The canonical author-led re-review CSVs under `results/supplementary_reproducibility_20260720/author_led_vhr_label_rereview_20260720/` are submission-facing terminology derivatives. Their provenance field names and source descriptions were neutralised without changing identifiers, coordinates, labels, inclusion flags, resolution statuses, or analytical results. The derivative provenance JSON records source and output hashes. Superseded source CSVs are retained only in a non-public internal archive.
+
 ## Current evidence map
 
 - Canonical supplementary package: `results/supplementary_reproducibility_20260720/`

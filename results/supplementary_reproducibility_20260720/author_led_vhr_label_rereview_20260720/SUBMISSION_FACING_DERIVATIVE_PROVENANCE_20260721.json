@@ -1,0 +1,64 @@
+{
+  "generated_date": "2026-07-21",
+  "purpose": "Submission-facing provenance terminology derivative",
+  "scientific_values_changed": false,
+  "original_sources_retained_outside_submission": {
+    "reference_samples_author_rereview_resolved_AUDIT_20260720.csv": {
+      "archived_path_not_submitted": "_internal_not_for_submission/submission_facing_derivative_sources_20260721/AUDIT_ORIGINAL_20260720.csv",
+      "bytes": 399209,
+      "sha256": "2cf66ea15cbacc1df578da4f8358cb45ae51285e5cbea7cb7857469f2f8aaa27"
+    },
+    "reference_samples_author_resolved_INCLUDED_20260720.csv": {
+      "archived_path_not_submitted": "_internal_not_for_submission/submission_facing_derivative_sources_20260721/INCLUDED_ORIGINAL_20260720.csv",
+      "bytes": 337798,
+      "sha256": "51b81ec506082e920c5ff408d03f5f22ce66002dc0286f1b90e07f230ea62781"
+    }
+  },
+  "submission_facing_derivatives": {
+    "reference_samples_author_rereview_resolved_AUDIT_20260720.csv": {
+      "rows": 622,
+      "changed_cells": 896,
+      "field_renames": {
+        "original_verified": "historical_original_benchmark_included",
+        "original_verification_source": "historical_label_provenance_source",
+        "original_verification_notes": "historical_label_provenance_notes"
+      },
+      "invariants_checked": [
+        "sample_id",
+        "longitude",
+        "latitude",
+        "original_class_code",
+        "original_class_name",
+        "author_rereview_class_name",
+        "internally_resolved_class_name",
+        "final_class_name",
+        "include_in_author_resolved_reference",
+        "final_resolution_status"
+      ],
+      "sha256": "2a11c4aaa208992661e27d71e340149a7592310307b862565f9900e1a874f565"
+    },
+    "reference_samples_author_resolved_INCLUDED_20260720.csv": {
+      "rows": 525,
+      "changed_cells": 758,
+      "field_renames": {
+        "original_verified": "historical_original_benchmark_included",
+        "original_verification_source": "historical_label_provenance_source",
+        "original_verification_notes": "historical_label_provenance_notes"
+      },
+      "invariants_checked": [
+        "sample_id",
+        "longitude",
+        "latitude",
+        "original_class_code",
+        "original_class_name",
+        "author_rereview_class_name",
+        "internally_resolved_class_name",
+        "final_class_name",
+        "include_in_author_resolved_reference",
+        "final_resolution_status"
+      ],
+      "sha256": "dcd30444ca5d4b7b78c590bc1b2f7632045eaf712ef199a5d641b1ec8a3e9e32"
+    }
+  },
+  "claim_boundary": "The derivative changes provenance field names and reader-facing source descriptions only. Sample identifiers, coordinates, original labels, author re-review labels, internally resolved labels, final labels, inclusion flags, and resolution status values are unchanged."
+}

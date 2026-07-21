@@ -15,4 +15,6 @@ W.D. performed both the repeat interpretation and internal resolution. The proce
 
 Historical review files and superseded wording are preserved in a separate internal archive that is explicitly excluded from the submission package. Machine status codes remain only in data and provenance files where they are part of the reproducible schema.
 
+The two canonical author-led re-review CSVs are submission-facing terminology derivatives. Their provenance-oriented field names and source descriptions were neutralised without changing any identifiers, coordinates, labels, inclusion flags, resolution statuses, or analytical results. `author_led_vhr_label_rereview_20260720/SUBMISSION_FACING_DERIVATIVE_PROVENANCE_20260721.json` records the exact field mapping, invariance checks, and source/derivative hashes. The byte-identical pre-derivative CSVs remain in a non-submitted internal archive.
+
 Start with `SUPPLEMENT_INDEX.md` for a manuscript-to-file map.

@@ -1,7 +1,7 @@
 {
-  "created_utc": "2026-07-20T14:52:16.169372+00:00",
+  "created_utc": "2026-07-21T06:02:20.655611+00:00",
   "figure_1": {
-    "method": "Author-designed deterministic schematic drawn with Python and Matplotlib; no generative image model used.",
+    "method": "Author-designed deterministic schematic drawn with Python 3.12.10 and Matplotlib 3.10.9; no generative image model used.",
     "outputs": [
       "Figure_1_workflow.png",
       "Figure_1_workflow.pdf"

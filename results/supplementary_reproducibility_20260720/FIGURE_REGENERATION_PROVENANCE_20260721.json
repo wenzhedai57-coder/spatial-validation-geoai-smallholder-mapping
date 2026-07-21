@@ -1,0 +1,30 @@
+{
+  "generated_date": "2026-07-21",
+  "status": "OK",
+  "scientific_values_changed": false,
+  "figure_1": {
+    "change": "Corrected the fold-support statement to: One fold has no training records after buffering.",
+    "audit_source": "author_resolved_label_sensitivity_20260618/spatial_fold_leakage_audit.csv",
+    "audit_values": {
+      "fold": 1,
+      "train_count": 0,
+      "test_count": 299,
+      "status": "SKIPPED"
+    },
+    "software": {
+      "python": "3.12.10",
+      "matplotlib": "3.10.9"
+    },
+    "script": "figure_provenance_20260720/redraw_evidence_figures.py",
+    "script_sha256": "92af20630636ffd27ebea1ec4d50a23e736be9ad1f46f57c445ec5d4c362900e",
+    "png": "supplementary_figures/Figure_1_workflow.png",
+    "png_sha256": "1a61e2875dd9493f32116c938e2839f702e0939f0a53b6782f7066ed8c3d761c",
+    "pdf": "supplementary_figures/Figure_1_workflow.pdf",
+    "pdf_sha256": "b501b2e54e438f4fe801a36422d1d745fe773427e722ef0211e6bc8f913522bc"
+  },
+  "figure_provenance": {
+    "path": "figure_provenance_20260720/FIGURE_PROVENANCE_20260720.json",
+    "sha256": "7f77c5c21886f4200158162857a739a4307f8ebfc1f678a8cdef979a08f8f36e"
+  },
+  "path_format": "All paths in this record use POSIX forward slashes."
+}

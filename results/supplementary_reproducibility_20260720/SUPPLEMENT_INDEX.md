@@ -4,8 +4,8 @@ All paths are relative to the root of this supplementary package.
 
 | Manuscript element or claim | Primary supporting file(s) |
 |---|---|
-| Author-led re-review counts (622, 530, 370, 160, 92, 147, 8, 5, 525) | `author_led_vhr_label_rereview_20260720/author_rereview_summary_20260720.json`; `author_led_vhr_label_rereview_20260720/reference_samples_author_rereview_resolved_AUDIT_20260720.csv` |
-| 525-record author-resolved working label set and class counts | `author_led_vhr_label_rereview_20260720/reference_samples_author_resolved_INCLUDED_20260720.csv`; `author_resolved_label_sensitivity_20260618/author_resolved_reference_class_counts_20260618.csv` |
+| Author-led re-review counts (622, 530, 370, 160, 92, 147, 8, 5, 525) | `author_led_vhr_label_rereview_20260720/author_rereview_summary_20260720.json`; submission-facing derivative `author_led_vhr_label_rereview_20260720/reference_samples_author_rereview_resolved_AUDIT_20260720.csv`; derivative mapping and hashes in `author_led_vhr_label_rereview_20260720/SUBMISSION_FACING_DERIVATIVE_PROVENANCE_20260721.json` |
+| 525-record author-resolved working label set and class counts | submission-facing derivative `author_led_vhr_label_rereview_20260720/reference_samples_author_resolved_INCLUDED_20260720.csv`; `author_resolved_label_sensitivity_20260618/author_resolved_reference_class_counts_20260618.csv` |
 | Why complete four-fold q25 performance is not estimable for the 525-record set | `author_resolved_label_sensitivity_20260618/spatial_fold_leakage_audit.csv`; `author_resolved_label_sensitivity_20260618/author_resolved_sensitivity_manuscript_summary_20260618.csv` |
 | 622-record original-label sensitivity benchmark | `active_q25_rerun/reference_sample_audit.csv`; `active_q25_rerun/spatial_fold_leakage_audit.csv` |
 | Table 4A fold-level performance | `active_q25_rerun/table3_accuracy_by_stack_split.csv` |
